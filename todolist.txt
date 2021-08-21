@@ -1,0 +1,37 @@
+maybe add priority target to skirmishers->above:
+
+anti-cav:
+	make hold-the-line inherent, but at +5 instead of +10
+
+readjust naval ranged tree?:
+	move +1 range earlier, move damage a little more inconveient
+
+buff harbors next to city center:
+	lighthouses give instant trader if adjacent to coast?
+	harbor train naval units 25% faster?
+
+privateers:
+	better promotion tree that actually scales
+
+carthage:
+	city move project should be way cheaper, only scaling with times used
+	bireme to 40 str?
+
+quarries:
+	make them not bad lmao
+
+wonders:
+	make huey tocali not shit
+	great lighthouse at +2 move? may be a lil broken
+	statue of zeus at military tradition, reduce cost
+
+pantheons:
+	firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
+	godofhealing = add a +15/25% production to holysites?
+	godofwar = redo this
+	initationrites = clearing barb camp gives you strongest melee unit
+	religiousidols = redo this
+	stone circles = redo this
+
+world congress:
+	give ability to choose more resolutions/actions
