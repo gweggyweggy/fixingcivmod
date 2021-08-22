@@ -15,7 +15,7 @@ privateers:
 
 carthage:
 	city move project should be way cheaper, only scaling with times used
-	bireme to 40 str?
+	bireme shd get +5 when defending in friendly territory/along a trade route?
 
 quarries:
 	make them not bad lmao

@@ -4,11 +4,12 @@
 --------------------------------------------------------------
 
 --City Center
-UPDATE Buildings SET Cost=70 WHERE BuildingType='BUILDING_WATER_MILL';
+--BUG: somerthing wrong with this statement?
+--UPDATE Buildings SET Cost=70 WHERE BuildingType='BUILDING_WATER_MILL';
 
 --Encampments
-UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE' AND YieldType='YIELD_PRODUCTION';
-UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS' AND YieldType='YIELD_PRODUCTION';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
+UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
 
 --Theatre Square
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
