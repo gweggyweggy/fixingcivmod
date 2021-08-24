@@ -13,4 +13,4 @@ UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STAB
 
 --Theatre Square
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
-UPDATE Building_XP2 SET RequiredPower=2 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
+UPDATE Buildings_XP2 SET RequiredPower=2 WHERE BuildingType='BUILDING_BROADCAST_CENTER';

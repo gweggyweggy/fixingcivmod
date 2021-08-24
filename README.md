@@ -16,6 +16,6 @@ Developer notes:
 		The database in question you will want to investigate is probably in Documents\My Games\Sid Meier's Civilization VI\Cache\DebugGameplay
 		A lot of important stuff is in the ModifierArguments table
 
+	Links to learn:
+		https://forums.civfanatics.com/threads/using-modifiers-chapter-1-creating-and-attaching-modifiers.605835/
 
-	Fun things to know:
-		it seems like you cant force units to be in earlier eras with just update sql alone

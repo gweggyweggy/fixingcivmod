@@ -1,9 +1,6 @@
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
-districts:
-	make entertainment/waterpark/preserves nonspecialty
-	also maybe make them cheaper?
 
 recon:
 	maybe add priority target to skirmishers->above:
@@ -19,12 +16,12 @@ readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
 
 rewarding coastal cities:
-	buff harbors next to city center:
+	maybes?:
 		lighthouses give instant trader if adjacent to coast?
 		or lighthouses also give production like a shipyard?
+		or lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
+		i think the best way to improve this is to make trading more impactful for these coastal cities
 
-	coastal cities:
-		maybe make harbors and their buildings 20/30% faster?
 
 privateers:
 	better promotion tree that actually scales
