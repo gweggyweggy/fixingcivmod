@@ -1,4 +1,16 @@
-maybe add priority target to skirmishers->above:
+thismod:
+	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
+
+districts:
+	make entertainment/waterpark/preserves nonspecialty
+	also maybe make them cheaper?
+
+recon:
+	maybe add priority target to skirmishers->above:
+
+warrior monks: 
+	redo promotion tree:
+		one promotion should ignore walls (like siege tower)
 
 anti-cav:
 	make hold-the-line inherent, but at +5 instead of +10
@@ -6,16 +18,19 @@ anti-cav:
 readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
 
-buff harbors next to city center:
-	lighthouses give instant trader if adjacent to coast?
-	harbor train naval units 25% faster?
+rewarding coastal cities:
+	buff harbors next to city center:
+		lighthouses give instant trader if adjacent to coast?
+		or lighthouses also give production like a shipyard?
+
+	coastal cities:
+		maybe make harbors and their buildings 20/30% faster?
 
 privateers:
 	better promotion tree that actually scales
 
 carthage:
-	city move project should be way cheaper, only scaling with times used
-	bireme shd get +5 when defending in friendly territory/along a trade route?
+	bireme shd get +5/10 when near a friendly trade route?
 
 quarries:
 	make them not bad lmao
@@ -29,7 +44,7 @@ pantheons:
 	firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
 	godofhealing = add a +15/25% production to holysites?
 	godofwar = redo this
-	initationrites = clearing barb camp gives you strongest melee unit
+	initationrites = clearing barb camp gives you strongest melee unit?
 	religiousidols = redo this
 	stone circles = redo this
 
