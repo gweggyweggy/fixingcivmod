@@ -24,19 +24,20 @@ UPDATE Districts SET Cost=20 WHERE DistrictType='DISTRICT_STREET_CARNIVAL' OR
 
 --giving city centers next to coast a boon to promote more settling on coasts (at least for humans)
 --TODO: test if this also works on unique harbors
-INSERT INTO ModifierArguments (ModifierId, Name, Type, Value)
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
-('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','Amount', 'ARGTYPE_IDENTITY',20), --need playtesting to see if this discount is substantial enough
-('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','DistrictType', 'DISTRICT_HARBOR',20),
-('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','Amount', 'ARGTYPE_IDENTITY',20), 
-('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','DistrictType', 'DISTRICT_HARBOR',20);
+('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','Amount',20), --need playtesting to see if this discount is substantial enough
+('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','DistrictType', 'DISTRICT_HARBOR'),
+('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','Amount',20), 
+('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','DistrictType','DISTRICT_HARBOR');
 
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 VALUES 
 ('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION', 'PLOT_IS_ADJACENT_COAST_CITY_CENTER_REQUIREMENTS'),
 ('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION', 'PLOT_IS_ADJACENT_COAST_CITY_CENTER_REQUIREMENTS');
 
---make it take effect immediately when the game starts
+
+--TODO: not sure if this is the right place to put it, but its not activating anyway
 INSERT INTO GameModifiers (ModifierId)
 VALUES ('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION'),
 	   ('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION');
