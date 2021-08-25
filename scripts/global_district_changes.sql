@@ -26,24 +26,25 @@ UPDATE Districts SET Cost=20 WHERE DistrictType='DISTRICT_STREET_CARNIVAL' OR
 --giving city centers next to coast a boon to promote more settling on coasts (at least for humans)
 
 --we'll have these modifiers apply everyone immediately
-INSERT INTO GameModifiers (ModifierId)
-VALUES ('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION'),
-	   ('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION');
+--INSERT INTO GameModifiers (ModifierId)
+--VALUES ('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION'),
+--	   ('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION');
 
 
---TODO: not sure if this is the right place to put it, but its not activating anyway
---INSERT INTO DistrictModifiers (DistrictType, ModifierId)
---VALUES ('DISTRICT_CITY_CENTER','MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION'),
---	   ('DISTRICT_CITY_CENTER','MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION');
-
+INSERT INTO DistrictModifiers (DistrictType, ModifierId)
+VALUES ('DISTRICT_CITY_CENTER','MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION'),
+	   ('DISTRICT_CITY_CENTER','MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION');
 
 
 --but we only want it to apply to coastal cities
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+--TODO: test that this seg works
+INSERT INTO Modifiers (ModifierId, ModifierType, OwnerRequirementSetId)
 VALUES 
 ('MARITIME_CITY_HARBOR_BUILDINGS_PRODUCTION','MODIFIER_ALL_CITIES_ADJUST_DISTRICT_BUILDING_PRODUCTION', 'PLOT_IS_ADJACENT_COAST_CITY_CENTER_REQUIREMENTS'),
 ('MARITIME_CITY_HARBOR_DISTRICT_PRODUCTION','MODIFIER_ALL_CITIES_ADJUST_DISTRICT_PRODUCTION', 'PLOT_IS_ADJACENT_COAST_CITY_CENTER_REQUIREMENTS');
 
+
+--TODO: test that this seg works
 --need to add a dynamic modifier for building districts faster for everyone (the buildings in district already exists because thats a world congress effect)
 INSERT INTO DynamicModifiers (ModifierType, CollectionType, EffectType)
 VALUES ('MODIFIER_ALL_CITIES_ADJUST_DISTRICT_PRODUCTION', 'COLLECTION_ALL_CITIES', 'EFFECT_ADJUST_CITY_PRODUCTION_DISTRICT');
