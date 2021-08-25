@@ -22,6 +22,8 @@ rewarding coastal cities:
 		or lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
 		i think the best way to improve this is to make trading more impactful for these coastal cities
 
+naval combat:
+	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
 privateers:
 	better promotion tree that actually scales
