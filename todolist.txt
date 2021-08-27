@@ -6,6 +6,7 @@ recon:
 	maybe add priority target to skirmishers->above:
 
 warrior monks: 
+	instaunlock theology when founding warrior monk religion
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
 
@@ -17,10 +18,8 @@ readjust naval ranged tree?:
 
 rewarding coastal cities:
 	maybes?:
-		lighthouses give instant trader if adjacent to coast?
-		or lighthouses also give production like a shipyard?
-		or lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
-		i think the best way to improve this is to make trading more impactful for these coastal cities
+		some yield per coastal tile adjacent to city?  production would be best, but need to be careful
+		lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
 
 naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
@@ -36,7 +35,7 @@ quarries:
 
 wonders:
 	make huey tocali not shit
-	great lighthouse at +2 move? may be a lil broken
+	great lighthouse also gives +1 sight?
 	statue of zeus at military tradition, reduce cost
 
 pantheons:
@@ -49,3 +48,6 @@ pantheons:
 
 world congress:
 	give ability to choose more resolutions/actions
+
+tlacthi:
+	redo the effect to more unit oriented (+1 gen is kinda lame)
