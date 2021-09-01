@@ -2,6 +2,15 @@ thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
 
+norway:
+	update berserker (same cost as man?)
+
+japan:
+	update samurai (more expensive than manatarms)
+
+kongo:
+	ngaos to 35 str, but make them cheaper than regular swords production wise
+
 recon:
 	maybe add priority target to skirmishers->above:
 
@@ -18,7 +27,6 @@ readjust naval ranged tree?:
 
 rewarding coastal cities:
 	maybes?:
-		some yield per coastal tile adjacent to city?  production would be best, but need to be careful
 		lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
 
 naval combat:
