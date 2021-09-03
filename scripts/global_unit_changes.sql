@@ -48,11 +48,12 @@ VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'MODIFIER_PLAYER_UNITS_GRANT_ABILI
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'AbilityType', 'ABILITY_LESSER_HOLD_THE_LINE');
 
+--TODO this doesnt work rn
 --updating preview and text
-INSERT INTO ModifierStrings (ModifierId, Context, Text)
-VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', 'Adjacent units of a different class get +5 [ICON_Strength] Combat Strength vs. cavalry.'),
-VALUES ('LESSER_HOLD_THE_LINE_BONUS','Preview', '+{1_Amount} {LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME} {LOC_ABILITY_DESCRIPTOR_PREVIEW_TEXT}')
-;
+--INSERT INTO ModifierStrings (ModifierId, Context, Text)
+--VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', 'Adjacent units of a different class get +5 [ICON_Strength] Combat Strength vs. cavalry.'),
+--VALUES ('LESSER_HOLD_THE_LINE_BONUS','Preview', '+{1_Amount} {LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME} {LOC_ABILITY_DESCRIPTOR_PREVIEW_TEXT}')
+--;
 --DONE ANTICAV BUFF
 
 

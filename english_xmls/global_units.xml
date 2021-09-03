@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- global_units -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 8/31/2021 9:20:30 PM -->
+
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME" Language="en_US">
+			<Text>[ICON_Strength] Combat Strength +5 when adjacent to a friendly anti-cav unit.</Text>
+		</Replace>
+	</LocalizedText>
+
+</GameData>
