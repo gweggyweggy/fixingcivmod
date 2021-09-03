@@ -2,6 +2,38 @@ thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
 
+amenities:
+	make negative amenities more harmful since entercs are free now
+	make lowest amenity have -20 loyalty or something
+	make war weariness actually matter
+
+coursers:
+	move them in not castles
+
+castles:
+	make forts show up here
+
+siege tactics:
+	+5 to city strike, +5 defending against to all units
+
+military tactics:
+	increased flanking and support bonuses
+
+defensive tactics:
+	+5 to units defending in ??
+
+mathematics:
+	should give science modifier or someting
+
+astronomy:
+	make mountains +2 give science?
+
+metal casting:
+	move bombard to gunpowder
+
+gunpowder:
+	move musketman to metal casting
+
 norway:
 	update berserker (same cost as man?)
 

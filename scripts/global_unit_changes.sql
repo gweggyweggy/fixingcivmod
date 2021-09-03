@@ -11,9 +11,8 @@ UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT'; 
 
 --TODO: add preview to show combat modifier
---BUFF:
+--START ANTICAV BUFF:
 --new inherent hold-the-line for all anticav, but only +5 to adjacent noncav units fighting cav
-
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
 VALUES 
 ('LESSER_HOLD_THE_LINE_BONUS','MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'HOLD_THE_LINE_REQUIREMENTS'),
@@ -48,6 +47,14 @@ INSERT INTO Modifiers (ModifierId, ModifierType)
 VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'AbilityType', 'ABILITY_LESSER_HOLD_THE_LINE');
+
+--updating preview and text
+INSERT INTO ModifierStrings (ModifierId, Context, Text)
+VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', 'Adjacent units of a different class get +5 [ICON_Strength] Combat Strength vs. cavalry.'),
+VALUES ('LESSER_HOLD_THE_LINE_BONUS','Preview', '+{1_Amount} {LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME} {LOC_ABILITY_DESCRIPTOR_PREVIEW_TEXT}')
+;
+--DONE ANTICAV BUFF
+
 
 
 
