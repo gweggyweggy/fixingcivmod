@@ -23,12 +23,6 @@ make section for new devs
 
 
 -----DIFFICULTY 1s:-----
-metal casting:
-	move bombard to gunpowder
-
-gunpowder:
-	move musketman to metal casting
-
 norway:
 	update berserker (same cost as man?)
 
@@ -42,6 +36,9 @@ statue of zeus at military tradition, reduce cost
 
 ottomans: 
 	drop janissarys to 55 str, but keep them at gunpowder
+
+georgia:
+	update khevsurs?
 
 -----DIFFICULTY 2s:-----
 quarries:

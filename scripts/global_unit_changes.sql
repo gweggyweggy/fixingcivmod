@@ -5,6 +5,7 @@
 
 -- Melee --
 UPDATE Units SET PrereqTech='TECH_MILITARY_ENGINEERING',Cost=180 WHERE UnitType='UNIT_MAN_AT_ARMS'; 
+UPDATE Units SET PrereqTech='TECH_METAL_CASTING' WHERE UnitType='UNIT_MUSKETMAN'; 
 -- Anti-Cav --
 UPDATE Units SET Cost=60 WHERE UnitType='UNIT_SPEARMAN';
 UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
@@ -53,6 +54,8 @@ VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+3 [ICON_Strength] Comba
 --DONE ANTICAV BUFF
 
 
+-- Siege --
+UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD'; 
 
 
 -- Recon --
