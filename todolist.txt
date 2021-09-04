@@ -1,35 +1,22 @@
 
-
-
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
-babylon:
-	double unit maintenance cost?
+===difficulty estimates:===
+1 = trivial, should take no time at all
+2 = seems straightforward, may be some hiccups here and there
+3 = will take some effort and research to accomplish, but should be doable
+4 = seems complex, may need a lot more research and testing to accomplish
+5 = may be near impossible, maybe rethink this proposal
+? = unsure what to do/go forward with, come back to these later
 
-amenities:
-	make negative amenities more harmful since entercs are free now
-	make lowest amenity have -20 loyalty or something
-	make war weariness actually matter
-	occupied cities should suffer the most
 
+-----DIFFICULTY 1s:-----
 coursers:
 	move them in not castles
 
 castles:
 	make forts show up here
-
-siege tactics:
-	+5 to city strike, +5 defending against to all units
-
-military tactics:
-	increased flanking and support bonuses
-
-defensive tactics:
-	+5 to units defending in ??
-
-mathematics:
-	should give science modifier or someting
 
 metal casting:
 	move bombard to gunpowder
@@ -46,49 +33,79 @@ japan:
 kongo:
 	ngaos to 35 str, but make them cheaper than regular swords production wise
 
-recon:
-	maybe add priority target to skirmishers->above:
+statue of zeus at military tradition, reduce cost
+
+-----DIFFICULTY 2s:-----
+quarries:
+	make them not bad lmao
+
+make huey tocali not shit
+
+stonehenge, quarries give faith?
+
+-----DIFFICULTY 3s:-----
+babylon:
+	double unit maintenance cost?
+
+siege tactics:
+	+5 to city strike, +5 defending against to all units
+
+military tactics:
+	increased flanking and support bonuses
+
+defensive tactics:
+	+5 to units defending in ??
+
+military engineers:
+	should only require an encampment, armory should boost production towards, maybe also add extra charges too
+
+godofhealing = add a +15/25% production to holysites?
+
+carthage:
+	bireme shd get +5/10 when near a friendly trade route?
+
+firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
+
+-----DIFFICULTY 4s:-----
+amenities:
+	make negative amenities more harmful since entercs are free now
+	make lowest amenity have -20 loyalty or something
+	make war weariness actually matter
+	occupied cities should suffer the most
+
+privateers:
+	better promotion tree that actually scales
+
+readjust naval ranged tree?:
+	move +1 range earlier, move damage a little more inconveient
 
 warrior monks: 
 	instaunlock theology when founding warrior monk religion
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
 
-military engineers:
-	should only require an encampment, armory should boost production towards, maybe also add extra charges too
+-----DIFFICULTY 5s:-----
 
-readjust naval ranged tree?:
-	move +1 range earlier, move damage a little more inconveient
-
-rewarding coastal cities:
-	maybes?:
-		lighthouses now give gold=harbor adjacency instead of +1 gold (srsly wtf?)
+recon:
+	maybe add priority target to skirmishers->above:
 
 naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
-privateers:
-	better promotion tree that actually scales
+----DIFFICULTY ?s:-----
 
-carthage:
-	bireme shd get +5/10 when near a friendly trade route?
-
-quarries:
-	make them not bad lmao
+mathematics:
+	should give science modifier or someting
 
 wonders:
-	make huey tocali not shit
-	great lighthouse also gives +1 sight?
-	statue of zeus at military tradition, reduce cost
-	stonehenge, quarries give faith?
+	great lighthouse?
+	colossus?
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
 
 
 pantheons:
-	firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
-	godofhealing = add a +15/25% production to holysites?
 	godofwar = redo this
 	initationrites = clearing barb camp gives you strongest melee unit?
 	religiousidols = redo this
