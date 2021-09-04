@@ -1,7 +1,16 @@
 
+///codebase todos///
+
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
+make a changelog
+
+keep README/desc updated
+
+make section for new devs
+
+///gameplay todos///
 ===difficulty estimates:===
 1 = trivial, should take no time at all
 2 = seems straightforward, may be some hiccups here and there
@@ -34,6 +43,7 @@ kongo:
 	ngaos to 35 str, but make them cheaper than regular swords production wise
 
 statue of zeus at military tradition, reduce cost
+
 
 -----DIFFICULTY 2s:-----
 quarries:
@@ -93,6 +103,8 @@ naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
 ----DIFFICULTY ?s:-----
+
+make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 
 mathematics:
 	should give science modifier or someting
