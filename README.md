@@ -1,5 +1,4 @@
 This mod is similar to BBG but takes a different approach to balancing.
-
 There are several global balance changes done by adjusting the tech and civic trees, as well as some other general changes such as (but not limited to):
 1. coastal cities get production each adj coastal tile
 2. anticav units have an inherent hold-the-line ability (only at +3)
@@ -18,6 +17,7 @@ https://github.com/gweggyweggy/fixingcivmod
 Developer notes:
 	This mod was made via ModBuddy, from the official Civ 6 development tools.
 	The modinfo file (i.e. the driver for this mod) is generated/customized via the .sln > Properties > InGameActions > UpdateDatabase
+
 
 	Further development:
 		Database entries can be found using a sql browser such as DB Browser for SQL lite.  

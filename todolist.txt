@@ -6,6 +6,8 @@ thismod:
 
 make a changelog
 
+specify load order for all files
+
 keep README/desc updated
 
 make section for new devs
@@ -21,12 +23,6 @@ make section for new devs
 
 
 -----DIFFICULTY 1s:-----
-coursers:
-	move them in not castles
-
-castles:
-	make forts show up here
-
 metal casting:
 	move bombard to gunpowder
 
@@ -44,6 +40,8 @@ kongo:
 
 statue of zeus at military tradition, reduce cost
 
+ottomans: 
+	drop janissarys to 55 str, but keep them at gunpowder
 
 -----DIFFICULTY 2s:-----
 quarries:
