@@ -1,11 +1,17 @@
+
+
+
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
+babylon:
+	double unit maintenance cost?
 
 amenities:
 	make negative amenities more harmful since entercs are free now
 	make lowest amenity have -20 loyalty or something
 	make war weariness actually matter
+	occupied cities should suffer the most
 
 coursers:
 	move them in not castles
@@ -24,9 +30,6 @@ defensive tactics:
 
 mathematics:
 	should give science modifier or someting
-
-astronomy:
-	make mountains +2 give science?
 
 metal casting:
 	move bombard to gunpowder
@@ -51,8 +54,8 @@ warrior monks:
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
 
-anti-cav:
-	make hold-the-line inherent, but at +5 instead of +10
+military engineers:
+	should only require
 
 readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
@@ -77,6 +80,11 @@ wonders:
 	make huey tocali not shit
 	great lighthouse also gives +1 sight?
 	statue of zeus at military tradition, reduce cost
+	stonehenge, quarries give faith?
+	angkor wat: make it way more impactful for taller civs 
+	hanging gardens: not sure what to do
+	sankore?
+
 
 pantheons:
 	firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
