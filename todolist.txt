@@ -55,7 +55,7 @@ warrior monks:
 		one promotion should ignore walls (like siege tower)
 
 military engineers:
-	should only require
+	should only require an encampment, armory should boost production towards, maybe also add extra charges too
 
 readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
