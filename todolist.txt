@@ -25,15 +25,12 @@ make section for new devs
 -----DIFFICULTY 1s:-----
 infantry:
 	require no oil to upgrade, but 1 oil to maintain
-
+zulu:
+	update ability desc to say ikanda buildings now provide culture
 
 -----DIFFICULTY 2s:-----
-quarries:
-	make them not bad lmao
-
 
 zulu:
-	make ikanda buildings give culture instead of science
 	need to adjust +5 bonus to corps and armies, going to make +3 for now
 
 -----DIFFICULTY 3s:-----
@@ -50,7 +47,7 @@ siege tactics:
 military tactics:
 	increased flanking and support bonuses
 defensive tactics:
-	+5 to units defending in ??
+	+5 to units defending adjacent to friendly city?
 
 
 military engineers:
