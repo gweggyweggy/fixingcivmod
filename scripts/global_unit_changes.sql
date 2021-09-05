@@ -5,12 +5,12 @@
 
 -- Melee --
 UPDATE Units SET PrereqTech='TECH_MILITARY_ENGINEERING',Cost=180 WHERE UnitType='UNIT_MAN_AT_ARMS'; 
+UPDATE Units SET PrereqTech='TECH_METAL_CASTING' WHERE UnitType='UNIT_MUSKETMAN'; 
 -- Anti-Cav --
 UPDATE Units SET Cost=60 WHERE UnitType='UNIT_SPEARMAN';
 UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT'; 
 
---TODO: add preview to show combat modifier
 --START ANTICAV BUFF:
 --new inherent hold-the-line for all anticav, but only +5 to adjacent noncav units fighting cav
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
@@ -50,10 +50,12 @@ VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'AbilityType', 'ABILITY_LESSER_HOL
 
 --this stacks btw
 INSERT INTO ModifierStrings (ModifierId, Context, Text)
-VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+3 [ICON_Strength] Combat Strength vs. cavalry from friendly adjacent anti-cav');
+VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+3 [ICON_Strength] Combat Strength vs. cavalry from a friendly adjacent anti-cav');
 --DONE ANTICAV BUFF
 
 
+-- Siege --
+UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD'; 
 
 
 -- Recon --
@@ -63,13 +65,14 @@ UPDATE Units SET Cost=270,Combat=50,RangedCombat=65 WHERE UnitType='UNIT_RANGER'
 UPDATE Units SET Cost=495,Combat=60,RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; 
 
 -- Light Cav --
+UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_COURSER'; 
 
 -- Heavy Cav --
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_TANK'; 
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_MODERN_ARMOR'; 
 
 -- Support --
-UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE BuildWithUnitChargeCost=1; --NOTTESTED
+UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE BuildWithUnitChargeCost=1;
 
 -- Naval Raider -- 
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
