@@ -23,16 +23,19 @@ make section for new devs
 
 
 -----DIFFICULTY 1s:-----
-
+infantry:
+	require no oil to upgrade, but 1 oil to maintain
 
 
 -----DIFFICULTY 2s:-----
 quarries:
 	make them not bad lmao
 
-make huey tocali not shit
-
 stonehenge, quarries give faith?
+
+zulu:
+	remove +5 str to corps and armies
+	make ikanda buildings give culture instead of science
 
 -----DIFFICULTY 3s:-----
 babylon:
@@ -56,6 +59,7 @@ carthage:
 	bireme shd get +5/10 when near a friendly trade route?
 
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
+
 
 -----DIFFICULTY 4s:-----
 amenities:
@@ -96,7 +100,7 @@ wonders:
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
-
+	make huey tocali not shit
 
 pantheons:
 	godofwar = redo this
@@ -113,3 +117,11 @@ tlacthi:
 kongo:
 	let them build holy sites, but not recruit prophet
 	maybe make killing units a chance to grant relic/artifact?  in turn, get archelogists and reveal artifacts early
+
+nam:
+	voi chiens?
+
+kupe:
+	maybe make him unable to remove features?  pretty harsh, but thematic
+
+
