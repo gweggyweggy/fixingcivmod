@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- global_improvements -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/5/2021 12:21:34 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TECH_GUNPOWDER_DESCRIPTION" Language="en_US">
+			<Text>Quarry improvements receive +2 [ICON_Production] Production. Unlocks a [ICON_GOVERNOR] Governor title for Suleiman.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

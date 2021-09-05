@@ -31,24 +31,27 @@ infantry:
 quarries:
 	make them not bad lmao
 
-stonehenge, quarries give faith?
 
 zulu:
-	remove +5 str to corps and armies
 	make ikanda buildings give culture instead of science
+	need to adjust +5 bonus to corps and armies, going to make +3 for now
 
 -----DIFFICULTY 3s:-----
+
+make huey tocali not shit:
+		lakes provide major adj to theatre squares and holy sites, standard for all others
+		+2 food, culture, faith to all lake tiles
 babylon:
 	double unit maintenance cost?
 
+--these are techmodifiers
 siege tactics:
 	+5 to city strike, +5 defending against to all units
-
 military tactics:
 	increased flanking and support bonuses
-
 defensive tactics:
 	+5 to units defending in ??
+
 
 military engineers:
 	should only require an encampment, armory should boost production towards, maybe also add extra charges too
@@ -100,8 +103,7 @@ wonders:
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
-	make huey tocali not shit
-
+	
 pantheons:
 	godofwar = redo this
 	initationrites = clearing barb camp gives you strongest melee unit?
@@ -119,9 +121,12 @@ kongo:
 	maybe make killing units a chance to grant relic/artifact?  in turn, get archelogists and reveal artifacts early
 
 nam:
-	voi chiens?
+	voi chiens?  maybe more expensive
 
 kupe:
 	maybe make him unable to remove features?  pretty harsh, but thematic
 
+stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 
+--meme idea:
+	10000 faith to instastart the apocalypse
