@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- zulu -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/7/2021 11:45:09 AM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DISTRICT_IKANDA_DESCRIPTION" Language="en_US">
+			<Text>A district unique to Zulu which replaces the Encampment. Provides +1 [ICON_Housing] Housing. Once the Civic or Technology prerequisite is met, Corps and Armies can be built outright. Buildings in the Ikanda receive +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture. Faster Corps and Army creation.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
+			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to Corps at (Nationalism Civic) and Armies at (Mobilization Civic).</Text>
+		</Replace>
+
+
+	</LocalizedText>
+</GameData>

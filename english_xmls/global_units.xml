@@ -5,6 +5,8 @@
 
 <GameData>
 	<LocalizedText>
+		
+		<!-- todo remove this tag, unused-->
 		<Replace Tag="LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME" Language="en_US">
 			<Text>[ICON_Strength] Combat Strength +4 when adjacent to a friendly anti-cav unit.</Text>
 		</Replace>
