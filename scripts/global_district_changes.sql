@@ -4,11 +4,8 @@
 --------------------------------------------------------------
 
 --BUFFING SOME DISTRICTS
---not making hippodromes nonspecialty since that might be a little broken
 UPDATE Districts SET RequiresPopulation=0 WHERE DistrictType='DISTRICT_ENTERTAINMENT_COMPLEX' OR 
 												DistrictType='DISTRICT_WATER_ENTERTAINMENT_COMPLEX' OR
-												DistrictType='DISTRICT_STREET_CARNIVAL' OR
-												DistrictType='DISTRICT_WATER_STREET_CARNIVAL' OR
 												DistrictType='DISTRICT_PRESERVE' OR
 												DistrictType='DISTRICT_DIPLOMATIC_QUARTER'
 												;

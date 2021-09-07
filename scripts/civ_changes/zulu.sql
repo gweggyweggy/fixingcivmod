@@ -30,3 +30,9 @@ INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType) VALUES
 INSERT OR IGNORE INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('SIXFIX_PLAYER_HAS_MOBILIZATION_REQUIREMENT' , 'CivicType', 'CIVIC_MOBILIZATION');
 
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES 
+	('TRAIT_LAND_CORPS_COMBAT_STRENGTH','Preview', '+5 [ICON_Strength] Combat Strength to corps from Amabutho Ability');
+
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES 
+	('TRAIT_LAND_ARMIES_COMBAT_STRENGTH','Preview', '+5 [ICON_Strength] Combat Strength to armies from Amabutho Ability');
+
