@@ -51,7 +51,7 @@ VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'AbilityType', 'ABILITY_LESSER_HOL
 
 --this stacks btw
 INSERT INTO ModifierStrings (ModifierId, Context, Text)
-VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+4 [ICON_Strength] Combat Strength vs. cavalry from a friendly adjacent anti-cav');
+VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', 'LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME');
 --DONE ANTICAV BUFF
 
 

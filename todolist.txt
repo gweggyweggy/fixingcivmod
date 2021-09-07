@@ -7,7 +7,6 @@ thismod:
 
 cleanup formatting and refactor appropiately
 
-
 make a changelog
 
 specify load order for all files
@@ -15,6 +14,8 @@ specify load order for all files
 keep README/desc updated
 
 make section for new devs
+
+investigate long load times?
 
 ///gameplay todos///
 ===difficulty estimates:===
@@ -132,3 +133,5 @@ stonehenge, quarries give faith? maybe when founding a religion, gain another be
 specialists?
 
 should fighters only cost 1 alum as they are meant for more defensive measures compared to bombers?
+
+make polders more spammable
