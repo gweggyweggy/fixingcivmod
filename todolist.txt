@@ -33,13 +33,13 @@ fix some of the wrong eureka descs:
 	something else i dont remember? check patch notes
 
 -----DIFFICULTY 2s:-----
-
-
+shipyards:
+	production to all coastal tiles, not just unimproved
 
 -----DIFFICULTY 3s:-----
 
 make huey tocali not shit:
-		lakes provide major adj to theatre squares and holy sites, standard for all others
+		lakes provide major adj to theatre squares, holy sites, harbors(?), standard for all others
 		+2 food, culture, faith to all lake tiles
 babylon:
 	double unit maintenance cost?
@@ -103,6 +103,7 @@ wonders:
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
+	buff machu picchu slighty?  maybe +2 adj to at least theatre squares and commercial hubs?
 	
 pantheons:
 	godofwar = redo this
@@ -129,3 +130,5 @@ kupe:
 stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 
 specialists?
+
+should fighters only cost 1 alum as they are meant for more defensive measures compared to bombers?
