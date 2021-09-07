@@ -27,22 +27,13 @@ make section for new devs
 
 
 -----DIFFICULTY 1s:-----
-infantry:
-	require no oil to upgrade, but 1 oil to maintain
-zulu:
-	update ability desc to say ikanda buildings now provide culture
-	update ability desc to say that corps get +5 at national, armies get +5 at mobilization
-	add preview for +5 from amibutho effect
-
-anticav:
-	make spearman 50 prod
-	lhtd bonus to +4
 
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check patch notes
 
 -----DIFFICULTY 2s:-----
+
 
 
 -----DIFFICULTY 3s:-----

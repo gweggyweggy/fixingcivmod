@@ -6,8 +6,9 @@
 -- Melee --
 UPDATE Units SET PrereqTech='TECH_MILITARY_ENGINEERING',Cost=180 WHERE UnitType='UNIT_MAN_AT_ARMS'; 
 UPDATE Units SET PrereqTech='TECH_METAL_CASTING' WHERE UnitType='UNIT_MUSKETMAN'; 
+UPDATE Units_XP2 SET ResourceMaintenanceAmount=1,ResourceCost=0 WHERE UnitType='UNIT_INFANTRY';
 -- Anti-Cav --
-UPDATE Units SET Cost=60 WHERE UnitType='UNIT_SPEARMAN';
+UPDATE Units SET Cost=50 WHERE UnitType='UNIT_SPEARMAN';
 UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT'; 
 
@@ -22,7 +23,7 @@ VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
 ('LESSER_HOLD_THE_LINE_BONUS', 'ModifierId', 'LESSER_HOLD_THE_LINE_COMBAT_BONUS'),
-('LESSER_HOLD_THE_LINE_COMBAT_BONUS', 'Amount', '3')
+('LESSER_HOLD_THE_LINE_COMBAT_BONUS', 'Amount', '4')
 ;
 
 --establish ability and attach to anticav
@@ -38,11 +39,11 @@ VALUES ('ABILITY_LESSER_HOLD_THE_LINE', 'CLASS_ANTI_CAVALRY');
 
 --having ability apply as a trait to all
 INSERT INTO Traits (TraitType)
-VALUES ('TRAIT_MYTEST');
+VALUES ('TRAIT_INHERENT_HOLD_THE_LINE');
 INSERT INTO Types (Type, Kind)
-VALUES ('TRAIT_MYTEST','KIND_TRAIT');
+VALUES ('TRAIT_INHERENT_HOLD_THE_LINE','KIND_TRAIT');
 INSERT INTO TraitModifiers (TraitType, ModifierId)
-VALUES ('TRAIT_MYTEST', 'GRANT_ABILITY_LESSER_HOLD_THE_LINE');
+VALUES ('TRAIT_INHERENT_HOLD_THE_LINE', 'GRANT_ABILITY_LESSER_HOLD_THE_LINE');
 INSERT INTO Modifiers (ModifierId, ModifierType)
 VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY');
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
@@ -50,7 +51,7 @@ VALUES ('GRANT_ABILITY_LESSER_HOLD_THE_LINE', 'AbilityType', 'ABILITY_LESSER_HOL
 
 --this stacks btw
 INSERT INTO ModifierStrings (ModifierId, Context, Text)
-VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+3 [ICON_Strength] Combat Strength vs. cavalry from a friendly adjacent anti-cav');
+VALUES ('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', '+4 [ICON_Strength] Combat Strength vs. cavalry from a friendly adjacent anti-cav');
 --DONE ANTICAV BUFF
 
 

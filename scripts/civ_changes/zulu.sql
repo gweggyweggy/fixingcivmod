@@ -30,3 +30,5 @@ INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType) VALUES
 INSERT OR IGNORE INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('SIXFIX_PLAYER_HAS_MOBILIZATION_REQUIREMENT' , 'CivicType', 'CIVIC_MOBILIZATION');
 
+
+
