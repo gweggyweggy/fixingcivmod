@@ -4,6 +4,10 @@
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
+
+cleanup formatting and refactor appropiately
+
+
 make a changelog
 
 specify load order for all files
@@ -23,29 +27,40 @@ make section for new devs
 
 
 -----DIFFICULTY 1s:-----
+infantry:
+	require no oil to upgrade, but 1 oil to maintain
+zulu:
+	update ability desc to say ikanda buildings now provide culture
+	update ability desc to say that corps get +5 at national, armies get +5 at mobilization
+	add preview for +5 from amibutho effect
 
+anticav:
+	make spearman 50 prod
+	lhtd bonus to +4
 
+fix some of the wrong eureka descs:
+	siege tactics, shd be two trebuchets now
+	something else i dont remember? check patch notes
 
 -----DIFFICULTY 2s:-----
-quarries:
-	make them not bad lmao
 
-make huey tocali not shit
-
-stonehenge, quarries give faith?
 
 -----DIFFICULTY 3s:-----
+
+make huey tocali not shit:
+		lakes provide major adj to theatre squares and holy sites, standard for all others
+		+2 food, culture, faith to all lake tiles
 babylon:
 	double unit maintenance cost?
 
+--these are techmodifiers
 siege tactics:
 	+5 to city strike, +5 defending against to all units
-
 military tactics:
 	increased flanking and support bonuses
-
 defensive tactics:
-	+5 to units defending in ??
+	+5 to units defending adjacent to friendly city?
+
 
 military engineers:
 	should only require an encampment, armory should boost production towards, maybe also add extra charges too
@@ -56,6 +71,7 @@ carthage:
 	bireme shd get +5/10 when near a friendly trade route?
 
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
+
 
 -----DIFFICULTY 4s:-----
 amenities:
@@ -96,8 +112,7 @@ wonders:
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
-
-
+	
 pantheons:
 	godofwar = redo this
 	initationrites = clearing barb camp gives you strongest melee unit?
@@ -113,3 +128,13 @@ tlacthi:
 kongo:
 	let them build holy sites, but not recruit prophet
 	maybe make killing units a chance to grant relic/artifact?  in turn, get archelogists and reveal artifacts early
+
+nam:
+	voi chiens?  maybe more expensive
+
+kupe:
+	maybe make him unable to remove features?  pretty harsh, but thematic
+
+stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
+
+specialists?
