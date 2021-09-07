@@ -4,6 +4,10 @@
 thismod:
 	rename to 6fix, possibly divide into 6 seperate mods as a bundle?
 
+
+cleanup formatting and refactor appropiately
+
+
 make a changelog
 
 specify load order for all files
@@ -27,11 +31,19 @@ infantry:
 	require no oil to upgrade, but 1 oil to maintain
 zulu:
 	update ability desc to say ikanda buildings now provide culture
+	update ability desc to say that corps get +5 at national, armies get +5 at mobilization
+	add preview for +5 from amibutho effect
+
+anticav:
+	make spearman 50 prod
+	lhtd bonus to +4
+
+fix some of the wrong eureka descs:
+	siege tactics, shd be two trebuchets now
+	something else i dont remember? check patch notes
 
 -----DIFFICULTY 2s:-----
 
-zulu:
-	need to adjust +5 bonus to corps and armies, going to make +3 for now
 
 -----DIFFICULTY 3s:-----
 
@@ -125,5 +137,4 @@ kupe:
 
 stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 
---meme idea:
-	10000 faith to instastart the apocalypse
+specialists?
