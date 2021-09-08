@@ -15,7 +15,7 @@ keep README/desc updated
 
 make section for new devs
 
-IMPORTANT: load times seem to be affected by load order (load order 10000 is a killer, 400 not so much)
+IMPORTANT: load times might actually be due to a lot of text lookups to replace, not sure though
 
 ///gameplay todos///
 ===difficulty estimates:===

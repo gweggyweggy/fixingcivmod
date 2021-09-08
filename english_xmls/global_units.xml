@@ -5,7 +5,6 @@
 
 <GameData>
 	<LocalizedText>
-		
 		<Replace Tag="LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME" Language="en_US">
 			<Text>+4 [ICON_Strength] Combat Strength from an adjacent friendly anti-cav unit.</Text>
 		</Replace>
