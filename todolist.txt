@@ -15,7 +15,7 @@ keep README/desc updated
 
 make section for new devs
 
-IMPORTANT: load times might actually be due to a lot of text lookups to replace, not sure though
+IMPORTANT: long load times might actually be due to a lot of text lookups to replace, need to figure that out
 
 ///gameplay todos///
 ===difficulty estimates:===
@@ -39,9 +39,6 @@ shipyards:
 
 -----DIFFICULTY 3s:-----
 
-make huey tocali not shit:
-		lakes provide major adj to theatre squares, holy sites, harbors(?), standard for all others
-		+2 food, culture, faith to all lake tiles
 babylon:
 	double unit maintenance cost?
 
@@ -66,6 +63,9 @@ firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
 
 
 -----DIFFICULTY 4s:-----
+huey teocalli:
+	make adj bonus apply only to lake tiles.  once that's done, reenable harbor adjacencies
+
 amenities:
 	make negative amenities more harmful since entercs are free now
 	make lowest amenity have -20 loyalty or something
