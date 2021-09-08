@@ -15,7 +15,7 @@ keep README/desc updated
 
 make section for new devs
 
-IMPORTANT: long load times might actually be due to a lot of text lookups to replace, need to figure that out
+find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
 ///gameplay todos///
 ===difficulty estimates:===
@@ -37,10 +37,23 @@ fix some of the wrong eureka descs:
 shipyards:
 	production to all coastal tiles, not just unimproved
 
+add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent coastal tiles)), is there a LOC_ value?
+
 -----DIFFICULTY 3s:-----
 
-babylon:
-	double unit maintenance cost?
+military engineers:
+	can be built outright, but cost more now
+	encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
+	should be able to rush walls and encampments (10% per charge)
+	building roads should cost some amount of gold (maybe 10, maybe 25?)
+
+	barracks give +1 charge, stables give +1 movement
+	armory reduces cost further (25% production towards eng): 
+		extra effects depending on prereq building:
+			if barracks: can place forts on features 
+			if stable: building a road/railroad only takes 1 movement 
+	military academies, +1 charge, +1 movement and 50% prod towards eng.  unlocks the other armory and barracks ability
+	update relevant texts
 
 --these are techmodifiers
 siege tactics:
@@ -50,21 +63,26 @@ military tactics:
 defensive tactics:
 	+5 to units defending adjacent to friendly city?
 
-
-military engineers:
-	should only require an encampment, armory should boost production towards, maybe also add extra charges too
-
-godofhealing = add a +15/25% production to holysites?
-
-carthage:
-	bireme shd get +5/10 when near a friendly trade route?
+forts:
+	 gain additional defensive bonus in siege tactics
 
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
 
 
+
+godofhealing = add a +15/25% production to holysites?
+
+babylon:
+	double unit maintenance cost?
+
+carthage:
+	bireme shd get +5/10 when near a friendly trade route?
+
+
 -----DIFFICULTY 4s:-----
+
 huey teocalli:
-	make adj bonus apply only to lake tiles.  once that's done, reenable harbor adjacencies
+	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
 
 amenities:
 	make negative amenities more harmful since entercs are free now
@@ -84,6 +102,8 @@ warrior monks:
 		one promotion should ignore walls (like siege tower)
 
 -----DIFFICULTY 5s:-----
+military engineers:
+	build forts in enemy territory
 
 recon:
 	maybe add priority target to skirmishers->above:
@@ -93,10 +113,13 @@ naval combat:
 
 ----DIFFICULTY ?s:-----
 
+stacked trees:
+	more crazy fun abilites in normally worthless techs/civics (e.g. +1 charge to all builders at some civic)
+
 make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 
 mathematics:
-	should give science modifier or someting
+	make it do something useful?
 
 wonders:
 	great lighthouse?
@@ -137,3 +160,4 @@ should fighters only cost 1 alum as they are meant for more defensive measures c
 make polders more spammable
 
 may nerf coastal prod adj to every 2, but playtesting will determine that
+

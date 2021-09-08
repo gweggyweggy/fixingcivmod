@@ -18,7 +18,7 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>FixingCiv</AssemblyName>
     <RootNamespace>FixingCiv</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="update_global_units"><File priority="301">scripts/global_unit_changes.sql</File></UpdateDatabase><UpdateDatabase id="update_global_buildings"><File>scripts/global_building_changes.sql</File></UpdateDatabase><UpdateDatabase id="update_civs"><File>scripts/civ_changes/phoenicia.sql</File><File>scripts/civ_changes/kongo.sql</File><File>scripts/civ_changes/georgia.sql</File><File>scripts/civ_changes/japan.sql</File><File>scripts/civ_changes/norway.sql</File><File>scripts/civ_changes/ottomans.sql</File><File>scripts/civ_changes/zulu.sql</File><File>scripts/civ_changes/brazil.sql</File></UpdateDatabase><UpdateDatabase id="update_global_districts"><File>scripts/global_district_changes.sql</File></UpdateDatabase><UpdateDatabase id="update_global_improvements"><File>scripts/global_improvement_changes.sql</File></UpdateDatabase><UpdateDatabase id="update_wonders"><File priority="302">scripts/wonders.sql</File></UpdateDatabase><UpdateText id="update_improvements_text"><File>english_xmls/global_improvements.xml</File></UpdateText><UpdateText id="update_global_units_xml"><File priority="401">english_xmls/global_units.xml</File></UpdateText><UpdateText id="update_wonders_xml"><File priority="402">english_xmls/wonders.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="update_civs"><File>scripts/civ_changes/phoenicia.sql</File><File>scripts/civ_changes/kongo.sql</File><File>scripts/civ_changes/georgia.sql</File><File>scripts/civ_changes/japan.sql</File><File>scripts/civ_changes/norway.sql</File><File>scripts/civ_changes/ottomans.sql</File><File>scripts/civ_changes/zulu.sql</File><File>scripts/civ_changes/brazil.sql</File></UpdateDatabase><UpdateDatabase id="update_globals"><File>scripts/global_building_changes.sql</File><File>scripts/global_district_changes.sql</File><File>scripts/global_improvement_changes.sql</File><File>scripts/global_unit_changes.sql</File><File>scripts/wonders.sql</File></UpdateDatabase><UpdateText id="update_text_globals"><File>english_xmls/global_improvements.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/wonders.xml</File></UpdateText></InGameActions>]]></InGameActionData>
     <AssociationData><![CDATA[<Associations>
   <Dependency type="Dlc" title="DLC: Australia Civilization Pack" id="E3F53C61-371C-440B-96CE-077D318B36C0" />
   <Dependency type="Dlc" title="DLC: Aztec Civilization Pack" id="02A8BDDE-67EA-4D38-9540-26E685E3156E" />
@@ -33,7 +33,7 @@
     <ModProperties>
       <CustomProperties xmlns="" />
     </ModProperties>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="update_civ_xmls"><File>english_xmls/civ_changes/zulu.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="preload_xmls"><File>english_xmls/civ_changes/zulu.xml</File><File>english_xmls/global_improvements.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/wonders.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
