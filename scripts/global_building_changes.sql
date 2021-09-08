@@ -4,6 +4,12 @@
 --------------------------------------------------------------
 
 --City Center
+INSERT INTO Building_BuildChargeProductions (BuildingType, UnitType, PercentProductionPerCharge) VALUES 
+	('BUILDING_WALLS','UNIT_MILITARY_ENGINEER', 10),
+	('BUILDING_CASTLE','UNIT_MILITARY_ENGINEER', 10),
+	('BUILDING_STAR_FORT','UNIT_MILITARY_ENGINEER', 10)
+	;
+
 --BUG: somerthing wrong with this statement?
 --UPDATE Buildings SET Cost=70 WHERE BuildingType='BUILDING_WATER_MILL';
 

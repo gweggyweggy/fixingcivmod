@@ -42,9 +42,13 @@ add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent c
 -----DIFFICULTY 3s:-----
 
 military engineers:
+	
+	update relevant texts before removing from todolist:
+
 	can be built outright, but cost more now
 	encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
-	should be able to rush walls and encampments (10% per charge)
+
+	should be able to rush walls and encampments (10% per charge) (make sure georgia also has this change to tsikhes, same with shaka and nam)
 	building roads should cost some amount of gold (maybe 10, maybe 25?)
 
 	barracks give +1 charge, stables give +1 movement
@@ -53,7 +57,7 @@ military engineers:
 			if barracks: can place forts on features 
 			if stable: building a road/railroad only takes 1 movement 
 	military academies, +1 charge, +1 movement and 50% prod towards eng.  unlocks the other armory and barracks ability
-	update relevant texts
+	
 
 --these are techmodifiers
 siege tactics:
@@ -75,8 +79,6 @@ godofhealing = add a +15/25% production to holysites?
 babylon:
 	double unit maintenance cost?
 
-carthage:
-	bireme shd get +5/10 when near a friendly trade route?
 
 
 -----DIFFICULTY 4s:-----
@@ -113,13 +115,26 @@ naval combat:
 
 ----DIFFICULTY ?s:-----
 
+anti early snowball:
+	harsher research penalty for going past current era tech/civic?
+	loyalty pressure more of a problem in earlier eras, should certain techs or civics fix this or global era progression?
+	
+	
+
 stacked trees:
-	more crazy fun abilites in normally worthless techs/civics (e.g. +1 charge to all builders at some civic)
+	more crazy fun abilites in normally worthless techs/civics 
+		e.g. +1 charge to all builders at some civic
+		builders can rush certain districts/buildings past certain civics
+		nationalism should boost loyalty in founded cities
+
 
 make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 
 mathematics:
 	make it do something useful?
+
+carthage:
+	bireme shd get +5/10 when near a friendly trade route?
 
 wonders:
 	great lighthouse?

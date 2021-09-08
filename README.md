@@ -11,9 +11,16 @@ There are also specific changes to Civs and their units as well.
 Full changelog will be made at some point once I'm happy with what I want for an initial release
 
 Big thanks to the guys at BBG for having their code on github for me to reference/copy.
+Also big thanks to these mods for inspiration/ideas:
+
+Strategic Forts
+
+
 
 https://github.com/gweggyweggy/fixingcivmod
 
+
+--todo, move this into seperate file
 Developer notes:
 	This mod was made via ModBuddy, from the official Civ 6 development tools.
 	The modinfo file (i.e. the driver for this mod) is generated/customized via the .sln > Properties > InGameActions > UpdateDatabase
