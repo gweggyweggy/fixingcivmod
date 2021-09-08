@@ -17,7 +17,7 @@ https://github.com/gweggyweggy/fixingcivmod
 Developer notes:
 	This mod was made via ModBuddy, from the official Civ 6 development tools.
 	The modinfo file (i.e. the driver for this mod) is generated/customized via the .sln > Properties > InGameActions > UpdateDatabase
-
+	Cheat Menu for units and Cheat Menu for Rise and Fall are essential for testing/developing this mod.
 
 	Further development:
 		Database entries can be found using a sql browser such as DB Browser for SQL lite.  

@@ -13,9 +13,34 @@
 				Must be built on a Lake tile adjacent to land.
 			</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_GOLD_ADJ" Language="en_US">
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_COMHUB_GOLD_ADJ" Language="en_US">
 			<Text>
 				+{1_num} [ICON_GOLD] Gold from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_HARBOR_GOLD_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_GOLD] Gold from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_FAITH_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_FAITH] Faith from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_SCIENCE_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_SCIENCE] Science from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_CULTURE_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_CULTURE] Culture from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_PRODUCTION_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_PRODUCTION] Production from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
 			</Text>
 		</Replace>
 

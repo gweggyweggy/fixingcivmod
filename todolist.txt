@@ -15,7 +15,7 @@ keep README/desc updated
 
 make section for new devs
 
-investigate long load times?
+IMPORTANT: load times seem to be affected by load order (load order 10000 is a killer, 400 not so much)
 
 ///gameplay todos///
 ===difficulty estimates:===
@@ -135,3 +135,5 @@ specialists?
 should fighters only cost 1 alum as they are meant for more defensive measures compared to bombers?
 
 make polders more spammable
+
+may nerf coastal prod adj to every 2, but playtesting will determine that
