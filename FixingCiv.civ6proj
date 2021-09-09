@@ -123,6 +123,9 @@
     <Content Include="scripts\wonders.sql">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="taskboard.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="todolist.txt">
       <SubType>Content</SubType>
     </Content>

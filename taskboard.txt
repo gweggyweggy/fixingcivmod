@@ -1,0 +1,38 @@
+==TASKS==
+
+stables:
+	move to animal husbandry
+	reduce cost to 90
+
+spearman:
+	production nerf to 55
+
+coursers and knights:
+	reduce cost of both by 10
+
+--these are techmodifiers
+siege tactics:  bonuses for defender and attacker
+	+5 to city strike, +5 bonus to units when attacking cities and when defending against city strikes
+	can place forts on features (improvement_valid features, put in prereq tech) 
+	forts: gain additional defensive bonus in siege tactics
+	do the same for roman fort and pa
+
+military tactics:
+	increased flanking and support bonuses
+defensive tactics:
+	+5 to units defending in certain circumstances (maybe?)
+
+will need to add policy cards for support and siege units with all the new defensive buffs
+
+
+==DEVELOPING==
+
+
+
+==UPDATING TEXTS==
+
+
+==TESTING==
+
+
+==DONE==
