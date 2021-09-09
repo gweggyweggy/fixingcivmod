@@ -4,6 +4,8 @@
 --------------------------------------------------------------
 
 --siege tactics
+
+UPDATE Technologies SET Description='LOC_TECH_SIEGE_TACTICS_DESCRIPTION' WHERE TechnologyType='TECH_SIEGE_TACTICS';
 --player gets +5 to city strike attacks, units gain +5 attacking and defending against cities
 --not sure if i want to add +5 to city defense, defender is already favored in the game
 INSERT OR IGNORE INTO TechnologyModifiers (TechnologyType, ModifierId) VALUES 
