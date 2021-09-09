@@ -56,12 +56,9 @@ kongo:
 -----DIFFICULTY 3s:-----
 
 
-military engineers:
+military academies:
+	add additoinal benefit to mili engs, maybe 2 engies for 1?
 	
-	armory reduces cost further (25% production towards eng): 
-		engies ignore all terrain
-	military academies, +1 charge, +1 movement and 50% prod towards eng. 
-	check if they are capturable or killable
 
 
 --these are techmodifiers
@@ -192,3 +189,4 @@ make polders more spammable
 
 may nerf coastal prod adj to every 2, but playtesting will determine that
 
+machine guns should come before infantry and tanks

@@ -5,7 +5,7 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Macedon. +25% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 25% of the unit's cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.  +1 build charge and +1 movement to Military Engineers trained in this city.</Text>
+			<Text>A building unique to Macedon. +25% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 25% of the unit's cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.  +1 build charge to Military Engineers and +1 movement to Support units trained in this city. +20% [ICON_PRODUCTION] towards Military Engineers</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
