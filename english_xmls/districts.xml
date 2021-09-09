@@ -5,7 +5,7 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_DISTRICT_ENCAMPMENT_DESCRIPTION" Language="en_US">
-			<Text>A district in your city for military facilities.  +25% [ICON_PRODUCTION] towards Military Engineers</Text>
+			<Text>A district in your city for military facilities.  +20% [ICON_PRODUCTION] towards Military Engineers</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
