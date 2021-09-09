@@ -79,9 +79,9 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	;
 
 --mili academy gives more prod towards for now, will be more creative later
---INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
---	('BUILDING_MILITARY_ACADEMY','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
---	;
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+	('BUILDING_MILITARY_ACADEMY','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
+	;
 
 
 --Theatre Square
