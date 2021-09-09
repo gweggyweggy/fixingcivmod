@@ -160,6 +160,6 @@ should fighters only cost 1 alum as they are meant for more defensive measures c
 
 make polders more spammable
 
-may nerf coastal prod adj to every 2, but playtesting will determine that
+may nerf coastal prod adj to every 2 if better balanced start works too well
 
 machine guns should come before infantry and tanks, like why are tanks modern but machine guns atomic?

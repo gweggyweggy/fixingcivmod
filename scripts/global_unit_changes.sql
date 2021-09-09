@@ -8,7 +8,7 @@ UPDATE Units SET PrereqTech='TECH_MILITARY_ENGINEERING',Cost=180 WHERE UnitType=
 UPDATE Units SET PrereqTech='TECH_METAL_CASTING' WHERE UnitType='UNIT_MUSKETMAN'; 
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=1,ResourceCost=0 WHERE UnitType='UNIT_INFANTRY';
 -- Anti-Cav --
-UPDATE Units SET Cost=50 WHERE UnitType='UNIT_SPEARMAN';
+UPDATE Units SET Cost=55 WHERE UnitType='UNIT_SPEARMAN';
 UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT'; 
 
@@ -21,7 +21,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 	('LESSER_HOLD_THE_LINE_BONUS', 'ModifierId', 'LESSER_HOLD_THE_LINE_COMBAT_BONUS'),
-	('LESSER_HOLD_THE_LINE_COMBAT_BONUS', 'Amount', '4')
+	('LESSER_HOLD_THE_LINE_COMBAT_BONUS', 'Amount', 4)
 	;
 
 --establish ability and attach to anticav
@@ -64,8 +64,9 @@ UPDATE Units SET Cost=270,Combat=50,RangedCombat=65 WHERE UnitType='UNIT_RANGER'
 UPDATE Units SET Cost=495,Combat=60,RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; 
 
 -- Light Cav --
-UPDATE Units SET PrereqTech='TECH_STIRRUPS' WHERE UnitType='UNIT_COURSER'; 
-
+UPDATE Units SET PrereqTech='TECH_STIRRUPS', Cost=190 WHERE UnitType='UNIT_COURSER'; 
+UPDATE Units SET Cost=210 WHERE UnitType='UNIT_KNIGHT';
+ 
 -- Heavy Cav --
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_TANK'; 
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_MODERN_ARMOR'; 
