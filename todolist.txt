@@ -47,25 +47,27 @@ military engineers:
 
 	can be built outright, but cost more now
 	encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
+	should be able to rush walls and encampments (10% per charge) 
+	barracks give +1 charge, stables give +1 movement (to all support, because i dont know how to narrow it down)
 
-	should be able to rush walls and encampments (10% per charge) (make sure georgia also has this change to tsikhes, same with shaka and nam)
-	building roads should cost some amount of gold (maybe 10, maybe 25?)
-
-	barracks give +1 charge, stables give +1 movement
+	make sure georgia,nam, and shaka can rush their encampments/walls
 	armory reduces cost further (25% production towards eng): 
 		extra effects depending on prereq building:
 			if barracks: can place forts on features 
 			if stable: building a road/railroad only takes 1 movement 
 	military academies, +1 charge, +1 movement and 50% prod towards eng.  unlocks the other armory and barracks ability
-	
+	make them capturable or killable
+
 
 --these are techmodifiers
-siege tactics:
-	+5 to city strike, +5 defending against to all units
+siege tactics:  bonuses for defender and attacker
+	+5 to city strike, +5 bonus to units when attacking cities and when defending against city strikes
 military tactics:
 	increased flanking and support bonuses
 defensive tactics:
-	+5 to units defending adjacent to friendly city?
+	+5 to units defending in certain circumstances (maybe?)
+
+will need to add policy cards for support and siege units with all the new defensive buffs
 
 forts:
 	 gain additional defensive bonus in siege tactics
@@ -118,7 +120,9 @@ naval combat:
 anti early snowball:
 	harsher research penalty for going past current era tech/civic?
 	loyalty pressure more of a problem in earlier eras, should certain techs or civics fix this or global era progression?
-	
+
+anti turtle:
+	on the other hand, need to prevent turtling from being too efficient. game already favors the defender
 	
 
 stacked trees:
@@ -127,6 +131,8 @@ stacked trees:
 		builders can rush certain districts/buildings past certain civics
 		nationalism should boost loyalty in founded cities
 
+
+with new mili engie changes, road spam might be an issue.
 
 make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 
