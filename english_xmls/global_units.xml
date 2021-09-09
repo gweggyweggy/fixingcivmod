@@ -5,11 +5,13 @@
 
 <GameData>
 	<LocalizedText>
-		
-		<!-- todo remove this tag, unused-->
 		<Replace Tag="LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME" Language="en_US">
-			<Text>[ICON_Strength] Combat Strength +4 when adjacent to a friendly anti-cav unit.</Text>
+			<Text>+4 [ICON_Strength] Combat Strength from an adjacent friendly anti-cav unit.</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_MILITARY_ENGINEER_DESCRIPTION" Language="en_US">
+			<Text>Medieval era support unit. Can construct Roads, Forts, Airstrips, and Missile Silo improvements.  May expend a build charge to complete 20% of a Canal, Dam, Aqueduct or a Flood Barrier building. 10% to complete Walls or Encampments.</Text>
+		</Replace>
+
 	</LocalizedText>
 
 </GameData>

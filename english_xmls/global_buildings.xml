@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- global_buildings -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/8/2021 8:15:56 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all melee and ranged land units trained in this city.  +1 build charge to Military Engineers trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>+25% combat experience for all cavalry and siege class units trained in this city. +1 movement to Military Engineers trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed). May not be built in an Encampment district that already has a Barracks.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

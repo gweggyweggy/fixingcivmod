@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- wonders -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/7/2021 2:41:15 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_HUEY_TEOCALLI_DESCRIPTION" Language="en_US">
+			<Text>
+				Lake and coast tiles provide major adjacency bonuses for Theatre Squares and Holy Sites. Lake and coast tiles provide standard adjacency for all other districts. +1 [ICON_Amenities] Amenity from entertainment for each Lake tile within one tile of Huey Teocalli. +2 [ICON_Food] Food, +2 [ICON_Production] Production, +1 [ICON_Culture] Culture and +1 [ICON_Faith] Faith for each Lake tile in your empire. Must be built on a Lake tile adjacent to land.
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_COMHUB_GOLD_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_GOLD] Gold from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_HARBOR_GOLD_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_GOLD] Gold from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_FAITH_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_FAITH] Faith from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_SCIENCE_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_SCIENCE] Science from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_CULTURE_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_CULTURE] Culture from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_HUEYTEOCALLI_PRODUCTION_ADJ" Language="en_US">
+			<Text>
+				+{1_num} [ICON_PRODUCTION] Production from the adjacent Lake {1_Num : plural 1?tile; other?tiles;}
+			</Text>
+		</Replace>
+
+	</LocalizedText>
+</GameData>
