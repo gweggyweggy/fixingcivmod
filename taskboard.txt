@@ -14,21 +14,21 @@ will need to add policy cards for support and siege units with all the new defen
 
 ==DEVELOPING==
 
-siege tactics:  
-	can place forts on features (improvement_valid features, put in prereq tech) 
-	forts: gain additional defensive bonus in siege tactics
-	do the same for roman fort and pa
-
-
 
 
 ==UPDATING TEXTS==
 siege tactics:  
 	bonuses for defender and attacker
 	+5 to city strike, +5 bonus to units when attacking cities and when defending against city strikes
+		can place forts on features, floodplains and marshes
 
 ==FINAL TESTING==
 
+
+==BACKLOGGED==
+siege tactics:  
+	units gain additional defensive bonus in forts
+	do the same for roman fort and pa
 
 ==DONE==
 
