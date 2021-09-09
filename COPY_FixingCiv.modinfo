@@ -4,7 +4,7 @@
     <Name>FixingCiv2</Name>
     <Description>Full desc and details here https://github.com/gweggyweggy/fixingcivmod</Description>
     <CustomProperties></CustomProperties>
-    <Created>1631147668</Created>
+    <Created>1631159576</Created>
     <Teaser>What if Civ was actually balanced?</Teaser>
     <Authors>Cezas</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -27,6 +27,9 @@
       <File>english_xmls/global_units.xml</File>
       <File>english_xmls/wonders.xml</File>
       <File>english_xmls/global_buildings.xml</File>
+      <File>english_xmls/civ_changes/vietnam.xml</File>
+      <File>english_xmls/civ_changes/macedon.xml</File>
+      <File>english_xmls/districts.xml</File>
     </UpdateText>
   </FrontEndActions>
   <InGameActions>
@@ -39,6 +42,8 @@
       <File>scripts/civ_changes/ottomans.sql</File>
       <File>scripts/civ_changes/zulu.sql</File>
       <File>scripts/civ_changes/brazil.sql</File>
+      <File>scripts/civ_changes/macedon.sql</File>
+      <File>scripts/civ_changes/vietnam.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="update_globals">
       <File>scripts/global_building_changes.sql</File>
@@ -55,7 +60,10 @@
     </UpdateText>
   </InGameActions>
   <Files>
+    <File>english_xmls/civ_changes/macedon.xml</File>
+    <File>english_xmls/civ_changes/vietnam.xml</File>
     <File>english_xmls/civ_changes/zulu.xml</File>
+    <File>english_xmls/districts.xml</File>
     <File>english_xmls/global_buildings.xml</File>
     <File>english_xmls/global_improvements.xml</File>
     <File>english_xmls/global_units.xml</File>
@@ -65,9 +73,11 @@
     <File>scripts/civ_changes/georgia.sql</File>
     <File>scripts/civ_changes/japan.sql</File>
     <File>scripts/civ_changes/kongo.sql</File>
+    <File>scripts/civ_changes/macedon.sql</File>
     <File>scripts/civ_changes/norway.sql</File>
     <File>scripts/civ_changes/ottomans.sql</File>
     <File>scripts/civ_changes/phoenicia.sql</File>
+    <File>scripts/civ_changes/vietnam.sql</File>
     <File>scripts/civ_changes/zulu.sql</File>
     <File>scripts/global_building_changes.sql</File>
     <File>scripts/global_district_changes.sql</File>
