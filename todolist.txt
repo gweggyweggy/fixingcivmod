@@ -44,12 +44,8 @@ add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent c
 military engineers:
 	
 	update relevant texts before removing from todolist:
-
-	can be built outright, but cost more now
-	encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
-	should be able to rush walls and encampments (10% per charge) 
-	barracks give +1 charge, stables give +1 movement (to all support, because i dont know how to narrow it down)
-
+		-encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
+	
 	make sure georgia,nam, and shaka can rush their encampments/walls
 	armory reduces cost further (25% production towards eng): 
 		extra effects depending on prereq building:
