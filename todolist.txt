@@ -29,6 +29,7 @@ find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
 -----DIFFICULTY 1s:-----
 
+
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check patch notes
@@ -41,16 +42,14 @@ add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent c
 
 -----DIFFICULTY 3s:-----
 
+
 military engineers:
 	
-	update relevant texts before removing from todolist:
-		-encampments reduce cost of engineers (add modifier for 25% towards engineers in that city)
-	
-	make sure georgia,nam, and shaka can rush their encampments/walls
 	armory reduces cost further (25% production towards eng): 
 		extra effects depending on prereq building:
 			if barracks: can place forts on features 
 			if stable: building a road/railroad only takes 1 movement 
+			if basilkoi: do both
 	military academies, +1 charge, +1 movement and 50% prod towards eng.  unlocks the other armory and barracks ability
 	make them capturable or killable
 
@@ -129,6 +128,8 @@ stacked trees:
 
 
 with new mili engie changes, road spam might be an issue.
+
+reduce heavy chariot cost by 5?
 
 make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 

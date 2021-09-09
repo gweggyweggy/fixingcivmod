@@ -30,5 +30,11 @@ INSERT OR IGNORE INTO Requirements(RequirementId , RequirementType) VALUES
 INSERT OR IGNORE INTO RequirementArguments(RequirementId , Name, Value) VALUES
 	('SIXFIX_PLAYER_HAS_MOBILIZATION_REQUIREMENT' , 'CivicType', 'CIVIC_MOBILIZATION');
 
+INSERT INTO DistrictModifiers (DistrictType, ModifierId) VALUES 
+	('DISTRICT_IKANDA','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
+	;
+INSERT INTO District_BuildChargeProductions (DistrictType, UnitType, PercentProductionPerCharge) VALUES 
+	('DISTRICT_IKANDA','UNIT_MILITARY_ENGINEER', 10)
+	;
 
 

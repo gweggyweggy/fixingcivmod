@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- districts -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/8/2021 11:02:49 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DISTRICT_ENCAMPMENT_DESCRIPTION" Language="en_US">
+			<Text>A district in your city for military facilities.  +25% [ICON_PRODUCTION] towards Military Engineers</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
