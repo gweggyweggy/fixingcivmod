@@ -29,6 +29,15 @@ find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
 -----DIFFICULTY 1s:-----
 
+stables:
+	move to animal husbandry
+	reduce cost to 90
+
+spearman:
+	production nerf to 55
+
+coursers and knights:
+	reduce cost of both by 10
 
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
@@ -40,23 +49,28 @@ shipyards:
 
 add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent coastal tiles)), is there a LOC_ value?
 
+kongo:
+	make mbanzas more resilient to recruit partisans
+
+
 -----DIFFICULTY 3s:-----
 
 
 military engineers:
 	
 	armory reduces cost further (25% production towards eng): 
-		extra effects depending on prereq building:
-			if barracks: can place forts on features 
-			if stable: building a road/railroad only takes 1 movement 
-			if basilkoi: do both
-	military academies, +1 charge, +1 movement and 50% prod towards eng.  unlocks the other armory and barracks ability
-	make them capturable or killable
+		engies ignore all terrain
+	military academies, +1 charge, +1 movement and 50% prod towards eng. 
+	check if they are capturable or killable
 
 
 --these are techmodifiers
 siege tactics:  bonuses for defender and attacker
 	+5 to city strike, +5 bonus to units when attacking cities and when defending against city strikes
+	can place forts on features (improvement_valid features, put in prereq tech) 
+	forts: gain additional defensive bonus in siege tactics
+	do the same for roman fort and pa
+
 military tactics:
 	increased flanking and support bonuses
 defensive tactics:
@@ -64,8 +78,6 @@ defensive tactics:
 
 will need to add policy cards for support and siege units with all the new defensive buffs
 
-forts:
-	 gain additional defensive bonus in siege tactics
 
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
 
@@ -106,6 +118,7 @@ military engineers:
 
 recon:
 	maybe add priority target to skirmishers->above:
+	i see PRIORITY_TARGET existing, but theres nothing else in the db that it explicitly attaches itself into
 
 naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat

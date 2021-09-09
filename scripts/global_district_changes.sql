@@ -76,6 +76,7 @@ INSERT INTO DistrictModifiers (DistrictType, ModifierId) VALUES
 	('DISTRICT_ENCAMPMENT','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
 	;
 
+--military engineer prod modifier defined here
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION','MODIFIER_SINGLE_CITY_ADJUST_UNIT_PRODUCTION')
 	;
@@ -83,6 +84,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION','UnitType','UNIT_MILITARY_ENGINEER'), 
 	('SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION','Amount',25)
 	;
+
 
 INSERT INTO District_BuildChargeProductions (DistrictType, UnitType, PercentProductionPerCharge) VALUES 
 	('DISTRICT_ENCAMPMENT','UNIT_MILITARY_ENGINEER', 10)
