@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- policies -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/9/2021 9:40:06 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_POLICY_SIXFIX_SIEGE_TRAINS_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_PRODUCTION] towards Ancient and Classical Support and Siege units. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIXFIX_SIEGE_TRAINS_NAME" Language="en_US">
+			<Text>Siege Trains</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

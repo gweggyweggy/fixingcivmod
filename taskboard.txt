@@ -1,13 +1,6 @@
 ==TASKS==
 
 
---these are techmodifiers
-military tactics:
-	increased flanking and support bonuses
-defensive tactics:
-	+5 to units defending in certain circumstances (maybe?)
-
-
 will need to add policy cards for support and siege units with all the new defensive buffs
 
 
