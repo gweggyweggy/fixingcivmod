@@ -7,13 +7,9 @@ thismod:
 
 cleanup formatting and refactor appropiately
 
-make a changelog
-
 specify load order for all files
 
 keep README/desc updated
-
-make section for new devs
 
 find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
@@ -24,24 +20,13 @@ find out if:  long load times due to xml replaces or # of updatedb/text calls?
 3 = will take some effort and research to accomplish, but should be doable
 4 = seems complex, may need a lot more research and testing to accomplish
 5 = may be near impossible, maybe rethink this proposal
-? = unsure what to do/go forward with, come back to these later
 
 
 -----DIFFICULTY 1s:-----
 
-stables:
-	move to animal husbandry
-	reduce cost to 90
-
-spearman:
-	production nerf to 55
-
-coursers and knights:
-	reduce cost of both by 10
-
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
-	something else i dont remember? check patch notes
+	something else i dont remember? check april patch notes
 
 -----DIFFICULTY 2s:-----
 shipyards:
@@ -56,28 +41,7 @@ kongo:
 -----DIFFICULTY 3s:-----
 
 
-military academies:
-	add additoinal benefit to mili engs, maybe 2 engies for 1?
-	
-
-
---these are techmodifiers
-siege tactics:  bonuses for defender and attacker
-	+5 to city strike, +5 bonus to units when attacking cities and when defending against city strikes
-	can place forts on features (improvement_valid features, put in prereq tech) 
-	forts: gain additional defensive bonus in siege tactics
-	do the same for roman fort and pa
-
-military tactics:
-	increased flanking and support bonuses
-defensive tactics:
-	+5 to units defending in certain circumstances (maybe?)
-
-will need to add policy cards for support and siege units with all the new defensive buffs
-
-
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
-
 
 
 godofhealing = add a +15/25% production to holysites?
@@ -120,7 +84,7 @@ recon:
 naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
-----DIFFICULTY ?s:-----
+----BACKLOG-----
 
 anti early snowball:
 	harsher research penalty for going past current era tech/civic?
@@ -155,7 +119,7 @@ wonders:
 	angkor wat: make it way more impactful for taller civs 
 	hanging gardens: not sure what to do
 	sankore?
-	buff machu picchu slighty?  maybe +2 adj to at least theatre squares and commercial hubs?
+	stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 	
 pantheons:
 	godofwar = redo this
@@ -179,7 +143,6 @@ nam:
 kupe:
 	maybe make him unable to remove features?  pretty harsh, but thematic
 
-stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 
 specialists?
 
@@ -187,6 +150,24 @@ should fighters only cost 1 alum as they are meant for more defensive measures c
 
 make polders more spammable
 
-may nerf coastal prod adj to every 2, but playtesting will determine that
+may nerf coastal prod adj to every 2 if better balanced start works too well
 
 machine guns should come before infantry and tanks, like why are tanks modern but machine guns atomic?
+
+spies should come in way earlier (near end of ancient), but have their offensive capabilites and movement times severely nerfed until renaissance picks up
+	black queen should pick up at medieval
+
+alliances earlier for cree
+
+mass production gives lumber mills +1 prod
+
+
+military academies:
+	add additoinal benefit to mili engs, maybe 2 engies for 1?
+
+china:
+	move builder charge to chinas main ability?
+
+siege tactics:  
+	units gain additional defensive bonus in forts
+	do the same for roman fort and pa

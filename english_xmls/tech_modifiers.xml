@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tech_modifiers -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/9/2021 6:35:09 PM -->
+<GameData>
+	<LocalizedText>
+	<Replace Tag="LOC_TECH_SIEGE_TACTICS_DESCRIPTION" Language="en_US">
+		<Text>Your City Strikes gain +5 [ICON_STRENGTH] Strength.  Units gain +5 [ICON_STRENGTH] Strength when against enemy Cities. Forts can now be placed on Forest, Rainforest, Marsh and Floodplains.</Text>
+	</Replace>
+	</LocalizedText>
+</GameData>

@@ -16,6 +16,7 @@ INSERT INTO Building_BuildChargeProductions (BuildingType, UnitType, PercentProd
 --Encampments
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_BARRACKS';
 UPDATE Building_YieldChanges SET YieldChange=2 WHERE BuildingType='BUILDING_STABLE';
+UPDATE Buildings SET PrereqTech='TECH_ANIMAL_HUSBANDRY', Cost=90 WHERE BuildingType='BUILDING_STABLE';
 
 --definining the additional military engineer buffs here
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
