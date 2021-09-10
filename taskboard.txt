@@ -1,8 +1,6 @@
 ==TASKS==
 
 
-will need to add policy cards for support and siege units with all the new defensive buffs
-
 
 ==DEVELOPING==
 
@@ -15,9 +13,6 @@ will need to add policy cards for support and siege units with all the new defen
 
 
 ==BACKLOGGED==
-siege tactics:  
-	units gain additional defensive bonus in forts
-	do the same for roman fort and pa
 
 ==DONE==
 

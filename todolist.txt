@@ -164,3 +164,10 @@ mass production gives lumber mills +1 prod
 
 military academies:
 	add additoinal benefit to mili engs, maybe 2 engies for 1?
+
+china:
+	move builder charge to chinas main ability?
+
+siege tactics:  
+	units gain additional defensive bonus in forts
+	do the same for roman fort and pa
