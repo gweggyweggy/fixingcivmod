@@ -10,5 +10,17 @@
 		<Replace Tag="LOC_POLICY_SIXFIX_SIEGE_TRAINS_NAME" Language="en_US">
 			<Text>Siege Trains</Text>
 		</Replace>
+		<Replace Tag="LOC_POLICY_SIXFIX_FOUNDRIES_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_PRODUCTION] towards Renaissance and earlier Support and Siege units. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIXFIX_FOUNDRIES_NAME" Language="en_US">
+			<Text>Foundries</Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIXFIX_WAR_MACHINES_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_PRODUCTION] towards all Support and Siege units. </Text>
+		</Replace>
+		<Replace Tag="LOC_POLICY_SIXFIX_WAR_MACHINES_NAME" Language="en_US">
+			<Text>War Machines</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>
