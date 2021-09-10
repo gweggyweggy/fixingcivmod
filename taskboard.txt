@@ -5,17 +5,15 @@ amenities:
 	make war weariness actually matter
 	occupied cities should suffer the most
 
-mass production:
-	gives lumber mills +1 prod
-
-siege tactics:
-	remove +5 attack bonus for units
-
 
 defensive tactics:
 	additional support bonuses?
 
+
+impi's should not have any bonus against cavalry (due to iklwa being a much shorter spear)
+
 ==DEVELOPING==
+
 
 
 
@@ -29,3 +27,13 @@ defensive tactics:
 
 ==DONE==
 
+siege tactics:
+	remove +5 attack bonus for units
+
+mass production:
+	gives lumber mills +1 prod
+
+hoplites:
+	drop to 25 base str
+
+possibly nerf pikemen down to 42 str to compensate for cheaper cost
