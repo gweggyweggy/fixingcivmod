@@ -49,4 +49,4 @@ INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
 
 --couldnt get this to properly parse for some reason
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES 
-	('SIXFIX_IMPI_COMBAT_MALUS','Preview', 'Iklwas: -5 [ICON_STRENGTH] against Cavalry class units.');
+	('SIXFIX_IMPI_COMBAT_MALUS','Preview', 'LOC_IMPI_IKLWA');

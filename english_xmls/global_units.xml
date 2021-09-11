@@ -11,6 +11,12 @@
 		<Replace Tag="LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION" Language="en_US">
 			<Text>Medieval era support unit. Can construct Roads, Forts, Airstrips, and Missile Silo improvements.  May expend a build charge to complete 20% of a Canal, Dam, Aqueduct or a Flood Barrier building. 10% to complete Walls or Encampments.</Text>
 		</Replace>
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_NAME" Language="en_US">
+			<Text>SWIFT-FOOTED</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_DESCRIPTION" Language="en_US">
+			<Text>Ignore ZOC.</Text>
+		</Replace>
 
 	</LocalizedText>
 

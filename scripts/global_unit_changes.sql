@@ -61,10 +61,16 @@ UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD';
 -- Recon --
 --new promotion tree
 
---left side is now ranger->spyglass+sentry->camouflage
-UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
+--deleting old connections and promotions
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
+DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_SPYGLASS';
+
+--left side is now ranger->spyglass+sentry->camouflage
+UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
+
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	('PROMOTION_CAMOUFLAGE','PROMOTION_SENTRY')
 	;
@@ -73,16 +79,29 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT')
 	;
 
---right side is nwo guerilla->ignore zoc->depradation
---IGNOREZOC_IGNORE_ZOC
+--right side is nwo guerilla->ignore zoc->???
 UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
-UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SPYGLASS'; --temp placeholder
-UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
+
+--new promotion to avoid zoc
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_SWIFT-FOOTED','LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_NAME','LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_DESCRIPTION',2,'PROMOTION_CLASS_RECON',3)
+	;
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_SWIFT-FOOTED','IGNOREZOC_IGNORE_ZOC')
+	;
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_ALPINE','PROMOTION_SPYGLASS'),
-	('PROMOTION_SPYGLASS','PROMOTION_GUERRILLA')
+	('PROMOTION_SIXFIX_SWIFT-FOOTED','PROMOTION_GUERRILLA')
+	;
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_SWIFT-FOOTED','KIND_PROMOTION');
+UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_SWIFT-FOOTED';
+
+
+UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
+
+
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_ALPINE','PROMOTION_SIXFIX_SWIFT-FOOTED')
 	;
 
 
