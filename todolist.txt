@@ -24,9 +24,11 @@ find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
 -----DIFFICULTY 1s:-----
 
+
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check april patch notes
+
 
 -----DIFFICULTY 2s:-----
 shipyards:
@@ -34,8 +36,6 @@ shipyards:
 
 add desc for what the coastal modifier is (e.g. +2 production from (2 adjacent coastal tiles)), is there a LOC_ value?
 
-kongo:
-	make mbanzas more resilient to recruit partisans
 
 
 -----DIFFICULTY 3s:-----
@@ -52,15 +52,14 @@ babylon:
 
 
 -----DIFFICULTY 4s:-----
+kongo:
+	make mbanzas more resilient to recruit partisans
+
 
 huey teocalli:
 	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
 
-amenities:
-	make negative amenities more harmful since entercs are free now
-	make lowest amenity have -20 loyalty or something
-	make war weariness actually matter
-	occupied cities should suffer the most
+
 
 privateers:
 	better promotion tree that actually scales
@@ -90,9 +89,6 @@ anti early snowball:
 	harsher research penalty for going past current era tech/civic?
 	loyalty pressure more of a problem in earlier eras, should certain techs or civics fix this or global era progression?
 
-anti turtle:
-	on the other hand, need to prevent turtling from being too efficient. game already favors the defender
-	
 
 stacked trees:
 	more crazy fun abilites in normally worthless techs/civics 
@@ -103,12 +99,9 @@ stacked trees:
 
 with new mili engie changes, road spam might be an issue.
 
-reduce heavy chariot cost by 5?
 
 make mod not depend in Rise and fall: should be trivial, but who knows what breaks
 
-mathematics:
-	make it do something useful?
 
 carthage:
 	bireme shd get +5/10 when near a friendly trade route?
@@ -157,9 +150,10 @@ machine guns should come before infantry and tanks, like why are tanks modern bu
 spies should come in way earlier (near end of ancient), but have their offensive capabilites and movement times severely nerfed until renaissance picks up
 	black queen should pick up at medieval
 
-alliances earlier for cree
-
-mass production gives lumber mills +1 prod
+alliances:
+	alliances should only require one person to know what they are
+	earlier for cree
+	
 
 
 military academies:
@@ -171,3 +165,17 @@ china:
 siege tactics:  
 	units gain additional defensive bonus in forts
 	do the same for roman fort and pa
+
+crossbows are not as strong as they used to be since man-at-arms update bumped everything up in the medieival era, maybe its for the better though?
+
+scythia:
+	make horse archers cost horses, but maybe also give them the ability to move and shoot? (must reduce melee strength if thats the case)
+
+mongolia:
+	archers->keshigs?  that might be broken
+
+make music censorship more punishing to slot in:
+	this may fuck up the ai really badly, need to be careful
+
+defensive tactics:
+	additional support bonuses?

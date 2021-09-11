@@ -7,5 +7,8 @@
 		<Replace Tag="LOC_TECH_GUNPOWDER_DESCRIPTION" Language="en_US">
 			<Text>Quarry improvements receive +2 [ICON_Production] Production. Unlocks a [ICON_GOVERNOR] Governor title for Suleiman.</Text>
 		</Replace>
+		<Replace Tag="LOC_TECH_MASS_PRODUCTION_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] production to the Lumber Mill improvement.</Text>
+		</Replace>
 	</LocalizedText>
 </GameData>

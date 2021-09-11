@@ -12,6 +12,7 @@ UPDATE Units SET Cost=55 WHERE UnitType='UNIT_SPEARMAN';
 UPDATE Units SET Cost=160 WHERE UnitType='UNIT_PIKEMAN';
 UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT'; 
 
+
 --START ANTICAV BUFF:
 --new inherent hold-the-line for all anticav, but only +5 to adjacent noncav units fighting cav
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
