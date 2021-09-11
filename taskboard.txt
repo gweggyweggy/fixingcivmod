@@ -10,8 +10,6 @@ defensive tactics:
 	additional support bonuses?
 
 
-impi's should not have any bonus against cavalry (due to iklwa being a much shorter spear)
-
 ==DEVELOPING==
 
 
@@ -27,6 +25,9 @@ impi's should not have any bonus against cavalry (due to iklwa being a much shor
 
 ==DONE==
 
+
+impi's should reduced bonus against cavalry (due to iklwa being a much shorter spear)
+
 siege tactics:
 	remove +5 attack bonus for units
 
@@ -36,4 +37,3 @@ mass production:
 hoplites:
 	drop to 25 base str
 
-possibly nerf pikemen down to 42 str to compensate for cheaper cost

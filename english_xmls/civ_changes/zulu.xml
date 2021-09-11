@@ -10,6 +10,13 @@
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="en_US">
 			<Text>May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 [ICON_STRENGTH] Base Combat Strength to Corps at (Nationalism Civic) and Armies at (Mobilization Civic).</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_ZULU_IMPI_DESCRIPTION" Language="en_US">
+			<Text>Zulu unique Medieval Era unit that replaces the Pikeman. Increased Flanking bonus, low cost and low maintenance. Earns XP faster.  +5 [ICON_STRENGTH] bonus against cavalry instead of the usual +10 [ICON_STRENGTH]</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPI_IKLWA" Language="en_US">
+			<Text>Iklwas: -5 [ICON_STRENGTH] against Cavalry class units.</Text>
+		</Replace>
+
 
 
 	</LocalizedText>

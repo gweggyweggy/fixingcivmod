@@ -163,3 +163,5 @@ china:
 siege tactics:  
 	units gain additional defensive bonus in forts
 	do the same for roman fort and pa
+
+crossbows are not as strong as they used to be since man-at-arms update bumped everything up in the medieival era, maybe its for the better though?
