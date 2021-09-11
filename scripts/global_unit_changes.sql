@@ -59,6 +59,42 @@ UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD';
 
 
 -- Recon --
+--new promotion tree
+
+--left side is now ranger->spyglass+sentry->camouflage
+UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS';
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_CAMOUFLAGE','PROMOTION_SENTRY')
+	;
+
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT')
+	;
+
+--right side is nwo guerilla->ignore zoc->depradation
+--IGNOREZOC_IGNORE_ZOC
+UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
+UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SPYGLASS'; --temp placeholder
+UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_ALPINE','PROMOTION_SPYGLASS'),
+	('PROMOTION_SPYGLASS','PROMOTION_GUERRILLA')
+	;
+
+
+--ambush is now final promotion
+UPDATE UnitPromotions SET Level=4, Column=2 WHERE UnitPromotionType='PROMOTION_AMBUSH';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_AMBUSH' OR PrereqUnitPromotion='PROMOTION_AMBUSH';
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_AMBUSH','PROMOTION_CAMOUFLAGE'),
+	('PROMOTION_AMBUSH','PROMOTION_ALPINE') --temporary placeholder
+	;
+
+
 UPDATE Units SET BaseSightRange=3 WHERE PromotionClass='PROMOTION_CLASS_RECON'; 
 UPDATE Units SET Cost=90,Combat=25 WHERE UnitType='UNIT_SKIRMISHER'; 
 UPDATE Units SET Cost=270,Combat=50,RangedCombat=65 WHERE UnitType='UNIT_RANGER';

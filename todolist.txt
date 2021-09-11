@@ -67,10 +67,6 @@ privateers:
 readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
 
-warrior monks: 
-	instaunlock theology when founding warrior monk religion
-	redo promotion tree:
-		one promotion should ignore walls (like siege tower)
 
 -----DIFFICULTY 5s:-----
 military engineers:
