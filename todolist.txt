@@ -150,8 +150,10 @@ machine guns should come before infantry and tanks, like why are tanks modern bu
 spies should come in way earlier (near end of ancient), but have their offensive capabilites and movement times severely nerfed until renaissance picks up
 	black queen should pick up at medieval
 
-alliances earlier for cree, alliances should only require one person to know what they are
-
+alliances:
+	alliances should only require one person to know what they are
+	earlier for cree
+	
 
 
 military academies:
@@ -165,3 +167,15 @@ siege tactics:
 	do the same for roman fort and pa
 
 crossbows are not as strong as they used to be since man-at-arms update bumped everything up in the medieival era, maybe its for the better though?
+
+scythia:
+	make horse archers cost horses, but maybe also give them the ability to move and shoot? (must reduce melee strength if thats the case)
+
+mongolia:
+	archers->keshigs?  that might be broken
+
+make music censorship more punishing to slot in:
+	this may fuck up the ai really badly, need to be careful
+
+defensive tactics:
+	additional support bonuses?

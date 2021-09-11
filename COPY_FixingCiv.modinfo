@@ -4,7 +4,7 @@
     <Name>FixingCiv2</Name>
     <Description>Full desc and details here https://github.com/gweggyweggy/fixingcivmod</Description>
     <CustomProperties></CustomProperties>
-    <Created>1631324572</Created>
+    <Created>1631330470</Created>
     <Teaser>What if Civ was actually balanced?</Teaser>
     <Authors>Cezas</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -54,6 +54,7 @@
       <File>scripts/wonders.sql</File>
       <File>scripts/tech_modifiers.sql</File>
       <File>scripts/policies.sql</File>
+      <File>scripts/amenities.sql</File>
     </UpdateDatabase>
     <UpdateText id="update_texts">
       <File>english_xmls/global_improvements.xml</File>
@@ -78,6 +79,7 @@
     <File>english_xmls/tech_modifiers.xml</File>
     <File>english_xmls/wonders.xml</File>
     <File>README.md</File>
+    <File>scripts/amenities.sql</File>
     <File>scripts/civ_changes/brazil.sql</File>
     <File>scripts/civ_changes/georgia.sql</File>
     <File>scripts/civ_changes/greece.sql</File>
