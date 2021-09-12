@@ -176,6 +176,39 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_JET_BOMBER';
 
 --Warrior Monks--
+--will be available with a shrine, will nerf combat str accordingly
+UPDATE Units SET Combat=35 WHERE UnitType='UNIT_WARRIOR_MONK';
+DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
+INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
+	('UNIT_WARRIOR_MONK','BUILDING_SHRINE');
+
+--gain combat bonuses at these civics
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
+	('SIXFIX_THEOLOGY_MONK_COMBAT_BONUS', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'PLAYER_HAS_THEOLOGY');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_THEOLOGY_MONK_COMBAT_BONUS', 'Amount', 20);
+
+--requirement stuff here
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES
+	('REQUIRES_SIXFIX_PLAYER_HAS_THEOLOGY','REQUIREMENT_PLAYER_HAS_CIVIC');
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+	('PLAYER_HAS_THEOLOGY', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+	('PLAYER_HAS_THEOLOGY', 'REQUIRES_SIXFIX_PLAYER_HAS_THEOLOGY');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
+	('REQUIRES_SIXFIX_PLAYER_HAS_THEOLOGY','CivicType','CIVIC_THEOLOGY');
+
+--adding the specific ability
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description) VALUES
+	('ABILITY_SIXFIX_CIVIC_MONK_BONUS', 'LOC_ABILITY_SIXFIX_CIVIC_MONK_BONUS_NAME', 'LOC_ABILITY_SIXFIX_CIVIC_MONK_BONUS_DESC');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('ABILITY_SIXFIX_CIVIC_MONK_BONUS', 'SIXFIX_THEOLOGY_MONK_COMBAT_BONUS');
+INSERT INTO Types (Type, Kind) VALUES 
+	('ABILITY_SIXFIX_CIVIC_MONK_BONUS','KIND_ABILITY');
+
+
+	
 --deleting old connections and promotions
 --DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';
 --DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_TWILIGHT_VEIL';
