@@ -79,10 +79,9 @@ DELETE FROM UnitPromotions WHERE
 
 
 --making new promotions first
---combine spyglass+sentry, ranger+alpine and guerrilla now ignores zoc
+--combine spyglass+sentry, and guerrilla now ignores zoc
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
-	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY'),
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
 	;
 	;
@@ -103,12 +102,13 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_FORAGER','KIND_PROMOTION');
 
---new promotion for increased range
+--new promotion for increased range (we will also be attaching alpine here)
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_SNIPER','SNIPER','+1 [ICON_Range] Range.',2,'PROMOTION_CLASS_RECON',3)
+	('PROMOTION_SIXFIX_SNIPER','SNIPER','+1 [ICON_Range] Range.  Faster [ICON_Movement] Movement in Hills.',2,'PROMOTION_CLASS_RECON',3)
 	;
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SIXFIX_SNIPER','SIXFIX_RECON_RANGE_BONUS')
+	('PROMOTION_SIXFIX_SNIPER','SIXFIX_RECON_RANGE_BONUS'),
+	('PROMOTION_SIXFIX_SNIPER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY')
 	;
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_RECON_RANGE_BONUS', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE');
@@ -177,6 +177,6 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 
 --Warrior Monks--
 --deleting old connections and promotions
-DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';
-DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_TWILIGHT_VEIL';
+--DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';
+--DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_TWILIGHT_VEIL';
 

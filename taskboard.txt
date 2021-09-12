@@ -7,13 +7,15 @@ new policy cards for recon production (combine discipline with survey later on i
 
 ==DEVELOPING==
 warrior monks: become ultimate meme unit
-	instaunlock theology when founding warrior monk religion
-		if thats not possible, make monks more expensive, but have temples reduce cost
+	only require shrines to be built, but have 35 starting strength.
+	increases to 40 upon research theology
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
 		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion
-	get more strength via certain civics (reformed churhc, mass media, professional sports)
+		disciples as 1st promotion, add combat strength here
+		what if walk on water?
+
+	get more strength via certain civics (theology, reformed churhc, mass media, professional sports)
 
 
 
