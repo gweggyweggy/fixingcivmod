@@ -147,9 +147,9 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 
 --+1 sight to all recon and some other balances
 UPDATE Units SET BaseSightRange=3 WHERE PromotionClass='PROMOTION_CLASS_RECON'; 
-UPDATE Units SET Cost=90,Combat=25 WHERE UnitType='UNIT_SKIRMISHER'; 
-UPDATE Units SET Cost=270,Combat=50,RangedCombat=65 WHERE UnitType='UNIT_RANGER';
-UPDATE Units SET Cost=495,Combat=60,RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; 
+UPDATE Units SET Cost=110, Combat=25, PrereqTech='TECH_CONSTRUCTION' WHERE UnitType='UNIT_SKIRMISHER'; 
+UPDATE Units SET Cost=270, Combat=45, Range=2 WHERE UnitType='UNIT_RANGER';
+UPDATE Units SET Cost=495, Combat=60, RangedCombat=75 WHERE UnitType='UNIT_SPEC_OPS'; 
 
 -- Light Cav --
 UPDATE Units SET PrereqTech='TECH_STIRRUPS', Cost=190 WHERE UnitType='UNIT_COURSER'; 
