@@ -66,20 +66,24 @@ DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_CAMOUFLAGE' OR P
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
+DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SENTRY' OR PrereqUnitPromotion='PROMOTION_SENTRY';
 DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_SPYGLASS';
 
---left side is now ranger->spyglass+sentry->camouflage
-UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
-
+--left side is now camouflage->spyglass+sentry->ranger
+UPDATE UnitPromotions SET Level=1, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
+UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_RANGER';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_CAMOUFLAGE','PROMOTION_SENTRY')
+	('PROMOTION_RANGER','PROMOTION_SENTRY'),
+	('PROMOTION_SENTRY','PROMOTION_CAMOUFLAGE')
 	;
 
+--combine spyglass and sentry, also combine ranger and alpine
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT')
+	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
+	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY')
 	;
 
---right side is nwo guerilla->ignore zoc->???
+--right side is nwo guerilla+zoc->???->???
 UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
 
 --new promotion to avoid zoc
@@ -98,8 +102,6 @@ UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_S
 
 
 UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
-
-
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	('PROMOTION_ALPINE','PROMOTION_SIXFIX_SWIFT-FOOTED')
 	;
@@ -109,7 +111,7 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 UPDATE UnitPromotions SET Level=4, Column=2 WHERE UnitPromotionType='PROMOTION_AMBUSH';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_AMBUSH' OR PrereqUnitPromotion='PROMOTION_AMBUSH';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_AMBUSH','PROMOTION_CAMOUFLAGE'),
+	('PROMOTION_AMBUSH','PROMOTION_RANGER'),
 	('PROMOTION_AMBUSH','PROMOTION_ALPINE') --temporary placeholder
 	;
 
