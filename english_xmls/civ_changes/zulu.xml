@@ -13,9 +13,6 @@
 		<Replace Tag="LOC_UNIT_ZULU_IMPI_DESCRIPTION" Language="en_US">
 			<Text>Zulu unique Medieval Era unit that replaces the Pikeman. Increased Flanking bonus, low cost and low maintenance. Earns XP faster.  +5 [ICON_STRENGTH] bonus against cavalry instead of the usual +10 [ICON_STRENGTH]</Text>
 		</Replace>
-		<Replace Tag="LOC_IMPI_IKLWA" Language="en_US">
-			<Text>Iklwas: -5 [ICON_STRENGTH] against Cavalry class units.</Text>
-		</Replace>
 
 
 

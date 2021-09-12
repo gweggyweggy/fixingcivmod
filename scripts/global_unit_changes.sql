@@ -84,7 +84,7 @@ UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_G
 
 --new promotion to avoid zoc
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_SWIFT-FOOTED','LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_NAME','LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_DESCRIPTION',2,'PROMOTION_CLASS_RECON',3)
+	('PROMOTION_SIXFIX_SWIFT-FOOTED','Swift-footed','Ignore ZOC.',2,'PROMOTION_CLASS_RECON',3)
 	;
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_SWIFT-FOOTED','IGNOREZOC_IGNORE_ZOC')
