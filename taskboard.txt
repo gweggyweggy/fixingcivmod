@@ -1,29 +1,22 @@
 ==TASKS==
 
-recon:
-	new promotion tree:
-		left side: woodsmen, spyglass + see through features, camouflage
-		right side: guerilla, ignore zoc, pillaging takes 1 move (maybe also spawn rebel units as meme?)
-		final promotion still ambush, but only applies against land units
-
-readjust recon strengths, costs, and ranges
-skirmishers at construction?
 
 new policy cards for recon production (combine discipline with survey later on in the game?)
 
+
+
+==DEVELOPING==
 warrior monks: become ultimate meme unit
 	instaunlock theology when founding warrior monk religion
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
 		can we enable ki blasts (similar to gdr ranged attack?)
+		disciples as 1st promotion
 	get more strength via certain civics (reformed churhc, mass media, professional sports)
 
-==DEVELOPING==
-recon:
-	new promotion tree:
-		left side: ranger, spyglass + sentry, camouflage
 
 
+adjusting small things for weariness, need to playtest to see actual changes
 
 ==UPDATING TEXTS==
 
@@ -35,3 +28,5 @@ recon:
 
 ==DONE==
 
+recon:
+	new promotion tree:

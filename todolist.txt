@@ -13,6 +13,8 @@ keep README/desc updated
 
 find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
+figure out proper localization for new text entries
+
 ///gameplay todos///
 ===difficulty estimates:===
 1 = trivial, should take no time at all
@@ -29,6 +31,7 @@ fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check april patch notes
 
+update text for new nonspecialty districts
 
 -----DIFFICULTY 2s:-----
 shipyards:
@@ -124,7 +127,7 @@ tlacthi:
 
 kongo:
 	let them build holy sites, but not recruit prophet
-	maybe make killing units a chance to grant relic/artifact?  in turn, get archelogists and reveal artifacts early
+	in turn, get archelogists and reveal artifacts early at humanism
 
 nam:
 	voi chiens?  maybe more expensive
@@ -151,7 +154,6 @@ alliances:
 	earlier for cree
 	
 
-
 military academies:
 	add additoinal benefit to mili engs, maybe 2 engies for 1?
 
@@ -175,3 +177,15 @@ make music censorship more punishing to slot in:
 
 defensive tactics:
 	additional support bonuses?
+
+fix ai science value
+
+give eleanor kongos great people gen (with writing)
+
+make martry give relics upon condemn heretic
+
+earlier form of propaganda called something like "warrior culture", buff propaganda appropiately
+
+change religious community:
+
+zen meditation, 1 amenity for every specialty, not just 2
