@@ -11,7 +11,7 @@ specify load order for all files
 
 keep README/desc updated
 
-find out if:  long load times due to xml replaces or # of updatedb/text calls?
+find out if:  long load times due to xml replaces or # of updatedb/text calls?  (a computer restart seemed to fix, so maybe not related to modding)
 
 figure out proper localization for new text entries
 

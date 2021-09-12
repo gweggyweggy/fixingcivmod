@@ -66,13 +66,16 @@ UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD';
 --final is ambush
 
 --deleting old connections and promotions
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE';
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS';
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
---DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SENTRY' OR PrereqUnitPromotion='PROMOTION_SENTRY';
-DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_SPYGLASS';
-DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_ALPINE';
+DELETE FROM UnitPromotionPrereqs WHERE 
+	UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE' OR
+	UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS' OR
+	UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA' OR
+	UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
+
+DELETE FROM UnitPromotions WHERE 
+	UnitPromotionType='PROMOTION_SPYGLASS' OR 
+	UnitPromotionType='PROMOTION_ALPINE';
+
 
 
 --making new promotions first
@@ -86,10 +89,10 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 
 --new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_FORAGERS','FORAGERS','Increased healing in neutral territory.',2,'PROMOTION_CLASS_RECON',3)
+	('PROMOTION_SIXFIX_FORAGER','FORAGER','Increased healing in neutral territory.',2,'PROMOTION_CLASS_RECON',3)
 	;
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SIXFIX_FORAGERS','SIXFIX_RECON_HEAL_BONUS')
+	('PROMOTION_SIXFIX_FORAGER','SIXFIX_RECON_HEAL_BONUS')
 	;
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_RECON_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
@@ -98,8 +101,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('SIXFIX_RECON_HEAL_BONUS', 'Type', 'NEUTRAL')
 	;
 INSERT INTO Types (Type, Kind) VALUES 
-	('PROMOTION_SIXFIX_FORAGERS','KIND_PROMOTION');
-
+	('PROMOTION_SIXFIX_FORAGER','KIND_PROMOTION');
 
 --new promotion for increased range
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
@@ -116,8 +118,6 @@ INSERT INTO Types (Type, Kind) VALUES
 	('PROMOTION_SIXFIX_SNIPER','KIND_PROMOTION');
 
 
-
-
 --relink promotions
 --left side
 --UPDATE UnitPromotions SET Level=1, Column=1 WHERE UnitPromotionType='PROMOTION_RANGER';
@@ -128,13 +128,13 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 
 --right side
 UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
-UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGERS';
+UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGER';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_SIXFIX_FORAGERS','PROMOTION_GUERRILLA')
+	('PROMOTION_SIXFIX_FORAGER','PROMOTION_GUERRILLA')
 	;
 UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_CAMOUFLAGE','PROMOTION_SIXFIX_FORAGERS')
+	('PROMOTION_CAMOUFLAGE','PROMOTION_SIXFIX_FORAGER')
 	;
 
 UPDATE UnitPromotions SET Level=4, Column=2 WHERE UnitPromotionType='PROMOTION_AMBUSH';
@@ -176,3 +176,7 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_JET_BOMBER';
 
 --Warrior Monks--
+--deleting old connections and promotions
+DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';
+DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_TWILIGHT_VEIL';
+
