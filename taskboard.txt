@@ -7,6 +7,7 @@ recon:
 		final promotion still ambush, but only applies against land units
 
 readjust recon strengths, costs, and ranges
+skirmishers at construction?
 
 new policy cards for recon production (combine discipline with survey later on in the game?)
 

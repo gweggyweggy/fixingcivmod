@@ -83,27 +83,37 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY')
 	;
 
---right side is nwo guerilla+zoc->???->???
+--right side is nwo guerilla+zoc->healing more->pillaging stuff
 UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
+	;
 
---new promotion to avoid zoc
+--new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_SWIFT-FOOTED','Swift-footed','Ignore ZOC.',2,'PROMOTION_CLASS_RECON',3)
+	('PROMOTION_SIXFIX_FORAGERS','FORAGERS','Greatly increased healing in neutral territory.',2,'PROMOTION_CLASS_RECON',3)
 	;
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SIXFIX_SWIFT-FOOTED','IGNOREZOC_IGNORE_ZOC')
+	('PROMOTION_SIXFIX_FORAGERS','SIXFIX_RECON_HEAL_BONUS')
 	;
-INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_SIXFIX_SWIFT-FOOTED','PROMOTION_GUERRILLA')
+
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_RECON_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_RECON_HEAL_BONUS', 'Amount', 15),
+	('SIXFIX_RECON_HEAL_BONUS', 'Type', 'NEUTRAL')
 	;
 INSERT INTO Types (Type, Kind) VALUES 
-	('PROMOTION_SIXFIX_SWIFT-FOOTED','KIND_PROMOTION');
-UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_SWIFT-FOOTED';
+	('PROMOTION_SIXFIX_FORAGERS','KIND_PROMOTION');
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_SIXFIX_FORAGERS','PROMOTION_GUERRILLA')
+	;
+UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGERS';
 
-
+--placeholder
 UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_ALPINE','PROMOTION_SIXFIX_SWIFT-FOOTED')
+	('PROMOTION_ALPINE','PROMOTION_SIXFIX_FORAGERS')
 	;
 
 
