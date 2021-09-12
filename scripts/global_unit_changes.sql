@@ -68,6 +68,7 @@ DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR Pr
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SENTRY' OR PrereqUnitPromotion='PROMOTION_SENTRY';
 DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_SPYGLASS';
+DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_ALPINE';
 
 --left side is now camouflage->spyglass+sentry->ranger
 UPDATE UnitPromotions SET Level=1, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
@@ -83,7 +84,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY')
 	;
 
---right side is nwo guerilla+zoc->healing more->pillaging stuff
+--right side is nwo guerilla+zoc->healing more->extended ranger
 UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
@@ -91,7 +92,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 
 --new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_FORAGERS','FORAGERS','Greatly increased healing in neutral territory.',2,'PROMOTION_CLASS_RECON',3)
+	('PROMOTION_SIXFIX_FORAGERS','FORAGERS','Increased healing in neutral territory.',2,'PROMOTION_CLASS_RECON',3)
 	;
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_FORAGERS','SIXFIX_RECON_HEAL_BONUS')
@@ -100,7 +101,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_RECON_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-	('SIXFIX_RECON_HEAL_BONUS', 'Amount', 15),
+	('SIXFIX_RECON_HEAL_BONUS', 'Amount', 10),
 	('SIXFIX_RECON_HEAL_BONUS', 'Type', 'NEUTRAL')
 	;
 INSERT INTO Types (Type, Kind) VALUES 
@@ -110,11 +111,26 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	;
 UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGERS';
 
---placeholder
-UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_ALPINE'; --temp placeholder
-INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_ALPINE','PROMOTION_SIXFIX_FORAGERS')
+--new promotion for increased range
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_SNIPER','SNIPER','+1 [ICON_Range] Range.',2,'PROMOTION_CLASS_RECON',3)
 	;
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_SNIPER','SIXFIX_RECON_RANGE_BONUS')
+	;
+
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_RECON_RANGE_BONUS', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_RECON_RANGE_BONUS', 'Amount', 1);
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_SNIPER','KIND_PROMOTION');
+
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_SIXFIX_SNIPER','PROMOTION_SIXFIX_FORAGERS')
+	;
+UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_SNIPER';
+
 
 
 --ambush is now final promotion
@@ -122,7 +138,7 @@ UPDATE UnitPromotions SET Level=4, Column=2 WHERE UnitPromotionType='PROMOTION_A
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_AMBUSH' OR PrereqUnitPromotion='PROMOTION_AMBUSH';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	('PROMOTION_AMBUSH','PROMOTION_RANGER'),
-	('PROMOTION_AMBUSH','PROMOTION_ALPINE') --temporary placeholder
+	('PROMOTION_AMBUSH','PROMOTION_SIXFIX_SNIPER')
 	;
 
 
