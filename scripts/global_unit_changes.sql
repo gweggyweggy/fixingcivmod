@@ -61,33 +61,27 @@ UPDATE Units SET PrereqTech='TECH_GUNPOWDER' WHERE UnitType='UNIT_BOMBARD';
 -- Recon --
 --new promotion tree
 
+--left side is now ranger->sentry+spyglass->sniper
+--right side is now guerrilla+ignorezoc->foragers->camouflage
+--final is ambush
+
 --deleting old connections and promotions
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SPYGLASS' OR PrereqUnitPromotion='PROMOTION_SPYGLASS';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_GUERRILLA' OR PrereqUnitPromotion='PROMOTION_GUERRILLA';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_ALPINE' OR PrereqUnitPromotion='PROMOTION_ALPINE';
-DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SENTRY' OR PrereqUnitPromotion='PROMOTION_SENTRY';
+--DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_SENTRY' OR PrereqUnitPromotion='PROMOTION_SENTRY';
 DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_SPYGLASS';
 DELETE FROM UnitPromotions WHERE UnitPromotionType='PROMOTION_ALPINE';
 
---left side is now camouflage->spyglass+sentry->ranger
-UPDATE UnitPromotions SET Level=1, Column=1 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
-UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_RANGER';
-INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_RANGER','PROMOTION_SENTRY'),
-	('PROMOTION_SENTRY','PROMOTION_CAMOUFLAGE')
-	;
 
---combine spyglass and sentry, also combine ranger and alpine
+--making new promotions first
+--combine spyglass+sentry, ranger+alpine and guerrilla now ignores zoc
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
-	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY')
-	;
-
---right side is nwo guerilla+zoc->healing more->extended ranger
-UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
-INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_RANGER','ALPINE_IGNORE_HILLS_MOVEMENT_PENALTY'),
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
+	;
 	;
 
 --new promotion for increased healing in neutral territory
@@ -97,7 +91,6 @@ INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Promoti
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_FORAGERS','SIXFIX_RECON_HEAL_BONUS')
 	;
-
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_RECON_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
@@ -106,10 +99,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	;
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_FORAGERS','KIND_PROMOTION');
-INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_SIXFIX_FORAGERS','PROMOTION_GUERRILLA')
-	;
-UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGERS';
+
 
 --new promotion for increased range
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
@@ -118,7 +108,6 @@ INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, Promoti
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_SNIPER','SIXFIX_RECON_RANGE_BONUS')
 	;
-
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_RECON_RANGE_BONUS', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
@@ -126,22 +115,37 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_SNIPER','KIND_PROMOTION');
 
+
+
+
+--relink promotions
+--left side
+--UPDATE UnitPromotions SET Level=1, Column=1 WHERE UnitPromotionType='PROMOTION_RANGER';
+UPDATE UnitPromotions SET Level=3, Column=1 WHERE UnitPromotionType='PROMOTION_SIXFIX_SNIPER';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_SIXFIX_SNIPER','PROMOTION_SIXFIX_FORAGERS')
+	('PROMOTION_SIXFIX_SNIPER','PROMOTION_SENTRY')
 	;
-UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_SNIPER';
 
+--right side
+UPDATE UnitPromotions SET Level=1, Column=3 WHERE UnitPromotionType='PROMOTION_GUERRILLA';
+UPDATE UnitPromotions SET Level=2, Column=3 WHERE UnitPromotionType='PROMOTION_SIXFIX_FORAGERS';
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_SIXFIX_FORAGERS','PROMOTION_GUERRILLA')
+	;
+UPDATE UnitPromotions SET Level=3, Column=3 WHERE UnitPromotionType='PROMOTION_CAMOUFLAGE';
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_CAMOUFLAGE','PROMOTION_SIXFIX_FORAGERS')
+	;
 
-
---ambush is now final promotion
 UPDATE UnitPromotions SET Level=4, Column=2 WHERE UnitPromotionType='PROMOTION_AMBUSH';
 DELETE FROM UnitPromotionPrereqs WHERE UnitPromotion='PROMOTION_AMBUSH' OR PrereqUnitPromotion='PROMOTION_AMBUSH';
 INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
-	('PROMOTION_AMBUSH','PROMOTION_RANGER'),
+	('PROMOTION_AMBUSH','PROMOTION_CAMOUFLAGE'),
 	('PROMOTION_AMBUSH','PROMOTION_SIXFIX_SNIPER')
 	;
 
 
+--+1 sight to all recon and some other balances
 UPDATE Units SET BaseSightRange=3 WHERE PromotionClass='PROMOTION_CLASS_RECON'; 
 UPDATE Units SET Cost=90,Combat=25 WHERE UnitType='UNIT_SKIRMISHER'; 
 UPDATE Units SET Cost=270,Combat=50,RangedCombat=65 WHERE UnitType='UNIT_RANGER';
