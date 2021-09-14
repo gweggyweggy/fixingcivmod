@@ -153,6 +153,25 @@ UPDATE Routes_XP2 SET BuildWithUnitChargeCost=0 WHERE BuildWithUnitChargeCost=1;
 DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_MILITARY_ENGINEER';
 UPDATE Units SET Cost=200 WHERE UnitType='UNIT_MILITARY_ENGINEER';
 
+--battering rams and siege towers will now affect monks
+--making modifiers here
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('ENABLE_SIXFIX_WALL_ATTACK_MONK','MODIFIER_PLAYER_UNIT_ADJUST_ENABLE_WALL_ATTACK_PROMOTION_CLASS'),
+	('BYPASS_SIXFIX_WALLS_MONK','MODIFIER_PLAYER_UNIT_ADJUST_BYPASS_WALLS_PROMOTION_CLASS')
+	;
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+	('ENABLE_SIXFIX_WALL_ATTACK_MONK','PromotionClass','PROMOTION_CLASS_MONK'),
+	('BYPASS_SIXFIX_WALLS_MONK','PromotionClass','PROMOTION_CLASS_MONK')
+	;
+
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('ABILITY_ENABLE_WALL_ATTACK_PROMOTION_CLASS','ENABLE_SIXFIX_WALL_ATTACK_MONK'),
+	('ABILITY_BYPASS_WALLS_PROMOTION_CLASS','BYPASS_SIXFIX_WALLS_MONK')
+	;
+
+
+
 -- Naval Raider -- 
 UPDATE Units SET PrereqCivic='CIVIC_EXPLORATION' WHERE UnitType='UNIT_PRIVATEER';
 INSERT OR IGNORE INTO Units_XP2 ( UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, CanEarnExperience, CanFormMilitaryFormation)

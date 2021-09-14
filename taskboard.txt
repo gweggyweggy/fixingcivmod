@@ -7,6 +7,10 @@ new policy cards for recon production (combine discipline with survey later on i
 
 ==DEVELOPING==
 warrior monks: become ultimate meme unit
+	
+	temples: 50% more exp to monks trained in this city, maybe cheaper cost to buy (would have to make default cost 250 then)
+	should benefit from siege support and classical->medieval generals
+	remove last 2 buffs to monks
 
 	redo promotion tree:
 		one promotion should ignore walls (like siege tower)
