@@ -184,7 +184,7 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='UNIT_JET_BOMBER';
 
 --Warrior Monks--
---will be available with a shrine, will nerf combat str accordingly
+--will be available with a shrine,  will nerf combat str accordingly
 UPDATE Units SET Combat=35 WHERE UnitType='UNIT_WARRIOR_MONK';
 DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
 INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
@@ -250,6 +250,8 @@ INSERT INTO TypeTags (Type, Tag) VALUES
 	('ABILITY_SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH','CLASS_WARRIOR_MONK');
 
 --what if monks gained a supportive role in later civics?  similar to a general or a medic?
+--on mass media, be like a pseudo general (check tagma code)
+--on prof sports, be like a medic? 
 
 
 --deleting old connections and promotions

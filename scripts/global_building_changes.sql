@@ -22,7 +22,7 @@ UPDATE Buildings SET PrereqTech='TECH_ANIMAL_HUSBANDRY', Cost=90 WHERE BuildingT
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('SIXFIX_ADDITIONAL_MILITARYENGINEER_CHARGE', 'MODIFIER_SINGLE_CITY_BUILDER_CHARGES', 'UNIT_IS_MILITARY_ENGINEER')
 	;
---barracks +1 charge to engie
+--barracks +1 charge to engie and increesed milieng prod
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('SIXFIX_ADDITIONAL_MILITARYENGINEER_CHARGE', 'Amount', '1')
 	;
@@ -31,7 +31,7 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_BARRACKS','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
 	;
 
---stable +1 move to support
+--stable +1 move to support and increased engprod
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
 	('BUILDING_STABLE','SIXFIX_SUPPORT_MOVEMENT_MODIFIER'),
 	('BUILDING_STABLE','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
@@ -84,7 +84,17 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_MILITARY_ACADEMY','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
 	;
 
-
+--Holy site
+--temples make warrior monks cost 150
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_TEMPLE', 'SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','MODIFIER_SINGLE_CITY_ADJUST_UNIT_PURCHASE_COST')
+	;
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','UnitType','UNIT_WARRIOR_MONK'), 
+	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',25)
+	;
 --Theatre Square
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
 UPDATE Buildings_XP2 SET RequiredPower=2 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
