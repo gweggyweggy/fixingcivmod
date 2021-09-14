@@ -15,6 +15,8 @@ Also big thanks to these mods/people for inspiration/ideas:
 
 Strategic Forts
 p0kiehl
+infixo
+CivFanatics in general
 
 
 https://github.com/gweggyweggy/fixingcivmod
