@@ -95,6 +95,21 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','UnitType','UNIT_WARRIOR_MONK'), 
 	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',25)
 	;
+
+--ON HOLD: not sure where to add the requirementset for only monks
+--temples also grant 50% exp bonus to monks
+--INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+--	('BUILDING_TEMPLE', 'SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION');
+--INSERT INTO Modifiers (ModifierId, ModifierType, Permanent) VALUES 
+--	('SIXFIX_TEMPLE_TRAINED_UNIT_XP_MODIFIER','MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS',1),
+--	('SIXFIX_TEMPLE_TRAINED_UNIT_XP','MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER',1)
+--	;
+--INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+--	('SIXFIX_TEMPLE_TRAINED_UNIT_XP_MODIFIER','AbilityType','SIXFIX_ABILITY_TEMPLE_TRAINED_UNIT_XP'), 
+--	('SIXFIX_TEMPLE_TRAINED_UNIT_XP','Amount',50)
+--	;
+
+
 --Theatre Square
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
 UPDATE Buildings_XP2 SET RequiredPower=2 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
