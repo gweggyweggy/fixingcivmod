@@ -7,6 +7,8 @@ thismod:
 
 cleanup formatting and refactor appropiately
 
+standardize naming conventions
+
 specify load order for all files
 
 keep README/desc updated
