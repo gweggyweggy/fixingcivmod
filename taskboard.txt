@@ -3,33 +3,38 @@
 
 new policy cards for recon production (combine discipline with survey later on in the game?)
 
-
-
 ==DEVELOPING==
-warrior monks: become ultimate meme unit
-	only require shrines to be built, but have 35 starting strength.
-	increases to 40 upon research theology
-	redo promotion tree:
-		one promotion should ignore walls (like siege tower)
-		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion, add combat strength here
-		what if walk on water?
-
-	get more strength via certain civics (theology, reformed churhc, mass media, professional sports)
+update prasat to also gain temple monk bonus
 
 
 
-adjusting small things for weariness, need to playtest to see actual changes
+
+
 
 ==UPDATING TEXTS==
-
-
+	only require shrines to be built, but have 35 starting strength.
+	get more strength via certain civics (theology, reformed churhc
+	temple is cheaper buy 
 ==FINAL TESTING==
 
 
 ==BACKLOGGED==
+	redo monks promotion tree:
+		one promotion should ignore walls (like siege tower)
+		can we enable ki blasts (similar to gdr ranged attack?)
+		disciples as 1st promotion, add combat strength here
+		what if walk on water?
+		
+	grandmasters chapel: 1 free promotion to all monks you train
+	temples: 50% more exp to monks trained in this city, 
 
 ==DONE==
 
 recon:
 	new promotion tree:
+adjusting small things for weariness, need to playtest to see actual changes
+
+monks:
+	should benefit from siege support and classical->medieval generals
+	remove last 2 buffs to monks
+	

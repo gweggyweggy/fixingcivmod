@@ -7,6 +7,8 @@ thismod:
 
 cleanup formatting and refactor appropiately
 
+standardize naming conventions
+
 specify load order for all files
 
 keep README/desc updated
@@ -26,6 +28,7 @@ figure out proper localization for new text entries
 
 -----DIFFICULTY 1s:-----
 
+update highlander to match with new recon unit
 
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
