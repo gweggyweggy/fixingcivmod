@@ -12,6 +12,18 @@
 			<Text>Medieval era support unit. Can construct Roads, Forts, Airstrips, and Missile Silo improvements.  May expend a build charge to complete 20% of a Canal, Dam, Aqueduct or a Flood Barrier building. 10% to complete Walls or Encampments.</Text>
 		</Replace>
 
+		<!-- currently unused localization-->
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_NAME_TEXT" Language="en_US">
+			<Text>Swift-footed</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_DESCRIPTION_TEXT" Language="en_US">
+			<Text>Ignore ZOC.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_UNIT_WARRIOR_MONK_DESCRIPTION" Language="en_US">
+			<Text>Fast-moving land combat unit with a unique promotion tree.  Gains additional strength throughout the Civic tree (Theology, Reformed Church, Mass Media and Professional Sports)</Text>
+		</Replace>
+		
 	</LocalizedText>
 
 </GameData>

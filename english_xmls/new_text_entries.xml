@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- new_text_entries -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/11/2021 6:48:21 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_NAME" Language="en_US">
+			<Text>Swift-footed</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_SIXFIX_SWIFT-FOOTED_DESCRIPTION" Language="en_US">
+			<Text>Ignore ZOC.</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPI_IKLWA" Language="en_US">
+			<Text>Iklwas: -5 [ICON_STRENGTH] against Cavalry class units.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

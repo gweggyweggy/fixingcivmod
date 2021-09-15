@@ -7,11 +7,15 @@ thismod:
 
 cleanup formatting and refactor appropiately
 
+standardize naming conventions
+
 specify load order for all files
 
 keep README/desc updated
 
-find out if:  long load times due to xml replaces or # of updatedb/text calls?
+find out if:  long load times due to xml replaces or # of updatedb/text calls?  (a computer restart seemed to fix, so maybe not related to modding)
+
+figure out proper localization for new text entries
 
 ///gameplay todos///
 ===difficulty estimates:===
@@ -24,11 +28,13 @@ find out if:  long load times due to xml replaces or # of updatedb/text calls?
 
 -----DIFFICULTY 1s:-----
 
+update highlander to match with new recon unit
 
 fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check april patch notes
 
+update text for new nonspecialty districts
 
 -----DIFFICULTY 2s:-----
 shipyards:
@@ -67,10 +73,6 @@ privateers:
 readjust naval ranged tree?:
 	move +1 range earlier, move damage a little more inconveient
 
-warrior monks: 
-	instaunlock theology when founding warrior monk religion
-	redo promotion tree:
-		one promotion should ignore walls (like siege tower)
 
 -----DIFFICULTY 5s:-----
 military engineers:
@@ -128,7 +130,7 @@ tlacthi:
 
 kongo:
 	let them build holy sites, but not recruit prophet
-	maybe make killing units a chance to grant relic/artifact?  in turn, get archelogists and reveal artifacts early
+	in turn, get archelogists and reveal artifacts early at humanism
 
 nam:
 	voi chiens?  maybe more expensive
@@ -155,7 +157,6 @@ alliances:
 	earlier for cree
 	
 
-
 military academies:
 	add additoinal benefit to mili engs, maybe 2 engies for 1?
 
@@ -179,3 +180,27 @@ make music censorship more punishing to slot in:
 
 defensive tactics:
 	additional support bonuses?
+
+fix ai science value
+
+give eleanor kongos great people gen (with writing)
+
+make martry give relics upon condemn heretic
+
+earlier form of propaganda called something like "warrior culture", buff propaganda appropiately
+
+change religious community:
+
+zen meditation, 1 amenity for every specialty, not just 2
+
+	new policy cards for recon production (combine discipline with survey later on in the game?)
+	redo monks promotion tree:
+		one promotion should ignore walls (like siege tower)
+		can we enable ki blasts (similar to gdr ranged attack?)
+		disciples as 1st promotion, add combat strength here
+		what if walk on water?
+		
+	grandmasters chapel: 1 free promotion to all monks you train
+	temples: 50% more exp to monks trained in this city, 
+
+	fix theology civic text ui
