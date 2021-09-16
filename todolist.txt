@@ -62,8 +62,6 @@ kongo:
 	make mbanzas more resilient to recruit partisans
 
 
-huey teocalli:
-	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
 
 
 
@@ -75,6 +73,10 @@ readjust naval ranged tree?:
 
 
 -----DIFFICULTY 5s:-----
+
+huey teocalli:
+	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
+
 military engineers:
 	build forts in enemy territory
 
@@ -192,15 +194,3 @@ earlier form of propaganda called something like "warrior culture", buff propaga
 change religious community:
 
 zen meditation, 1 amenity for every specialty, not just 2
-
-	new policy cards for recon production (combine discipline with survey later on in the game?)
-	redo monks promotion tree:
-		one promotion should ignore walls (like siege tower)
-		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion, add combat strength here
-		what if walk on water?
-		
-	grandmasters chapel: 1 free promotion to all monks you train
-	temples: 50% more exp to monks trained in this city, 
-
-	fix theology civic text ui

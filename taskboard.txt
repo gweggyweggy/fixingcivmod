@@ -1,10 +1,45 @@
 ==TASKS==
 
+buff monk at theology
+redo monk promotion tree
+	right:
+		disciples tier 1:
+			add monks gain extra healing if in city following ur religion
+			
+		 tier2:
+			conquistador effect (escort part)
+		
+		 wallrunners tier 3:
+			inherent bypass walls, additional strength when attacking city center
 
-new policy cards for recon production (combine discipline with survey later on in the game?)
+
+	
+
+	left: 
+		shadowstrike tier 1:
+			combine with twilight veil
+		dancing crane tier 2:
+			combine with sweeping wind
+		exploding palms:
+			also add hussar knockback
+
+		
+	final:
+		ki blast? alt final:
+			see if adding a ranged strike is possible
+
+monks shd be 45 str at theology, 55 at theocracy
+are monks affected by twilight valor?  if not make them
+reduce cost to 150, temples make it 120
+temples grant free promotion to new monks trained
+monks have inherent faith on kill, 50% of prod cost or 100% of combat strength
+grandmasters chapel gives monks extra combat and another promotion?
+can we make monks have spread charges?
+
+fix text for guerilla promotion
 
 ==DEVELOPING==
-update prasat to also gain temple monk bonus
+
 
 
 
@@ -12,29 +47,13 @@ update prasat to also gain temple monk bonus
 
 
 ==UPDATING TEXTS==
-	only require shrines to be built, but have 35 starting strength.
-	get more strength via certain civics (theology, reformed churhc
-	temple is cheaper buy 
+
 ==FINAL TESTING==
 
 
 ==BACKLOGGED==
-	redo monks promotion tree:
-		one promotion should ignore walls (like siege tower)
-		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion, add combat strength here
-		what if walk on water?
-		
-	grandmasters chapel: 1 free promotion to all monks you train
-	temples: 50% more exp to monks trained in this city, 
+
 
 ==DONE==
 
-recon:
-	new promotion tree:
-adjusting small things for weariness, need to playtest to see actual changes
-
-monks:
-	should benefit from siege support and classical->medieval generals
-	remove last 2 buffs to monks
 	
