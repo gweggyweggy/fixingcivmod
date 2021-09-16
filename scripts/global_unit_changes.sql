@@ -73,7 +73,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
 	;
-UPDATE UnitPromotions SET Description='Can attack after moving.  Ignore ZOC' WHERE UnitPromotionType='PROMOTION_RANGER'; 
+UPDATE UnitPromotions SET Description='Can attack after moving. Ignore ZOC.' WHERE UnitPromotionType='PROMOTION_RANGER'; 
 
 --new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
@@ -185,7 +185,7 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 
 --Warrior Monks--
 --will be available with a shrine, cheaper cost, will nerf combat str accordingly
-UPDATE Units SET Combat=35, Cost=80 WHERE UnitType='UNIT_WARRIOR_MONK';
+UPDATE Units SET Combat=35, Cost=75 WHERE UnitType='UNIT_WARRIOR_MONK';
 DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
 INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
 	('UNIT_WARRIOR_MONK','BUILDING_SHRINE');
@@ -205,8 +205,8 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH', 'PLAYER_HAS_REFORMED_CHURCH')
 	;
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-	('SIXFIX_THEOLOGY_MONK_ADJUST_STRENGTH', 'Amount', 5), --now 40 str
-	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'Amount', 10) --now 50
+	('SIXFIX_THEOLOGY_MONK_ADJUST_STRENGTH', 'Amount', 10),
+	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'Amount', 10)
 	;
 
 

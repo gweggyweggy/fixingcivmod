@@ -85,7 +85,7 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	;
 
 --Holy site
---temples make warrior monks cost less and grant them +5 
+--temples make warrior monks cost less and grant them a promotion
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 	('BUILDING_TEMPLE', 'SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION');
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
@@ -93,7 +93,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	;
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','UnitType','UNIT_WARRIOR_MONK'), 
-	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',25)
+	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',20)
 	;
 
 

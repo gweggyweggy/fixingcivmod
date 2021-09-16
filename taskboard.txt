@@ -31,11 +31,8 @@ are monks affected by twilight valor?  if not make them
 
 
 ==DEVELOPING==
-monks shd be 45 str at theology, 55 at theocracy
 monks have inherent faith on kill, 50% of prod cost or 100% of combat strength
 temples grant free promotion to new monks trained
-reduce cost to 150, temples make it 120
-fix text for guerilla promotion
 
 
 
@@ -49,5 +46,6 @@ fix text for guerilla promotion
 
 
 ==DONE==
-
-	
+monks shd be 45 str at theology, 55 at theocracy
+reduce cost to 150, temples make it 120 (do the same for prasat)
+fix text for guerilla promotion
