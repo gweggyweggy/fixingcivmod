@@ -1,6 +1,5 @@
 ==TASKS==
 
-buff monk at theology
 redo monk promotion tree
 	right:
 		disciples tier 1:
@@ -10,10 +9,7 @@ redo monk promotion tree
 			conquistador effect (escort part)
 		
 		 wallrunners tier 3:
-			inherent bypass walls, additional strength when attacking city center
-
-
-	
+			inherent bypass walls, additional strength when attacking city center	
 
 	left: 
 		shadowstrike tier 1:
@@ -28,20 +24,18 @@ redo monk promotion tree
 		ki blast? alt final:
 			see if adding a ranged strike is possible
 
-monks shd be 45 str at theology, 55 at theocracy
-are monks affected by twilight valor?  if not make them
-reduce cost to 150, temples make it 120
-temples grant free promotion to new monks trained
-monks have inherent faith on kill, 50% of prod cost or 100% of combat strength
+
 grandmasters chapel gives monks extra combat and another promotion?
 can we make monks have spread charges?
+are monks affected by twilight valor?  if not make them
 
-fix text for guerilla promotion
 
 ==DEVELOPING==
-
-
-
+monks shd be 45 str at theology, 55 at theocracy
+monks have inherent faith on kill, 50% of prod cost or 100% of combat strength
+temples grant free promotion to new monks trained
+reduce cost to 150, temples make it 120
+fix text for guerilla promotion
 
 
 
