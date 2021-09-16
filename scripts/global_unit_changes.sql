@@ -190,6 +190,24 @@ DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
 INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
 	('UNIT_WARRIOR_MONK','BUILDING_SHRINE');
 
+--now have inherent faith on kill
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description) VALUES
+	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL', 'LOC_ABILITY_SIXFIX_MONK_FAITH_ON_KILL_NAME', 'LOC_ABILITY_SIXFIX_MONK_FAITH_ON_KILL_DESC');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL', 'SIXFIX_MONK_FAITH_ON_KILL_MODIFIER');
+INSERT INTO Types (Type, Kind) VALUES 
+	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL','KIND_ABILITY');
+INSERT INTO TypeTags(Type, Tag) VALUES 
+	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL', 'CLASS_WARRIOR_MONK');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD')
+	;
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','PercentDefeatedStrength', 100),
+	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','YieldType', 'YIELD_FAITH')
+	;
+
 --benefits from generals now
 --taking this code from a post by infixo on civfanatics
 -- 2019-04-09 Warrior Monks don't have bonuses from Great Generals
