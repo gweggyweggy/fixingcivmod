@@ -1,22 +1,22 @@
 ==TASKS==
 
 redo monk promotion tree
-	right:
+	right: (designed for monks to siege cities)
 		disciples tier 1:
 			add monks gain extra healing if in city following ur religion
 			
-		 tier2:
+		 crusaders tier2:
 			conquistador effect (escort part)
 		
-		 wallrunners tier 3:
-			inherent bypass walls, additional strength when attacking city center	
+		 tier3:
+			conquistador effect (convert part) and taking a city gives you some large amount of faith (based on city pop or city strength)
 
-	left: 
+	left: (designed for monks to be like cavalry)
 		shadowstrike tier 1:
 			combine with twilight veil
-		dancing crane tier 2:
-			combine with sweeping wind
-		exploding palms:
+		naruto run tier 2:
+			also ignores rough terrain
+		exploding palms: 
 			also add hussar knockback
 
 		
@@ -25,12 +25,11 @@ redo monk promotion tree
 			see if adding a ranged strike is possible
 
 
-grandmasters chapel gives monks extra combat and another promotion?
-can we make monks have spread charges?
+grandmasters chapel gives monks something spicy?
+
 
 
 ==DEVELOPING==
-
 
 
 ==UPDATING TEXTS==

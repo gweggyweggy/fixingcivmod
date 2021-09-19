@@ -265,6 +265,7 @@ INSERT INTO Types (Type, Kind) VALUES
 INSERT INTO TypeTags (Type, Tag) VALUES 
 	('ABILITY_SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH','CLASS_WARRIOR_MONK');
 
+
 --what if monks gained a supportive role in later civics?  similar to a general or a medic?
 --on mass media, be a medic?
 --on prof sports, ???
