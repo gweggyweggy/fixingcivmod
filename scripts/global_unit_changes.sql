@@ -266,9 +266,8 @@ INSERT INTO TypeTags (Type, Tag) VALUES
 	('ABILITY_SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH','CLASS_WARRIOR_MONK');
 
 --what if monks gained a supportive role in later civics?  similar to a general or a medic?
---on mass media, be like a pseudo general (check tagma code)
---on prof sports, be like a medic? 
-
+--on mass media, be a medic?
+--on prof sports, ???
 
 --deleting old connections and promotions
 --DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';

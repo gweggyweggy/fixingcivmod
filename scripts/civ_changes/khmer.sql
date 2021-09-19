@@ -4,5 +4,5 @@
 --------------------------------------------------------------
 --apply temple monk change to prasat
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
-	('BUILDING_PRASAT', 'SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION');
-
+	('BUILDING_PRASAT', 'SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION'),
+	('BUILDING_PRASAT', 'SIXFIX_TEMPLE_GRANT_MONK_PROMOTION');
