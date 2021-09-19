@@ -36,11 +36,11 @@ grandmasters chapel gives monks something spicy?
 
 
 ==FINAL TESTING==
-
+are monks affected by twilight valor?  if not make them (cant tell if theyre affected without playtesting)
 
 ==BACKLOGGED==
 try to fix localization texts
-are monks affected by twilight valor?  if not make them (cant tell if theyre affected without playtesting)
+
 
 ==DONE==
 monks shd be 45 str at theology, 55 at theocracy
