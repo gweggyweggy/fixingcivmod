@@ -36,8 +36,6 @@ INSERT INTO TypeTags(Type, Tag) VALUES
 	('ABILITY_LESSER_HOLD_THE_LINE', 'CLASS_ANTI_CAVALRY');
 --end ability establish
 
-
---this stacks btw
 INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES 
 	('LESSER_HOLD_THE_LINE_COMBAT_BONUS','Preview', 'LOC_ABILITY_LESSER_HOLD_THE_LINE_NAME');
 --DONE ANTICAV BUFF
@@ -73,7 +71,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
 	;
-UPDATE UnitPromotions SET Description='Can attack after moving. Ignore ZOC.' WHERE UnitPromotionType='PROMOTION_RANGER'; 
+UPDATE UnitPromotions SET Description='Can attack after moving. Ignore ZOC.' WHERE UnitPromotionType='PROMOTION_GUERILLA'; 
 
 --new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES

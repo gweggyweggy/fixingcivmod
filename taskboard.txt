@@ -27,12 +27,10 @@ redo monk promotion tree
 
 grandmasters chapel gives monks extra combat and another promotion?
 can we make monks have spread charges?
-are monks affected by twilight valor?  if not make them
 
 
 ==DEVELOPING==
 temples grant free promotion to new monks trained
-
 
 
 
@@ -42,7 +40,8 @@ temples grant free promotion to new monks trained
 
 
 ==BACKLOGGED==
-
+try to fix localization texts
+are monks affected by twilight valor?  if not make them (cant tell if theyre affected without playtesting)
 
 ==DONE==
 monks shd be 45 str at theology, 55 at theocracy

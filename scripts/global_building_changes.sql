@@ -97,9 +97,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	;
 
 
---temples also grant 50% exp bonus to monks
---need to add a requirement set for monk specific gains first
---wait to add requirement restriction until bonus works
+
 --INSERT INTO Requirements (RequirementId, RequirementType) VALUES
 --	('SIXFIX_REQUIREMENT_UNIT_IS_MONK', 'REQUIREMENT_UNIT_PROMOTION_CLASS_MATCHES');
 --INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
@@ -109,20 +107,16 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 --INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 --	('SIXFIX_TEMPLE_UNIT_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 
---TODO this isnt working properly
---INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
---	('BUILDING_TEMPLE', 'SIXFIX_TEMPLE_TRAINED_UNIT_XP_MODIFIER');
---INSERT INTO Modifiers (ModifierId, ModifierType, Permanent, SubjectRequirementSetId) VALUES 
---	('SIXFIX_TEMPLE_TRAINED_UNIT_XP_MODIFIER','MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS',1, NULL),
---	('SIXFIX_TEMPLE_TRAINED_UNIT_XP','MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER',1, NULL)
---	;
---INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
---	('SIXFIX_TEMPLE_TRAINED_UNIT_XP_MODIFIER','AbilityType','SIXFIX_ABILITY_TEMPLE_TRAINED_UNIT_XP'), 
---	('SIXFIX_TEMPLE_TRAINED_UNIT_XP','Amount',100)
---	;
---make the ability 
---INSERT INTO Types (Type, Kind) VALUES 
---	('SIXFIX_ABILITY_TEMPLE_TRAINED_UNIT_XP','KIND_ABILITY');
+
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_TEMPLE', 'SIXFIX_TEMPLE_GRANT_MONK_PROMOTION');
+INSERT INTO Modifiers (ModifierId, ModifierType, Permanent, SubjectRequirementSetId) VALUES 
+	('SIXFIX_TEMPLE_GRANT_MONK_PROMOTION','MODIFIER_CITY_TRAINED_UNITS_ADJUST_GRANT_EXPERIENCE',1, NULL)
+	;
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_TEMPLE_GRANT_MONK_PROMOTION','Amount',-1)
+	;
+
 
 --Theatre Square
 UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
