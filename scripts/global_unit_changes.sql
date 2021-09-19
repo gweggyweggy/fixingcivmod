@@ -270,7 +270,48 @@ INSERT INTO TypeTags (Type, Tag) VALUES
 --on mass media, be a medic?
 --on prof sports, ???
 
---deleting old connections and promotions
---DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_SHADOW_STRIKE';
---DELETE FROM UnitPromotionPrereqs WHERE PrereqUnitPromotion='PROMOTION_TWILIGHT_VEIL';
 
+--new promo tree for monks
+
+--deleting old connections and promotions
+DELETE FROM UnitPromotionPrereqs WHERE 
+	UnitPromotion='PROMOTION_MONK_TWILIGHT_VEIL' OR PrereqUnitPromotion='PROMOTION_MONK_TWILIGHT_VEIL' OR
+	UnitPromotion='PROMOTION_MONK_DISCIPLES' OR PrereqUnitPromotion='PROMOTION_MONK_DISCIPLES' OR
+	UnitPromotion='PROMOTION_MONK_EXPLODING_PALMS' OR PrereqUnitPromotion='PROMOTION_MONK_EXPLODING_PALMS' OR
+	UnitPromotion='PROMOTION_MONK_SHADOW_STRIKE' OR PrereqUnitPromotion='PROMOTION_MONK_SHADOW_STRIKE' OR 
+	UnitPromotion='PROMOTION_MONK_SWEEPING_WIND' OR PrereqUnitPromotion='PROMOTION_MONK_SWEEPING_WIND' OR
+	UnitPromotion='PROMOTION_MONK_DANCING_CRANE' OR PrereqUnitPromotion='PROMOTION_MONK_DANCING_CRANE' OR  
+	UnitPromotion='PROMOTION_MONK_COBRA_STRIKE' OR PrereqUnitPromotion='PROMOTION_MONK_COBRA_STRIKE';
+	;
+
+DELETE FROM UnitPromotions WHERE 
+	UnitPromotionType='PROMOTION_MONK_SWEEPING_WIND'
+;
+
+--	left: (designed for monks to be like cavalry)
+--		shadowstrike tier 1:
+--			combine with twilight veil
+--		naruto run tier 2:
+--			+1 move, also ignores rough terrain
+--		exploding palms: 
+--			also add hussar knockback
+
+
+--new shadow strike, can simply just combine with twiveil
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_MONK_SHADOW_STRIKE','CAMOUFLAGE_STEALTH');
+UPDATE UnitPromotions SET Description='2x flanking bonus.  Only adjacent enemy units can reveal this unit.' WHERE UnitPromotionType='PROMOTION_MONK_SHADOW_STRIKE';
+
+--naruto run promotion
+--TODO: add rivers to this as well
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties',2,'PROMOTION_CLASS_MONK',1);
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_NARUTO_RUN','MOD_IGNORE_TERRAIN_COST');
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_NARUTO_RUN','KIND_PROMOTION');
+
+--exploding palms has hussar knockback
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_MONK_EXPLODING_PALMS','HUSSAR_FORCE_RETREAT');
+UPDATE UnitPromotions SET Level=3, Description='+10 [ICON_STRENGTH] strength.  Gains Winged Hussar knockback ability.' WHERE UnitPromotionType='PROMOTION_MONK_EXPLODING_PALMS';

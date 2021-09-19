@@ -15,17 +15,20 @@ redo monk promotion tree
 		shadowstrike tier 1:
 			combine with twilight veil
 		naruto run tier 2:
-			also ignores rough terrain
+			ignores rough terrain
 		exploding palms: 
 			also add hussar knockback
 
 		
 	final:
 		ki blast? alt final:
-			see if adding a ranged strike is possible
+			see if adding a ranged strike is possible 
+			try this by adding range and ranged strength
+			+1 combat str for every 3 followers?
 
+IMPORTANT: if the tree is redone, culture scaling may need to be nerfed
 
-grandmasters chapel gives monks something spicy?
+grandmasters chapel gives monks something spicy? (heal on kill?)
 
 
 
