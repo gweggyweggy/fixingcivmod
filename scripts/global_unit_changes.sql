@@ -71,7 +71,7 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SENTRY','SPYGLASS_BONUS_SIGHT'),
 	('PROMOTION_GUERRILLA','IGNOREZOC_IGNORE_ZOC')
 	;
-UPDATE UnitPromotions SET Description='Can attack after moving. Ignore ZOC.' WHERE UnitPromotionType='PROMOTION_GUERILLA'; 
+UPDATE UnitPromotions SET Description='Can attack after moving. Ignore ZOC.' WHERE UnitPromotionType='PROMOTION_GUERRILLA'; 
 
 --new promotion for increased healing in neutral territory
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
@@ -197,8 +197,9 @@ INSERT INTO Types (Type, Kind) VALUES
 	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL','KIND_ABILITY');
 INSERT INTO TypeTags(Type, Tag) VALUES 
 	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL', 'CLASS_WARRIOR_MONK');
+--BUG need to make it not player_units_adjust
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
-	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','MODIFIER_PLAYER_UNITS_ADJUST_POST_COMBAT_YIELD')
+	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD')
 	;
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
@@ -224,7 +225,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 	('SIXFIX_THEOLOGY_MONK_ADJUST_STRENGTH', 'Amount', 10),
 	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'Amount', 10)
 	;
-
 
 --requirement stuff here
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES
@@ -285,7 +285,8 @@ DELETE FROM UnitPromotionPrereqs WHERE
 	;
 
 DELETE FROM UnitPromotions WHERE 
-	UnitPromotionType='PROMOTION_MONK_SWEEPING_WIND'
+	UnitPromotionType='PROMOTION_MONK_SWEEPING_WIND' OR
+	UnitPromotionType='PROMOTION_MONK_TWILIGHT_VEIL'
 ;
 
 --	left: (designed for monks to be like cavalry)
@@ -307,7 +308,9 @@ UPDATE UnitPromotions SET Description='2x flanking bonus.  Only adjacent enemy u
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
 	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties',2,'PROMOTION_CLASS_MONK',1);
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SIXFIX_NARUTO_RUN','MOD_IGNORE_TERRAIN_COST');
+	('PROMOTION_SIXFIX_NARUTO_RUN','MOD_IGNORE_TERRAIN_COST'),
+	('PROMOTION_SIXFIX_NARUTO_RUN','AMPHIBIOUS_BONUS_IGNORE_RIVERS')
+	;
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_NARUTO_RUN','KIND_PROMOTION');
 
@@ -315,3 +318,31 @@ INSERT INTO Types (Type, Kind) VALUES
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_MONK_EXPLODING_PALMS','HUSSAR_FORCE_RETREAT');
 UPDATE UnitPromotions SET Level=3, Description='+10 [ICON_STRENGTH] strength.  Gains Winged Hussar knockback ability.' WHERE UnitPromotionType='PROMOTION_MONK_EXPLODING_PALMS';
+
+--right: (designed for monks to siege cities)
+--		disciples tier 1:
+--			add monks gain extra healing if in city following ur religion
+--			
+--		 crusaders tier2:
+--			conquistador effect (escort part)
+--		
+--		 tier3:
+--			conquistador effect (convert part) and taking a city gives you some large amount of faith (based on city pop or city strength)
+
+--disciples buff
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_MONK_DISCIPLES','SIXFIX_DISCIPLES_HEAL_BONUS');
+UPDATE UnitPromotions SET Level=1 WHERE UnitPromotionType='PROMOTION_MONK_DISCIPLES';
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
+	('SIXFIX_DISCIPLES_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN','SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_DISCIPLES_HEAL_BONUS', 'Amount', 10),
+	('SIXFIX_DISCIPLES_HEAL_BONUS', 'Type', 'ALL')
+	;
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
+	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
+	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_FRIENDLY_RELIGIOUS_CITY'),
+	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_ENEMY_RELIGIOUS_CITY')
+	;

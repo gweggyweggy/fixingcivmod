@@ -194,3 +194,8 @@ earlier form of propaganda called something like "warrior culture", buff propaga
 change religious community:
 
 zen meditation, 1 amenity for every specialty, not just 2
+
+gandhi:
+ADD:
+	10% faith for each person you met that isnt warring you. 15% if friend, 20% if ally
+	people at war with you gain 100 wwp a turn 

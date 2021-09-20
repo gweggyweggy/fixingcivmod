@@ -30,17 +30,18 @@ IMPORTANT: if the tree is redone, culture scaling may need to be nerfed
 
 grandmasters chapel gives monks something spicy? (heal on kill?)
 
+experimental:
+	gives monks a spread charge and some strength, they may get reclassed as religious unit
 
 
 ==DEVELOPING==
-
-
 ==UPDATING TEXTS==
 
 
 ==FINAL TESTING==
 are monks affected by twilight valor?  if not make them (cant tell if theyre affected without playtesting)
 
+BUG: once a warrior monk is made, all units get fiath on ikll
 ==BACKLOGGED==
 try to fix localization texts
 
