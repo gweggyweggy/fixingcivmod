@@ -197,7 +197,7 @@ INSERT INTO Types (Type, Kind) VALUES
 	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL','KIND_ABILITY');
 INSERT INTO TypeTags(Type, Tag) VALUES 
 	('ABILITY_SIXFIX_MONK_FAITH_ON_KILL', 'CLASS_WARRIOR_MONK');
---BUG need to make it not player_units_adjust
+
 INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
 	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD')
 	;
@@ -286,8 +286,9 @@ DELETE FROM UnitPromotionPrereqs WHERE
 
 DELETE FROM UnitPromotions WHERE 
 	UnitPromotionType='PROMOTION_MONK_SWEEPING_WIND' OR
-	UnitPromotionType='PROMOTION_MONK_TWILIGHT_VEIL'
-;
+	UnitPromotionType='PROMOTION_MONK_TWILIGHT_VEIL' OR
+	UnitPromotionType='PROMOTION_MONK_DANCING_CRANE'
+	;
 
 --	left: (designed for monks to be like cavalry)
 --		shadowstrike tier 1:
@@ -326,23 +327,53 @@ UPDATE UnitPromotions SET Level=3, Description='+10 [ICON_STRENGTH] strength.  G
 --		 crusaders tier2:
 --			conquistador effect (escort part)
 --		
---		 tier3:
+--		 Baptists tier3:
 --			conquistador effect (convert part) and taking a city gives you some large amount of faith (based on city pop or city strength)
 
 --disciples buff
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_MONK_DISCIPLES','SIXFIX_DISCIPLES_HEAL_BONUS');
-UPDATE UnitPromotions SET Level=1 WHERE UnitPromotionType='PROMOTION_MONK_DISCIPLES';
+--not sure if this has to has be your founded religion
+UPDATE UnitPromotions SET Level=1, Description='Spread religion to nearby cities on kill.  Additional healing near cities following your religion.' WHERE UnitPromotionType='PROMOTION_MONK_DISCIPLES';
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
 	('SIXFIX_DISCIPLES_HEAL_BONUS', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN','SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 	('SIXFIX_DISCIPLES_HEAL_BONUS', 'Amount', 10),
 	('SIXFIX_DISCIPLES_HEAL_BONUS', 'Type', 'ALL')
 	;
-
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_FRIENDLY_RELIGIOUS_CITY'),
 	('SIXFIX_UNIT_NEAR_SAME_RELIGION_CITY_REQUIREMENTS', 'REQUIRES_UNIT_NEAR_ENEMY_RELIGIOUS_CITY')
+	;
+
+--crusaders 
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_CRUSADERS','Crusaders','+10 [ICON_STRENGTH] Strength when adjacent to a religious unit',2,'PROMOTION_CLASS_MONK',3);
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_CRUSADERS','CONQUISTADOR_SPECIFIC_UNIT_COMBAT');
+	;
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_CRUSADERS','KIND_PROMOTION');
+
+--baptists
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_BAPTISTS','Baptist','Conquered cities full convert to your religion.',3,'PROMOTION_CLASS_MONK',3);
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_BAPTISTS','CONQUISTADOR_CITY_RELIGION_COMBAT');
+	;
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_BAPTISTS','KIND_PROMOTION');
+
+
+
+--LINKING promotions
+INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
+	('PROMOTION_SIXFIX_NARUTO_RUN','PROMOTION_MONK_SHADOW_STRIKE'),
+	('PROMOTION_MONK_EXPLODING_PALMS','PROMOTION_SIXFIX_NARUTO_RUN'),
+	('PROMOTION_SIXFIX_CRUSADERS','PROMOTION_MONK_DISCIPLES'),
+	('PROMOTION_SIXFIX_BAPTISTS','PROMOTION_SIXFIX_CRUSADERS'),
+	('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_SIXFIX_BAPTISTS'),
+	('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_MONK_EXPLODING_PALMS')
 	;
