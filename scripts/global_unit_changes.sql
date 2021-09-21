@@ -222,7 +222,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES
 	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH', 'PLAYER_HAS_REFORMED_CHURCH')
 	;
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-	('SIXFIX_THEOLOGY_MONK_ADJUST_STRENGTH', 'Amount', 10),
+	('SIXFIX_THEOLOGY_MONK_ADJUST_STRENGTH', 'Amount', 5),
 	('SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH', 'Amount', 10)
 	;
 
@@ -307,7 +307,7 @@ UPDATE UnitPromotions SET Description='2x flanking bonus.  Only adjacent enemy u
 --naruto run promotion
 --TODO: add rivers to this as well
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties',2,'PROMOTION_CLASS_MONK',1);
+	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties.',2,'PROMOTION_CLASS_MONK',1);
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_NARUTO_RUN','MOD_IGNORE_TERRAIN_COST'),
 	('PROMOTION_SIXFIX_NARUTO_RUN','AMPHIBIOUS_BONUS_IGNORE_RIVERS')
@@ -328,7 +328,7 @@ UPDATE UnitPromotions SET Level=3, Description='+10 [ICON_STRENGTH] strength.  G
 --			conquistador effect (escort part)
 --		
 --		 Baptists tier3:
---			conquistador effect (convert part) and taking a city gives you some large amount of faith (based on city pop or city strength)
+--			conquistador effect (convert part) and killing a unit gives you an postle
 
 --disciples buff
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
@@ -350,7 +350,7 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 
 --crusaders 
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_CRUSADERS','Crusaders','+10 [ICON_STRENGTH] Strength when adjacent to a religious unit',2,'PROMOTION_CLASS_MONK',3);
+	('PROMOTION_SIXFIX_CRUSADERS','Crusaders','+10 [ICON_STRENGTH] Strength when adjacent to a religious unit.',2,'PROMOTION_CLASS_MONK',3);
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_CRUSADERS','CONQUISTADOR_SPECIFIC_UNIT_COMBAT');
 	;
@@ -359,12 +359,21 @@ INSERT INTO Types (Type, Kind) VALUES
 
 --baptists
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_BAPTISTS','Baptist','Conquered cities full convert to your religion.',3,'PROMOTION_CLASS_MONK',3);
-INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
-	('PROMOTION_SIXFIX_BAPTISTS','CONQUISTADOR_CITY_RELIGION_COMBAT');
+	('PROMOTION_SIXFIX_BAPTISTS','Baptists','Conquering a city fully converts it to your religion.  Chance to gain an Apostle after a unit kill.',3,'PROMOTION_CLASS_MONK',3);
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('SIXFIX_GET_APOSTLE_FROM_KILL','MODIFIER_UNIT_ADJUST_COMBAT_UNIT_CAPTURE');
+INSERT INTO ModifierArguments (ModifierId,Name,Value) VALUES
+	('SIXFIX_GET_APOSTLE_FROM_KILL','UnitType','UNIT_APOSTLE'),
+	('SIXFIX_GET_APOSTLE_FROM_KILL','CanCapture',1)
 	;
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_BAPTISTS','CONQUISTADOR_CITY_RELIGION_COMBAT'),
+	('PROMOTION_SIXFIX_BAPTISTS','SIXFIX_GET_APOSTLE_FROM_KILL')
+	;
+
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_BAPTISTS','KIND_PROMOTION');
+
 
 
 
