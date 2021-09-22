@@ -1,13 +1,8 @@
 ==TASKS==
 
-redo monk promotion tree
 
 
 		
-	final promotion?  something more exciting than cobra strike
-
-
-grandmasters chapel gives monks something spicy? (heal on kill?)
 
 
 
@@ -18,8 +13,6 @@ grandmasters chapel gives monks something spicy? (heal on kill?)
 ==FINAL TESTING==
 
 ==BACKLOGGED==
-try to fix localization texts
-
 
 ==DONE==
 monks shd be 45 str at theology, 55 at theocracy
@@ -48,4 +41,4 @@ BUG: once a warrior monk is made, all units get fiath on ikll
 			ignores rough terrain
 		exploding palms: 
 			also add hussar knockback
-IMPORTANT: if the tree is redone, culture scaling may need to be nerfed
+final promotion is basically the gdr's siege cannon

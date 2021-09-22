@@ -201,3 +201,7 @@ ADD:
 	people at war with you gain 100 wwp a turn 
 
 india: cities with holuy sites get 50% towards city projects?
+
+try to fix localization texts
+does akkad work on monks?
+grandmasters chapel gives monks another promotion and 100% exp gain?
