@@ -15,6 +15,7 @@ UPDATE Units SET Cost=220 WHERE UnitType='UNIT_PIKE_AND_SHOT';
 
 --START ANTICAV BUFF:
 --new inherent hold-the-line for all anticav, but only +5 to adjacent noncav units fighting cav
+--not sure if this conflicts with the original hold the line, havent tested.  it shouldnt conflict
 INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
 	('LESSER_HOLD_THE_LINE_BONUS','MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'HOLD_THE_LINE_REQUIREMENTS'),
 	('LESSER_HOLD_THE_LINE_COMBAT_BONUS','MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ANTI_CAVALRY_OPPONENT_REQUIREMENTS')
@@ -183,7 +184,7 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 
 --Warrior Monks--
 --will be available with a shrine, cheaper cost, will nerf combat str accordingly
-UPDATE Units SET Combat=35, Cost=75 WHERE UnitType='UNIT_WARRIOR_MONK';
+UPDATE Units SET Combat=35, Cost=50, CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=6 WHERE UnitType='UNIT_WARRIOR_MONK';
 DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
 INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
 	('UNIT_WARRIOR_MONK','BUILDING_SHRINE');
@@ -266,6 +267,7 @@ INSERT INTO TypeTags (Type, Tag) VALUES
 	('ABILITY_SIXFIX_REFORMED_CHURCH_MONK_ADJUST_STRENGTH','CLASS_WARRIOR_MONK');
 
 
+
 --what if monks gained a supportive role in later civics?  similar to a general or a medic?
 --on mass media, be a medic?
 --on prof sports, ???
@@ -288,7 +290,7 @@ DELETE FROM UnitPromotions WHERE
 	UnitPromotionType='PROMOTION_MONK_SWEEPING_WIND' OR
 	UnitPromotionType='PROMOTION_MONK_TWILIGHT_VEIL' OR
 	UnitPromotionType='PROMOTION_MONK_DANCING_CRANE' 
-	--OR UnitPromotionType='PROMOTION_MONK_COBRA_STRIKE'
+	OR UnitPromotionType='PROMOTION_MONK_COBRA_STRIKE'
 	;
 
 --	left: (designed for monks to be like cavalry)
@@ -306,7 +308,6 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 UPDATE UnitPromotions SET Description='2x flanking bonus.  Only adjacent enemy units can reveal this unit.' WHERE UnitPromotionType='PROMOTION_MONK_SHADOW_STRIKE';
 
 --naruto run promotion
---TODO: add rivers to this as well
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
 	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties.',2,'PROMOTION_CLASS_MONK',1);
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
@@ -329,7 +330,7 @@ UPDATE UnitPromotions SET Level=3, Description='+10 [ICON_STRENGTH] strength.  G
 --			conquistador effect (escort part)
 --		
 --		 Baptists tier3:
---			conquistador effect (convert part) and killing a unit gives you an postle
+--		conquistador effect (convert part) and killing a unit gives you an postle
 
 --disciples buff
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
@@ -371,35 +372,77 @@ INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_BAPTISTS','CONQUISTADOR_CITY_RELIGION_COMBAT'),
 	('PROMOTION_SIXFIX_BAPTISTS','SIXFIX_GET_APOSTLE_FROM_KILL')
 	;
-
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_BAPTISTS','KIND_PROMOTION');
 
+--grandmaster
+
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_GRANDMASTERS','Grandmasters','+10 [ICON_STRENGTH] strength.  +5 [ICON_STRENGTH] strength and +1 [ICON_Movement] movement to adjacent Monks.',4,'PROMOTION_CLASS_MONK',2);
+
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_GRANDMASTERS','SIXFIX_GRANDMASTERS_BONUS')
+	;
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_GRANDMASTERS','KIND_PROMOTION');
+INSERT INTO ModifierStrings (ModifierId, Context, Text) VALUES 
+	('SIXFIX_GRANDMASTERS_COMBAT_BONUS','Preview', 'LOC_SIXFIX_GRANDMASTERS_COMBAT_DESC');
+
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES 
+	('SIXFIX_GRANDMASTERS_BONUS','MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER', 'HOLD_THE_LINE_REQUIREMENTS'),
+	('SIXFIX_GRANDMASTERS_COMBAT_BONUS','MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'SIXFIX_UNIT_IS_MONK_REQUIREMENTS')
+	;
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_GRANDMASTERS_BONUS', 'ModifierId', 'SIXFIX_GRANDMASTERS_COMBAT_BONUS'),
+	('SIXFIX_GRANDMASTERS_COMBAT_BONUS', 'Amount', 5)
+	;
+
+
+
+--BUGGED: monks will only be able to do ranged attacks, might be due to 0 range or something.
 --new promotion for ranged attack
---need to give the monk some ranged strength to make it work
---UPDATE Units SET RangedCombat=55 WHERE UnitType='UNIT_WARRIOR_MONK';
---INSERT INTO TypeTags (Type, Tag) VALUES 
---	('UNIT_WARRIOR_MONK','CLASS_MELEE')
---;
---INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
---	('PROMOTION_SIXFIX_KI_BLAST','KI BLAST','Enables the ranged attack. +2 [ICON_Range] Range and deals full damage to walls.',4,'PROMOTION_CLASS_MONK',2)
---	;
---INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
---	('PROMOTION_SIXFIX_KI_BLAST','SIXFIX_MONK_RANGE_BONUS'),
---	('PROMOTION_SIXFIX_KI_BLAST','SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS')
---	;
---INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
---	('SIXFIX_MONK_RANGE_BONUS', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE'),
---	('SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS', 'MODIFIER_PLAYER_UNIT_IGNORE_RANGED_VS_DISTRICT_PENALTY')
---	;
---INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
---	('SIXFIX_MONK_RANGE_BONUS', 'Amount', 2),
---	('SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS', 'Ignore',1)
---	;
+/*
+INSERT INTO UnitAbilities(UnitAbilityType, Name, Description) VALUES
+	('ABILITY_SIXFIX_MONK_MELEE_AND_RANGED', 'LOC_ABILITY_SIXFIX_MONK_MELEE_AND_RANGED_NAME', 'LOC_ABILITY_SIXFIX_MONK_MELEE_AND_RANGED_DESC');
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('ABILITY_SIXFIX_MONK_MELEE_AND_RANGED', 'SIXFIX_GRANT_MONK_IMMORTAL_ATTACH_MODIFIER');
+INSERT INTO Types (Type, Kind) VALUES 
+	('ABILITY_SIXFIX_MONK_MELEE_AND_RANGED','KIND_ABILITY');
+INSERT INTO TypeTags (Type, Tag) VALUES 
+	('ABILITY_SIXFIX_MONK_MELEE_AND_RANGED','CLASS_WARRIOR_MONK'),
+	('ABILITY_IMMORTAL', 'CLASS_WARRIOR_MONK')
+	;
 
---INSERT INTO Types (Type, Kind) VALUES 
---	('PROMOTION_SIXFIX_KI_BLAST','KIND_PROMOTION');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
+	('SIXFIX_GRANT_MONK_IMMORTAL_ATTACH_MODIFIER', 'MODIFIER_ALL_PLAYER_UNITS_ATTACH_MODIFIER'),
+	('SIXFIX_GRANT_MONK_IMMORTAL_ABILITY', 'MODIFIER_PLAYER_UNITS_GRANT_ABILITY')
+	;
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_GRANT_MONK_IMMORTAL_ATTACH_MODIFIER', 'ModifierId', 'SIXFIX_GRANT_MONK_IMMORTAL_ABILITY'),
+	('SIXFIX_GRANT_MONK_IMMORTAL_ABILITY', 'AbilityType', 'ABILITY_IMMORTAL')
+	;
 
+UPDATE Units SET RangedCombat=55, Range=1 WHERE UnitType='UNIT_WARRIOR_MONK';
+INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
+	('PROMOTION_SIXFIX_KI_BLAST','KI BLAST','Enables the ranged attack. +2 [ICON_Range] Range and deals full damage to walls.',4,'PROMOTION_CLASS_MONK',2)
+	;
+INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
+	('PROMOTION_SIXFIX_KI_BLAST','SIXFIX_MONK_RANGE_BONUS'),
+	('PROMOTION_SIXFIX_KI_BLAST','SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS')
+	;
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_MONK_RANGE_BONUS', 'MODIFIER_UNIT_ADJUST_ATTACK_RANGE'),
+	('SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS', 'MODIFIER_PLAYER_UNIT_IGNORE_RANGED_VS_DISTRICT_PENALTY')
+	;
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_MONK_RANGE_BONUS', 'Amount', 1),
+	('SIXFIX_MONK_RANGED_FULL_DAMAGE_WALLS', 'Ignore',1)
+	;
+
+INSERT INTO Types (Type, Kind) VALUES 
+	('PROMOTION_SIXFIX_KI_BLAST','KIND_PROMOTION');
+*/
 
 
 --LINKING promotions
@@ -409,7 +452,9 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	('PROMOTION_SIXFIX_CRUSADERS','PROMOTION_MONK_DISCIPLES'),
 	('PROMOTION_SIXFIX_BAPTISTS','PROMOTION_SIXFIX_CRUSADERS'),
 	--('PROMOTION_SIXFIX_KI_BLAST','PROMOTION_SIXFIX_BAPTISTS'),
-	--('PROMOTION_SIXFIX_KI_BLAST','PROMOTION_MONK_EXPLODING_PALMS'),
-	('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_SIXFIX_BAPTISTS'),
-	('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_MONK_EXPLODING_PALMS')
+	--('PROMOTION_SIXFIX_KI_BLAST','PROMOTION_MONK_EXPLODING_PALMS')
+	--('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_SIXFIX_BAPTISTS'),
+	--('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_MONK_EXPLODING_PALMS')
+	('PROMOTION_SIXFIX_GRANDMASTERS','PROMOTION_SIXFIX_BAPTISTS'),
+	('PROMOTION_SIXFIX_GRANDMASTERS','PROMOTION_MONK_EXPLODING_PALMS')
 	;

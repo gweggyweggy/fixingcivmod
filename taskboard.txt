@@ -7,6 +7,12 @@
 
 
 ==DEVELOPING==
+
+grandmasters chapel gives monks another promotion and do this MODIFIER_PLAYER_ADJUST_ENABLE_WALL_ATTACK_WHOLE_GAME_SAME_RELIGION_PROMOTION_CLASS
+exploding palms only +10 in melee combat
+monks now start at 100 faith, scaling up 
+temples now give 25% discount instead of 20
+boost faith on kill to at least 150%
 ==UPDATING TEXTS==
 
 
@@ -41,4 +47,3 @@ BUG: once a warrior monk is made, all units get fiath on ikll
 			ignores rough terrain
 		exploding palms: 
 			also add hussar knockback
-final promotion is basically the gdr's siege cannon

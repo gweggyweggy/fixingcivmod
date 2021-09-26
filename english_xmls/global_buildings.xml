@@ -17,7 +17,7 @@
 			<Text>+25% combat experience for all land units trained in this city.  +20% [ICON_PRODUCTION] towards Military Engineers. [NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE]Allows Corps and Armies to be trained directly. Corps and Army training costs reduced 25%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TEMPLE_DESCRIPTION" Language="en_US">
-			<Text>Allows [ICON_Faith] Faith purchasing of Apostles, Gurus and Inquisitors. 20% discount for purchasing Warrior Monks. Warrior Monks gain a free promotion.</Text>
+			<Text>Allows [ICON_Faith] Faith purchasing of Apostles, Gurus and Inquisitors. 25% discount for purchasing Warrior Monks. Warrior Monks gain a free promotion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SHRINE_DESCRIPTION" Language="en_US">
 			<Text>Allows the [ICON_Faith] Faith purchasing of Missionaries and, with the respective follower belief, Warrior Monks.</Text>
