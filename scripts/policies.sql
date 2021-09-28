@@ -141,3 +141,6 @@ INSERT INTO ObsoletePolicies (PolicyType, ObsoletePolicy) VALUES
 --WILD--
 
 --DARK--
+--updating twilight valor to affect warrior monks
+INSERT INTO TypeTags (Type, Tag) VALUES
+	('ABILITY_TWILIGHT_VALOR_ATTACK_BONUS','CLASS_WARRIOR_MONK');

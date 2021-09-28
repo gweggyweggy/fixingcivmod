@@ -1,40 +1,59 @@
 ==TASKS==
 
 
-new policy cards for recon production (combine discipline with survey later on in the game?)
+
+		
+
+
 
 ==DEVELOPING==
-update prasat to also gain temple monk bonus
-
 
 
 
 
 
 ==UPDATING TEXTS==
-	only require shrines to be built, but have 35 starting strength.
-	get more strength via certain civics (theology, reformed churhc
-	temple is cheaper buy 
+
+
+
 ==FINAL TESTING==
 
 
+
 ==BACKLOGGED==
-	redo monks promotion tree:
-		one promotion should ignore walls (like siege tower)
-		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion, add combat strength here
-		what if walk on water?
-		
-	grandmasters chapel: 1 free promotion to all monks you train
-	temples: 50% more exp to monks trained in this city, 
-
+exploding palms only +10 in melee combat 
+BUG: grandmasters chapel gives monks ignore walls, currently crashes the game (removed until working on this)
 ==DONE==
+monks shd be 45 str at theology, 55 at theocracy
+reduce cost to 150, temples make it 120 (do the same for prasat)
+fix text for guerilla promotion
+monks have inherent faith on kill, 50% of prod cost or 100% of combat strength
+temples grant free promotion to new monks trained
+are monks affected by twilight valor?  if not make them (cant tell if theyre affected without playtesting)
+monkes can ignore rivers on naruto run
+BUG: once a warrior monk is made, all units get fiath on ikll
 
-recon:
-	new promotion tree:
-adjusting small things for weariness, need to playtest to see actual changes
+	right: (designed for monks to siege cities)
+		disciples tier 1:
+			add monks gain extra healing if in city following ur religion
+			
+		 crusaders tier2:
+			conquistador effect (escort part)
+		
+		 tier3:
+			conquistador effect (convert part) and taking a city gives you some large amount of faith (based on city pop or city strength)
 
-monks:
-	should benefit from siege support and classical->medieval generals
-	remove last 2 buffs to monks
-	
+	left: (designed for monks to be like cavalry)
+		shadowstrike tier 1:
+			combine with twilight veil
+		naruto run tier 2:
+			ignores rough terrain
+		exploding palms: 
+			also add hussar knockback
+
+	final:
+		stacking great general eff to adj monks
+
+boost faith on kill to at least 150%
+monks now start at 100 faith, scaling up 
+temples now give 25% discount instead of 20

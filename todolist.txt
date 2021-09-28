@@ -62,8 +62,6 @@ kongo:
 	make mbanzas more resilient to recruit partisans
 
 
-huey teocalli:
-	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
 
 
 
@@ -75,6 +73,10 @@ readjust naval ranged tree?:
 
 
 -----DIFFICULTY 5s:-----
+
+huey teocalli:
+	make adj bonus apply only to lake tiles (need to specify a nwe terraintype with current implementation).  once that's done, reenable harbor adjacencies
+
 military engineers:
 	build forts in enemy territory
 
@@ -82,10 +84,12 @@ recon:
 	maybe add priority target to skirmishers->above:
 	i see PRIORITY_TARGET existing, but theres nothing else in the db that it explicitly attaches itself into
 
-naval combat:
-	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
+
 
 ----BACKLOG-----
+
+naval combat:
+	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
 anti early snowball:
 	harsher research penalty for going past current era tech/civic?
@@ -117,8 +121,8 @@ wonders:
 	stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 	
 pantheons:
-	godofwar = redo this
-	initationrites = clearing barb camp gives you strongest melee unit?
+	godofwar = increase faith gain and range
+	initationrites = melee kills against barbs have chance to capture?  or cleared camps give you strongest unit discovered
 	religiousidols = redo this
 	stone circles = redo this
 
@@ -133,7 +137,7 @@ kongo:
 	in turn, get archelogists and reveal artifacts early at humanism
 
 nam:
-	voi chiens?  maybe more expensive
+	remove move after attack
 
 kupe:
 	maybe make him unable to remove features?  pretty harsh, but thematic
@@ -176,7 +180,7 @@ mongolia:
 	archers->keshigs?  that might be broken
 
 make music censorship more punishing to slot in:
-	this may fuck up the ai really badly, need to be careful
+	this may fuck up the ai really badly with global amenity change, need to be careful
 
 defensive tactics:
 	additional support bonuses?
@@ -193,14 +197,12 @@ change religious community:
 
 zen meditation, 1 amenity for every specialty, not just 2
 
-	new policy cards for recon production (combine discipline with survey later on in the game?)
-	redo monks promotion tree:
-		one promotion should ignore walls (like siege tower)
-		can we enable ki blasts (similar to gdr ranged attack?)
-		disciples as 1st promotion, add combat strength here
-		what if walk on water?
-		
-	grandmasters chapel: 1 free promotion to all monks you train
-	temples: 50% more exp to monks trained in this city, 
+gandhi:
+ADD:
+	10% faith for each person you met that isnt warring you. 15% if friend, 20% if ally
+	people who declared war on you gain 45 wwp a turn (effectively 90 wwp)  natural decay is now 50, so that means 400/40=every ten turns accumulate -1 amenity
 
-	fix theology civic text ui
+india: cities with holy sites get 50% towards city projects?
+
+
+buff faith on kills for other things to be 100% minimum

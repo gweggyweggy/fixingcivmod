@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- civic_modifiers -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 9/14/2021 9:13:18 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_CIVIC_THEOLOGY_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_STRENGTH] to all Warrior Monks.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_REFORMED_CHURCH_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_STRENGTH] to all Warrior Monks.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
