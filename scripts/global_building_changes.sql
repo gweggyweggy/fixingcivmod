@@ -121,5 +121,14 @@ UPDATE Building_YieldChanges SET YieldChange=4 WHERE BuildingType='BUILDING_BROA
 UPDATE Buildings_XP2 SET RequiredPower=2 WHERE BuildingType='BUILDING_BROADCAST_CENTER';
 
 --Government Plaza
---INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
-	--('BUILDING_GOV_FAITH', 'SIXFIX_TEMPLE_GRANT_MONK_PROMOTION');
+--BUG: upon building the chapel, game just crashes
+/*
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+	('BUILDING_GOV_FAITH', 'SIXFIX_MONKS_IGNORE_WALLS_IF_SAME_RELIGION');
+INSERT INTO Modifiers (ModifierId, ModifierType) VALUES 
+	('SIXFIX_MONKS_IGNORE_WALLS_IF_SAME_RELIGION','MODIFIER_PLAYER_ADJUST_ENABLE_WALL_ATTACK_WHOLE_GAME_SAME_RELIGION_PROMOTION_CLASS')
+	;
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+	('SIXFIX_MONKS_IGNORE_WALLS_IF_SAME_RELIGION','Tag','CLASS_WARRIOR_MONK')
+	;
+*/

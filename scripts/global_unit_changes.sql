@@ -204,7 +204,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	;
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','PercentDefeatedStrength', 100),
+	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','PercentDefeatedStrength', 150),
 	('SIXFIX_MONK_FAITH_ON_KILL_MODIFIER','YieldType', 'YIELD_FAITH')
 	;
 
@@ -297,7 +297,7 @@ DELETE FROM UnitPromotions WHERE
 --		shadowstrike tier 1:
 --			combine with twilight veil
 --		naruto run tier 2:
---			+1 move, also ignores rough terrain
+--			ignores rough terrain
 --		exploding palms: 
 --			also add hussar knockback
 
@@ -405,7 +405,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 
 
 
---BUGGED: monks will only be able to do ranged attacks, might be due to 0 range or something.
+--BUGGED/UNUSED: monks will only be able to do ranged attacks, cant figure out how to make them like immortals where they are classed as a melee with a ranged attk
 --new promotion for ranged attack
 /*
 INSERT INTO UnitAbilities(UnitAbilityType, Name, Description) VALUES
@@ -456,10 +456,6 @@ INSERT INTO UnitPromotionPrereqs (UnitPromotion, PrereqUnitPromotion) VALUES
 	('PROMOTION_MONK_EXPLODING_PALMS','PROMOTION_SIXFIX_NARUTO_RUN'),
 	('PROMOTION_SIXFIX_CRUSADERS','PROMOTION_MONK_DISCIPLES'),
 	('PROMOTION_SIXFIX_BAPTISTS','PROMOTION_SIXFIX_CRUSADERS'),
-	--('PROMOTION_SIXFIX_KI_BLAST','PROMOTION_SIXFIX_BAPTISTS'),
-	--('PROMOTION_SIXFIX_KI_BLAST','PROMOTION_MONK_EXPLODING_PALMS')
-	--('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_SIXFIX_BAPTISTS'),
-	--('PROMOTION_MONK_COBRA_STRIKE','PROMOTION_MONK_EXPLODING_PALMS')
 	('PROMOTION_SIXFIX_GRANDMASTERS','PROMOTION_SIXFIX_BAPTISTS'),
 	('PROMOTION_SIXFIX_GRANDMASTERS','PROMOTION_MONK_EXPLODING_PALMS')
 	;

@@ -84,10 +84,12 @@ recon:
 	maybe add priority target to skirmishers->above:
 	i see PRIORITY_TARGET existing, but theres nothing else in the db that it explicitly attaches itself into
 
-naval combat:
-	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
+
 
 ----BACKLOG-----
+
+naval combat:
+	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
 anti early snowball:
 	harsher research penalty for going past current era tech/civic?
@@ -119,8 +121,8 @@ wonders:
 	stonehenge, quarries give faith? maybe when founding a religion, gain another belief?
 	
 pantheons:
-	godofwar = redo this
-	initationrites = clearing barb camp gives you strongest melee unit?
+	godofwar = increase faith gain and range
+	initationrites = melee kills against barbs have chance to capture?  or cleared camps give you strongest unit discovered
 	religiousidols = redo this
 	stone circles = redo this
 
@@ -135,7 +137,7 @@ kongo:
 	in turn, get archelogists and reveal artifacts early at humanism
 
 nam:
-	voi chiens?  maybe more expensive
+	remove move after attack
 
 kupe:
 	maybe make him unable to remove features?  pretty harsh, but thematic
@@ -178,7 +180,7 @@ mongolia:
 	archers->keshigs?  that might be broken
 
 make music censorship more punishing to slot in:
-	this may fuck up the ai really badly, need to be careful
+	this may fuck up the ai really badly with global amenity change, need to be careful
 
 defensive tactics:
 	additional support bonuses?
@@ -202,6 +204,5 @@ ADD:
 
 india: cities with holy sites get 50% towards city projects?
 
-does akkad work on monks?
 
 buff faith on kills for other things to be 100% minimum
