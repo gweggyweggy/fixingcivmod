@@ -28,10 +28,7 @@ figure out proper localization for new text entries
 
 -----DIFFICULTY 1s:-----
 
-fix ai science value
 
-nerf:
- reduce monks faith on kill to 100%, temple discount to 20%
 
 update highlander to match with new recon unit
 
@@ -39,22 +36,14 @@ fix some of the wrong eureka descs:
 	siege tactics, shd be two trebuchets now
 	something else i dont remember? check april patch notes
 
-update text for new nonspecialty districts
+
 
 add text for monk ability descs
 
-make music censorship at least  -2 amenities instead of -1 
-
-scythia:
-	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
 
-buff faith on kills for other things to be 100% minimum
 
-caroleans either have 58 str or start with free promo
 
-japan:
-	samurai have 45 str
 
 -----DIFFICULTY 2s:-----
 shipyards:
@@ -66,21 +55,11 @@ exploding palms only +10 in melee combat
 
 earlier form of propaganda called something like "warrior culture", buff propaganda appropiately 
 
-mongolia:
-	ordu: +1 mvoe to siege, maybe a little cheaper too
-	keshigs: make a little more expensive?
-
-rationalism-lik cards: change pop requirement to be like 12?
 
 
-make polders more spammable
-
-fix mayan spawn bias
 
 -----DIFFICULTY 3s:-----
 
-voi chien:
-	remove move after attack, replace with varu debuff?
 
 firegoddess = make tile improvements (maybe districts?) unpillagable by volcanos
 
@@ -90,9 +69,6 @@ godofhealing = add a +15/25% production to holysites?
 babylon:
 	double unit maintenance cost?
 
-kongo:
-	let them build holy sites, but not recruit prophet
-	in turn, get archelogists and reveal artifacts early at humanism
 
 machine guns should come before infantry and tanks, like why are tanks modern but machine guns atomic?
 
@@ -101,17 +77,10 @@ alliances:
 	earlier for cree
 
 
-give eleanor kongos great people gen (with writing)
-
-zen meditation, 1 amenity for every specialty, not just 2
-
-black queen:
-	gain free diplo slot at diplomatic service
 
 
 -----DIFFICULTY 4s:-----
-kongo:
-	make mbanzas more resilient to recruit partisans
+
 
 	
 BUG: grandmasters chapel gives monks ignore walls, currently crashes the game (removed until working on this)
@@ -134,15 +103,7 @@ stonehenge, quarries give faith? maybe when founding a religion, gain another be
 
 india: cities with holy sites get 50% towards city projects?
 
-change religious community:
-	increase religious pressure from trade routes
-	trade routes going to cities following this religion gain 1.5x to all yields?
 
-tamar:
-	levy city states following your reliugino with faith
-	killing units is 100% faith isntead of  50%
-georgia:
-	slight combat enrf to khevusrs, maybe 45
 
 	
 
@@ -230,7 +191,6 @@ siege tactics:
 	units gain additional defensive bonus in forts
 	do the same for roman fort and pa
 
-crossbows are not as strong as they used to be since man-at-arms update bumped everything up in the medieival era, maybe its for the better though?
 
 defensive tactics:
 	additional support bonuses?
@@ -242,11 +202,13 @@ persia?
 
 magnifence frnace?
 
-poland:
-	move hussars earlier, adjust str accordingly
-	holy sites arent specialty
 
-jadwiga:
-	converting enemy(warring) city to ur religion gives you a relic
+russia:
+	needs nerf
+peter:
+	give him a leader ability lol
+
+bull moose:
+	nerf
 
 

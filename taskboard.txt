@@ -1,10 +1,72 @@
 ==TASKS==
+fix ai science value
 
+reduce monks faith on kill to 100%, temple discount to 20%
 
-
+make music censorship at least  -2 amenities instead of -1 
 		
+	
+japan:
+	samurai have 45 str
+
+update text for new nonspecialty districts
+
+scythia:
+	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
 
+caroleans either have 58 str or start with free promo
+
+mongolia:
+	ordu: +1 mvoe to siege, maybe a little cheaper too
+	keshigs: make a little more expensive?
+
+
+rationalism-lik cards: change pop requirement to be like 12?
+
+
+make polders more spammable
+
+fix mayan spawn bias
+
+jadwiga:
+converting a city to ur religion for the first time gives you culture (similar to fez)
+
+
+voi chien:
+	remove move after attack, replace with varu debuff?
+
+
+kongo/mvebma:
+	let them build holy sites, but not recruit prophet
+	in turn, get archelogists and reveal artifacts early at humanism
+	make mbanzas more resilient to recruit partisans
+
+give eleanor kongos great people gen (with writing)
+
+zen meditation, 1 amenity for every specialty, not just 2
+
+
+black queen:
+	gain free diplo slot at diplomatic service
+
+arabia:
+	minor desert spawn bias, maybe add some mountains to that
+	campuses and holysites gain minor adj from desert tiles
+
+poland:
+	move hussars earlier, adjust str accordingly
+	holy sites arent specialty
+
+change religious community:
+	increase religious pressure from trade routes
+	trade routes going to cities following this religion gain 1.5x to all yields?
+
+tamar:
+	levy city states following your reliugino with faith
+	killing units is 100% faith isntead of  50%
+georgia:
+	slight combat enrf to khevusrs, maybe 45
 
 ==DEVELOPING==
 
