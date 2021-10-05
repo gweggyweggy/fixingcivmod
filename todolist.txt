@@ -30,6 +30,12 @@ figure out proper localization for new text entries
 
 
 
+make music censorship at least  -2 amenities instead of -1 
+		
+
+england:
+	sea dogs in exploration
+
 update highlander to match with new recon unit
 
 fix some of the wrong eureka descs:
@@ -39,9 +45,6 @@ fix some of the wrong eureka descs:
 
 
 add text for monk ability descs
-
-
-
 
 
 
@@ -55,7 +58,10 @@ exploding palms only +10 in melee combat
 
 earlier form of propaganda called something like "warrior culture", buff propaganda appropiately 
 
+greece:
+	envoy at amphitheaters
 
+make polders more spammable
 
 
 -----DIFFICULTY 3s:-----
@@ -76,8 +82,7 @@ alliances:
 	alliances should only require one person to know what they are
 	earlier for cree
 
-
-
+stave cghurchs should give prod and faith to adjacent forests, or in that city
 
 -----DIFFICULTY 4s:-----
 
@@ -103,7 +108,7 @@ stonehenge, quarries give faith? maybe when founding a religion, gain another be
 
 india: cities with holy sites get 50% towards city projects?
 
-
+make ai settle coastally more often
 
 	
 
@@ -138,14 +143,7 @@ anti early snowball:
 	loyalty pressure more of a problem in earlier eras, should certain techs or civics fix this or global era progression?
 
 
-stacked trees:
-	more crazy fun abilites in normally worthless techs/civics 
-		e.g. +1 charge to all builders at some civic
-		builders can rush certain districts/buildings past certain civics
-		nationalism should boost loyalty in founded cities
-
-
-with new mili engie changes, road spam might be an issue.
+nationalism should boost loyalty in founded cities
 
 
 carthage:
@@ -196,7 +194,6 @@ defensive tactics:
 	additional support bonuses?
 
 
-fix ai settle coastal bias
 
 persia?
 
@@ -208,7 +205,11 @@ russia:
 peter:
 	give him a leader ability lol
 
-bull moose:
-	nerf
+
+--stealing more things from bbg
 
 
+
+
+hungary:
+	maybe only +1 envoy per levy?
