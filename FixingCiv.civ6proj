@@ -62,6 +62,9 @@
     <Content Include="english_xmls\districts.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="english_xmls\global_ai_changes.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="english_xmls\global_buildings.xml">
       <SubType>Content</SubType>
     </Content>

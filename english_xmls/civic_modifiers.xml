@@ -10,5 +10,12 @@
 		<Replace Tag="LOC_CIVIC_REFORMED_CHURCH_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_STRENGTH] to all Warrior Monks.</Text>
 		</Replace>
+		<Replace Tag="LOC_CIVIC_POLITICAL_PHILOSOPHY_DESCRIPTION" Language="en_US">
+			<Text>Grants the ability to construct an additional Spy. </Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_CIVIL_SERVICE_DESCRIPTION" Language="en_US">
+			<Text>Grants the ability to construct an additional Spy.  Allows Alliances.</Text>
+		</Replace>
+		
 	</LocalizedText>
 </GameData>
