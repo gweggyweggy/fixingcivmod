@@ -46,7 +46,7 @@ fix some of the wrong eureka descs:
 
 add text for monk ability descs
 
-
+should probably take bbg take on rome and move monuments to after code of laws
 
 -----DIFFICULTY 2s:-----
 shipyards:

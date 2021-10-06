@@ -4,21 +4,17 @@
     <Name>FixingCiv2</Name>
     <Description>Full desc and details here https://github.com/gweggyweggy/fixingcivmod</Description>
     <CustomProperties></CustomProperties>
-    <Created>1632102392</Created>
+    <Created>1633483269</Created>
     <Teaser>What if Civ was actually balanced?</Teaser>
     <Authors>Cezas</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
   <Dependencies>
-    <Mod id="E3F53C61-371C-440B-96CE-077D318B36C0" title="DLC: Australia Civilization Pack" />
-    <Mod id="02A8BDDE-67EA-4D38-9540-26E685E3156E" title="DLC: Aztec Civilization Pack" />
     <Mod id="1F367231-A040-4793-BDBB-088816853683" title="DLC: Khmer and Indonesia Civilization Pack" />
-    <Mod id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" title="DLC: Nubia Civilization Pack" />
     <Mod id="E2749E9A-8056-45CD-901B-C368C8E83DEB" title="DLC: Persia and Macedon Civilization Pack" />
-    <Mod id="3809975F-263F-40A2-A747-8BFB171D821A" title="DLC: Poland Civilization Pack" />
     <Mod id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" title="DLC: Vikings Content" />
-    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
     <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
   </Dependencies>
   <FrontEndActions>
     <UpdateText id="preload_xmls">
@@ -48,6 +44,7 @@
       <File>scripts/civ_changes/greece.sql</File>
       <File priority="200">scripts/civ_changes/zulu.sql</File>
       <File>scripts/civ_changes/khmer.sql</File>
+      <File>scripts/civ_changes/mongolia.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="update_globals">
       <File>scripts/global_building_changes.sql</File>
@@ -61,6 +58,7 @@
       <File>scripts/war_weariness.sql</File>
       <File>scripts/religion.sql</File>
       <File>scripts/civic_modifiers.sql</File>
+      <File>scripts/global_promotion_changes.sql</File>
     </UpdateDatabase>
     <UpdateText id="update_texts">
       <File priority="301">english_xmls/global_units.xml</File>
@@ -71,16 +69,18 @@
       <File>english_xmls/wonders.xml</File>
       <File>english_xmls/tech_modifiers.xml</File>
       <File>english_xmls/civic_modifiers.xml</File>
+      <File>english_xmls/civ_changes/mongolia.xml</File>
     </UpdateText>
   </InGameActions>
   <Files>
-    <File>changelog.txt</File>
     <File>english_xmls/civic_modifiers.xml</File>
     <File>english_xmls/civ_changes/khmer.xml</File>
     <File>english_xmls/civ_changes/macedon.xml</File>
+    <File>english_xmls/civ_changes/mongolia.xml</File>
     <File>english_xmls/civ_changes/vietnam.xml</File>
     <File>english_xmls/civ_changes/zulu.xml</File>
     <File>english_xmls/districts.xml</File>
+    <File>english_xmls/global_ai_changes.xml</File>
     <File>english_xmls/global_buildings.xml</File>
     <File>english_xmls/global_improvements.xml</File>
     <File>english_xmls/global_units.xml</File>
@@ -98,6 +98,7 @@
     <File>scripts/civ_changes/khmer.sql</File>
     <File>scripts/civ_changes/kongo.sql</File>
     <File>scripts/civ_changes/macedon.sql</File>
+    <File>scripts/civ_changes/mongolia.sql</File>
     <File>scripts/civ_changes/norway.sql</File>
     <File>scripts/civ_changes/ottomans.sql</File>
     <File>scripts/civ_changes/phoenicia.sql</File>
@@ -106,6 +107,7 @@
     <File>scripts/global_building_changes.sql</File>
     <File>scripts/global_district_changes.sql</File>
     <File>scripts/global_improvement_changes.sql</File>
+    <File>scripts/global_promotion_changes.sql</File>
     <File>scripts/global_unit_changes.sql</File>
     <File>scripts/pantheons.sql</File>
     <File>scripts/policies.sql</File>

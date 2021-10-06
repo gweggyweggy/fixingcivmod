@@ -2,20 +2,14 @@
 
 
 
-japan:
-	samurai have 45 str
+
 
 update text for new nonspecialty districts
 
-scythia:
-	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
+
 
 sweden:
 	caroleans either have 58 str or start with free promo
-
-mongolia:
-	ordu: +1 mvoe to siege, maybe a little cheaper too
-	keshigs: make a little more expensive?
 
 
 
@@ -53,17 +47,13 @@ fix ai science value
 
 ==DEVELOPING==
 
-
-
-
+scythia:
+	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
 
 
 need to rework lhtl so that it only applies in melee combat
 
-
-georgia:
-	slight combat enrf to khevusrs, maybe 45
 
 kongo/mvebma:
 	let them build holy sites, but not recruit prophet
@@ -96,9 +86,18 @@ tamar:
 ==FINAL TESTING==
 reduce monks faith on kill to 100%, temple discount to 15%
 drop lesser hold the line from +4 to +3
+georgia:
+	slight combat enrf to khevusrs, maybe 45
+japan:
+	samurai have 45 str
+
+
 ==BACKLOGGED==
 
 ==DONE==
 additional spies at political philo and civil service
 move monk and recon promotion changes to seperate file
 adjust spy costs to be cheaper (start at 125)
+mongolia:
+	ordu: +1 mvoe to siege, maybe a little cheaper too.  also move it to animal husbandry 	mili eng bonus as well
+	keshigs: bump to 200 prod

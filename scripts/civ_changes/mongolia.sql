@@ -1,0 +1,13 @@
+-- mongolia
+-- Author: Cezas
+-- DateCreated: 10/5/2021 8:57:02 PM
+--------------------------------------------------------------
+UPDATE Buildings SET PrereqTech='TECH_ANIMAL_HUSBANDRY', Cost=90 WHERE BuildingType='BUILDING_ORDU';
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+	('BUILDING_ORDU','SIXFIX_SUPPORT_MOVEMENT_MODIFIER'),
+	('BUILDING_ORDU','SIXFIX_ADDITIONAL_MILITARYENGINEER_CHARGE'),
+	('BUILDING_ORDU','SIXFIX_ADJUST_MILITARY_ENGINEER_PRODUCTION')
+	;
+INSERT INTO TypeTags (Type, Tag) VALUES
+	('ABILITY_ORDU_INCREASED_MOVEMENT','CLASS_SIEGE');
+UPDATE Units Set Cost=200 WHERE UnitType = 'UNIT_MONGOLIAN_KESHIG';

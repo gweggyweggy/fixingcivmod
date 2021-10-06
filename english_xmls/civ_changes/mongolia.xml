@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- mongolia -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 10/5/2021 9:08:43 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_BUILDING_ORDU_EXPANSION2_DESCRIPTION" Language="en_US">
+			<Text>>A building unique to Mongolia. Grants an ability that gives +1 [ICON_MOVEMENT] Movement to Cavalry-class and Siege-class units trained in this city. +25% combat experience for all cavalry and siege class units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard Speed).[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Barracks.  +20% [ICON_PRODUCTION] towards Military Engineers</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
