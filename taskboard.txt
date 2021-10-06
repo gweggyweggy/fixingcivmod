@@ -53,11 +53,13 @@ fix ai science value
 
 ==DEVELOPING==
 
-reduce monks faith on kill to 100%, temple discount to 20%
 
-adjust spy costs to be cheaper (start at 125?)
 
-drop lesser hold the line from +4 to +3
+
+
+
+
+need to rework lhtl so that it only applies in melee combat
 
 
 georgia:
@@ -92,10 +94,11 @@ tamar:
 
 
 ==FINAL TESTING==
-
-
-
+reduce monks faith on kill to 100%, temple discount to 15%
+drop lesser hold the line from +4 to +3
 ==BACKLOGGED==
 
 ==DONE==
 additional spies at political philo and civil service
+move monk and recon promotion changes to seperate file
+adjust spy costs to be cheaper (start at 125)

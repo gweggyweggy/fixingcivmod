@@ -93,7 +93,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType) VALUES
 	;
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','UnitType','UNIT_WARRIOR_MONK'), 
-	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',25)
+	('SIXFIX_ADJUST_WARRIOR_MONK_PRODUCTION','Amount',15)
 	;
 
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES
