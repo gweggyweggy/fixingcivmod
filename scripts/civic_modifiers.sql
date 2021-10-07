@@ -3,6 +3,7 @@
 -- DateCreated: 9/14/2021 9:11:01 PM
 --------------------------------------------------------------
 UPDATE Civics SET Description='LOC_CIVIC_THEOLOGY_DESCRIPTION' WHERE CivicType='CIVIC_THEOLOGY';
+UPDATE Civics SET Description='LOC_CIVIC_DIVINE_RIGHT_DESCRIPTION' WHERE CivicType='CIVIC_DIVINE_RIGHT';
 UPDATE Civics SET Description='LOC_CIVIC_REFORMED_CHURCH_DESCRIPTION' WHERE CivicType='CIVIC_REFORMED_CHURCH';
 
 --granting spies at these civics

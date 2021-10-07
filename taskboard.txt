@@ -27,9 +27,7 @@ arabia:
 	Bonus Science and Culture from having a Worship building increased to 20% from 10%.
 	adjust mamluk str and cost
 
-change religious community:
-	shrines grant additional trade route capacity or increase religious pressure from trade routes
-	trade routes going to cities following this religion gain 1.5x to all yields?
+
 
 
 
@@ -47,10 +45,12 @@ fix ai science value
 
 ==DEVELOPING==
 
+buff foment unrest and other spy missions
+
 scythia:
 	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
-
+mvoe conquistador to metalcasting
 
 need to rework lhtl so that it only applies in melee combat
 
@@ -59,10 +59,19 @@ kongo/mvebma:
 	let them build holy sites, but not recruit prophet
 	in turn, get archelogists and reveal artifacts early at humanism
 	make mbanzas more resilient to recruit partisans
+	voidsinger great work slot effect for kongo
 
-give eleanor kongos great people gen (with writing)
 
-zen meditation, 1 amenity for every specialty, not just 2
+
+
+zen meditation:
+	1 amenity for every specialty, would need to use MODIFIER_CITY_DISTRICTS_ADJUST_DISTRICT_AMENITY
+	or 1 amen 
+
+
+change religious community:
+	shrines grant additional trade route capacity or increase religious pressure from trade routes
+	trade routes going to cities following this religion gain 1.5x to all yields?
 
 jadwiga:
 	converting a city to ur religion for the first time gives you culture (similar to fez)
@@ -77,24 +86,32 @@ voi chien:
 
 tamar:
 	levy city states following your reliugino with faith
-	killing units is 100% faith isntead of  50%
+	killing units is 100% faith isntead of 50%
+
+rome:
+	follow bbg lead with monument after code of laws
 
 ==UPDATING TEXTS==
 
 
 
+
 ==FINAL TESTING==
-reduce monks faith on kill to 100%, temple discount to 15%
+
 drop lesser hold the line from +4 to +3
 georgia:
 	slight combat enrf to khevusrs, maybe 45
 japan:
 	samurai have 45 str
-
+eleanor:
+	knogo great people gen
+	works now do -3
 
 ==BACKLOGGED==
 
 ==DONE==
+reduce monks faith on kill to 100%, temple discount to 15%
+increase monk base cost, scale 20 faith per purchase, only +5 at theology, another +5 at divine right (not really thematic but its fair for gameplay)
 additional spies at political philo and civil service
 move monk and recon promotion changes to seperate file
 adjust spy costs to be cheaper (start at 125)

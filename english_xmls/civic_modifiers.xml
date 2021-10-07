@@ -5,7 +5,10 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_CIVIC_THEOLOGY_DESCRIPTION" Language="en_US">
-			<Text>+10 [ICON_STRENGTH] to all Warrior Monks.</Text>
+			<Text>+5 [ICON_STRENGTH] to all Warrior Monks.</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVIC_DIVINE_RIGHT_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_STRENGTH] to all Warrior Monks.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVIC_REFORMED_CHURCH_DESCRIPTION" Language="en_US">
 			<Text>+10 [ICON_STRENGTH] to all Warrior Monks.</Text>

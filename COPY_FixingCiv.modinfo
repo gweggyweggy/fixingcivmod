@@ -4,7 +4,7 @@
     <Name>FixingCiv2</Name>
     <Description>Full desc and details here https://github.com/gweggyweggy/fixingcivmod</Description>
     <CustomProperties></CustomProperties>
-    <Created>1633483269</Created>
+    <Created>1633574886</Created>
     <Teaser>What if Civ was actually balanced?</Teaser>
     <Authors>Cezas</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -28,6 +28,8 @@
       <File>english_xmls/districts.xml</File>
       <File>english_xmls/global_units.xml</File>
       <File>english_xmls/civ_changes/khmer.xml</File>
+      <File>english_xmls/civ_changes/mongolia.xml</File>
+      <File>english_xmls/non_unique_leader_changes/eleanor.xml</File>
     </UpdateText>
   </FrontEndActions>
   <InGameActions>
@@ -69,8 +71,10 @@
       <File>english_xmls/wonders.xml</File>
       <File>english_xmls/tech_modifiers.xml</File>
       <File>english_xmls/civic_modifiers.xml</File>
-      <File>english_xmls/civ_changes/mongolia.xml</File>
     </UpdateText>
+    <UpdateDatabase id="update_non_unique_leaders">
+      <File>scripts/non_unique_leader_changes/eleanor.sql</File>
+    </UpdateDatabase>
   </InGameActions>
   <Files>
     <File>english_xmls/civic_modifiers.xml</File>
@@ -85,6 +89,7 @@
     <File>english_xmls/global_improvements.xml</File>
     <File>english_xmls/global_units.xml</File>
     <File>english_xmls/new_text_entries.xml</File>
+    <File>english_xmls/non_unique_leader_changes/eleanor.xml</File>
     <File>english_xmls/policies.xml</File>
     <File>english_xmls/tech_modifiers.xml</File>
     <File>english_xmls/wonders.xml</File>
@@ -92,6 +97,7 @@
     <File>scripts/amenities.sql</File>
     <File>scripts/civic_modifiers.sql</File>
     <File>scripts/civ_changes/brazil.sql</File>
+    <File>scripts/civ_changes/france.sql</File>
     <File>scripts/civ_changes/georgia.sql</File>
     <File>scripts/civ_changes/greece.sql</File>
     <File>scripts/civ_changes/japan.sql</File>
@@ -109,6 +115,7 @@
     <File>scripts/global_improvement_changes.sql</File>
     <File>scripts/global_promotion_changes.sql</File>
     <File>scripts/global_unit_changes.sql</File>
+    <File>scripts/non_unique_leader_changes/eleanor.sql</File>
     <File>scripts/pantheons.sql</File>
     <File>scripts/policies.sql</File>
     <File>scripts/religion.sql</File>

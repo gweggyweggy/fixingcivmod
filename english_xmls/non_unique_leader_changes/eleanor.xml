@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- eleanor -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 10/6/2021 10:17:52 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION" Language="en_US">
+			<Text>Great Works in Eleanor’s cities each cause -3 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization.  Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist and [ICON_GreatMusician] Great Musician points.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
