@@ -57,10 +57,10 @@ need to rework lhtl so that it only applies in melee combat
 
 kongo/mvebma:
 	let them build holy sites, but not recruit prophet
-	in turn, get archelogists and reveal artifacts early at humanism
+	get archelogists and reveal artifacts early at humanism
+	mbebes weaker but cheaper
 	make mbanzas more resilient to recruit partisans
 	voidsinger great work slot effect for kongo
-
 
 
 
@@ -90,6 +90,8 @@ tamar:
 
 rome:
 	follow bbg lead with monument after code of laws
+
+
 
 ==UPDATING TEXTS==
 

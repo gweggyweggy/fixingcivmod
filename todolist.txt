@@ -111,13 +111,13 @@ india: cities with holy sites get 50% towards city projects?
 make ai settle coastally more often
 
 	
-
+change escape time for spies to be 1,2,4,8 (theoretically simple, just dont see it in the db)
 
 -----DIFFICULTY 5s:-----
 
 gandhi:
 ADD:
-	10% faith for each person you met that isnt warring you. 15% if friend, 20% if ally
+	5% faith for each person you met that isnt warring you. 15% if friend, 20% if ally
 	people who declared war on you gain 45 wwp a turn (effectively 90 wwp)  natural decay is now 50, so that means 400/40=every ten turns accumulate -1 amenity
 
 huey teocalli:
@@ -213,7 +213,12 @@ nubia:
 sumeria:
 	what do nerf?
 
-
+france:
+	another major adj for theatre squares on wonders
+	AND or theater squares/buildings get built faster next to wonders, and vice versa
 
 hungary:
 	maybe only +1 envoy per levy?
+
+	magnifence france:
+	plantations over luxuries provide double luxuries?
