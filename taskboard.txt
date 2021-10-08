@@ -56,11 +56,9 @@ need to rework lhtl so that it only applies in melee combat
 
 
 kongo/mvebma:
-	let them build holy sites, but not recruit prophet
 	get archelogists and reveal artifacts early at humanism
-	mbebes weaker but cheaper
+	OR building a theater square grants a free relic
 	make mbanzas more resilient to recruit partisans
-	voidsinger great work slot effect for kongo
 
 
 
@@ -105,13 +103,19 @@ georgia:
 	slight combat enrf to khevusrs, maybe 45
 japan:
 	samurai have 45 str
-eleanor:
-	knogo great people gen
-	works now do -3
+
+
 
 ==BACKLOGGED==
 
 ==DONE==
+eleanor:
+	knogo great people gen
+	works now do -3
+
+kongo/mvebma:
+	let them build holy sites, but not recruit prophet
+		mbebes weaker but cheaper
 reduce monks faith on kill to 100%, temple discount to 15%
 increase monk base cost, scale 20 faith per purchase, only +5 at theology, another +5 at divine right (not really thematic but its fair for gameplay)
 additional spies at political philo and civil service
