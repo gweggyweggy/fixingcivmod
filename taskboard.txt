@@ -55,12 +55,6 @@ mvoe conquistador to metalcasting
 need to rework lhtl so that it only applies in melee combat
 
 
-kongo/mvebma:
-	get archelogists and reveal artifacts early at humanism
-	OR building a theater square grants a free relic
-	make mbanzas more resilient to recruit partisans
-
-
 
 zen meditation:
 	1 amenity for every specialty, would need to use MODIFIER_CITY_DISTRICTS_ADJUST_DISTRICT_AMENITY
@@ -79,8 +73,6 @@ poland:
 	holy sites arent specialty
 
 
-voi chien:
-	remove move after attack, replace with varu debuff?
 
 tamar:
 	levy city states following your reliugino with faith
@@ -104,6 +96,8 @@ georgia:
 japan:
 	samurai have 45 str
 
+voi chien:
+	remove move after attack, replaced with ignore zoc
 
 
 ==BACKLOGGED==
@@ -116,6 +110,8 @@ eleanor:
 kongo/mvebma:
 	let them build holy sites, but not recruit prophet
 		mbebes weaker but cheaper
+		building a theater square grants a free relic
+	
 reduce monks faith on kill to 100%, temple discount to 15%
 increase monk base cost, scale 20 faith per purchase, only +5 at theology, another +5 at divine right (not really thematic but its fair for gameplay)
 additional spies at political philo and civil service

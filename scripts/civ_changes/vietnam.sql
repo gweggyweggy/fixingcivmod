@@ -8,3 +8,5 @@ INSERT INTO DistrictModifiers (DistrictType, ModifierId) VALUES
 INSERT INTO District_BuildChargeProductions (DistrictType, UnitType, PercentProductionPerCharge) VALUES 
 	('DISTRICT_THANH','UNIT_MILITARY_ENGINEER', 10)
 	;
+
+UPDATE UnitAbilityModifiers SET ModifierId='IGNOREZOC_IGNORE_ZOC' WHERE UnitAbilityType='ABILITY_VOI_CHIEN';

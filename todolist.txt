@@ -193,6 +193,8 @@ siege tactics:
 defensive tactics:
 	additional support bonuses?
 
+kongo:
+	make mbanzas more resilient to recruit partisans
 
 
 persia?
