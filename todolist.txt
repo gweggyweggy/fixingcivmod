@@ -205,6 +205,8 @@ russia:
 peter:
 	give him a leader ability lol
 
+moksha:
+	lay on hands shd affect naval units
 
 --stealing more things from bbg
 
