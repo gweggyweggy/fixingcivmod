@@ -54,8 +54,6 @@ mvoe conquistador to metalcasting
 
 need to rework lhtl so that it only applies in melee combat
 
-
-
 zen meditation:
 	1 amenity for every specialty, would need to use MODIFIER_CITY_DISTRICTS_ADJUST_DISTRICT_AMENITY
 	or 1 amen 
@@ -74,9 +72,11 @@ poland:
 
 
 
-tamar:
-	levy city states following your reliugino with faith
-	killing units is 100% faith isntead of 50%
+
+georgia:
+	walls provide +1 era score when built
+		100% faith on kills if in golden age
+		+5 str when in golden age
 
 rome:
 	follow bbg lead with monument after code of laws
@@ -85,7 +85,9 @@ rome:
 
 ==UPDATING TEXTS==
 
+tamar:
 
+	faith purchases are cheaper when in a golden age
 
 
 ==FINAL TESTING==

@@ -29,7 +29,7 @@
     <ModProperties>
       <CustomProperties xmlns="" />
     </ModProperties>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="preload_xmls"><File>english_xmls/civ_changes/zulu.xml</File><File>english_xmls/global_improvements.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/wonders.xml</File><File>english_xmls/global_buildings.xml</File><File>english_xmls/civ_changes/vietnam.xml</File><File>english_xmls/civ_changes/macedon.xml</File><File>english_xmls/districts.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/civ_changes/khmer.xml</File><File>english_xmls/civ_changes/mongolia.xml</File><File>english_xmls/non_unique_leader_changes/eleanor.xml</File><File>english_xmls/civ_changes/kongo.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="preload_xmls"><File>english_xmls/civ_changes/zulu.xml</File><File>english_xmls/global_improvements.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/wonders.xml</File><File>english_xmls/global_buildings.xml</File><File>english_xmls/civ_changes/vietnam.xml</File><File>english_xmls/civ_changes/macedon.xml</File><File>english_xmls/districts.xml</File><File>english_xmls/global_units.xml</File><File>english_xmls/civ_changes/khmer.xml</File><File>english_xmls/civ_changes/mongolia.xml</File><File>english_xmls/non_unique_leader_changes/eleanor.xml</File><File>english_xmls/civ_changes/kongo.xml</File><File>english_xmls/civ_changes/georgia.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="english_xmls\civic_modifiers.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="english_xmls\civ_changes\georgia.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="english_xmls\civ_changes\khmer.xml">

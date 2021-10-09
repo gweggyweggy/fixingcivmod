@@ -177,7 +177,7 @@ specialists?
 
 should fighters only cost 1 alum as they are meant for more defensive measures compared to bombers?
 
-	
+canals should provide gold multipliers for owners, less for travelers
 
 military academies:
 	add additional benefit to mili engs, maybe 2 engies for 1?
