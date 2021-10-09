@@ -15,7 +15,7 @@ sweden:
 
 
 
-fix mayan spawn bias
+
 
 
 black queen:
@@ -40,7 +40,7 @@ robert:
 
 rationalism-lik cards: change pop requirement to be like 12?
 
-fix ai science value
+
 
 
 ==DEVELOPING==
@@ -96,10 +96,10 @@ georgia:
 japan:
 	samurai have 45 str
 
-voi chien:
-	remove move after attack, replaced with ignore zoc
 
 
+fix ai science value
+fix mayan spawn bias
 ==BACKLOGGED==
 
 ==DONE==
@@ -120,3 +120,6 @@ adjust spy costs to be cheaper (start at 125)
 mongolia:
 	ordu: +1 mvoe to siege, maybe a little cheaper too.  also move it to animal husbandry 	mili eng bonus as well
 	keshigs: bump to 200 prod
+
+voi chien:
+	remove move after attack, replaced with ignore zoc
