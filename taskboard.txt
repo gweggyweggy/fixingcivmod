@@ -3,8 +3,7 @@
 
 update text for new nonspecialty districts
 
-sweden:
-	caroleans start with free promo
+
 
 
 
@@ -26,17 +25,15 @@ robert:
 rationalism-lik cards: change pop requirement to be like 12?
 
 
-eleanor:
-	take bbg changes instead of more gwam points
 
-christina:
-	they gain kongos gwam ability
 
 kongo:
 	25% discount when purchasing great artists
 
 
 ==DEVELOPING==
+sweden:
+	caroleans start with free promo
 
 buff foment unrest and other spy missions
 
@@ -52,8 +49,6 @@ zen meditation:
 	or 1 amen 
 
 
-
-
 change religious community:
 	shrines grant additional trade route capacity or increase religious pressure from trade routes
 	trade routes going to cities following this religion gain 1.5x to all yields?
@@ -63,7 +58,7 @@ jadwiga:
 
 poland:
 	move hussars earlier, adjust str accordingly
-	culture bombing a city also grants a relic?
+	culture bombing a city also grants a relic? or conquering a city for the first time grants a relic
 
 
 
@@ -82,8 +77,9 @@ rome:
 
 
 ==FINAL TESTING==
-eleanir:
-	100% prod towards theater square buildings
+
+
+
 sweden:
 	getting a gwam gives you a random eureka
 	kristina gets kongos old ability for gwam
@@ -103,6 +99,7 @@ fix mayan spawn bias
 ==DONE==
 eleanor:
 	works now do -3
+	100% prod towards theater square buildings
 tamar:
 	faith purchases are cheaper when in a golden age
 kongo/mvebma:

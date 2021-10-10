@@ -2,6 +2,8 @@
 -- Author: Cezas
 -- DateCreated: 10/9/2021 10:05:17 PM
 --------------------------------------------------------------
+
+--probably does not need to be repeatable
 INSERT INTO Modifiers (ModifierId, ModifierType,Repeatable) VALUES
 	--('SIXFIX_SWEDEN_ACCUMULATIVE_GPP','MODIFIER_PLAYER_ADJUST_FREE_GREAT_PERSON_POINTS',1),
 	('SIXFIX_TECH_BOOST_ON_PROPHET_RECRUIT','MODIFIER_PLAYER_GRANT_BOOST_WITH_GREAT_PERSON',1),

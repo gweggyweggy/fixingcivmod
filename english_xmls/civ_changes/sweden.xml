@@ -8,7 +8,7 @@
 			<Text>Gain 50 [ICON_Favor] Diplomatic Favor when earning a Great Person (on Standard Speed). Gain a random [ICON_TechBoosted] Eureka upon recruiting a [ICON_GreatProphet] Great Prophet, [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist or [ICON_GreatMusician] Great Musician.  Factories and Universities provide an additional +1 [ICON_GreatEngineer] Great Engineer and +1 [ICON_GreatScientist] Great Scientist point respectively. Three unique World Congress competitions are added starting in the Industrial Era.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_KRISTINA_AUTO_THEME_DESCRIPTION" Language="en_US">
-			<Text>	Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist and [ICON_GreatMusician] Great Musician points.  Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all of their slots filled. Unlocks the Queen's Bibliotheque (Tier 2 Government Building).</Text>
+			<Text>Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist and [ICON_GreatMusician] Great Musician points.  Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all of their slots filled. Unlocks the Queen's Bibliotheque (Tier 2 Government Building).</Text>
 		</Replace>
 
 	</LocalizedText>
