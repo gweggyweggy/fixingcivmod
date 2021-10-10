@@ -1,20 +1,10 @@
 ==TASKS==
 
 
-
-
-
 update text for new nonspecialty districts
 
-
-
 sweden:
-	caroleans either have 58 str or start with free promo
-
-
-
-
-
+	caroleans start with free promo
 
 
 
@@ -28,19 +18,22 @@ arabia:
 	adjust mamluk str and cost
 
 
-
-
-
-
 robert:
 	redo bannockburn:
 		if warred on, 100% to anti cav units, anti cav units gain +5 str and +1 move your territory for 10 turns 
 
 
-
 rationalism-lik cards: change pop requirement to be like 12?
 
 
+eleanor:
+	take bbg changes instead of more gwam points
+
+christina:
+	they gain kongos gwam ability
+
+kongo:
+	25% discount when purchasing great artists
 
 
 ==DEVELOPING==
@@ -59,6 +52,8 @@ zen meditation:
 	or 1 amen 
 
 
+
+
 change religious community:
 	shrines grant additional trade route capacity or increase religious pressure from trade routes
 	trade routes going to cities following this religion gain 1.5x to all yields?
@@ -68,8 +63,7 @@ jadwiga:
 
 poland:
 	move hussars earlier, adjust str accordingly
-	holy sites arent specialty
-
+	culture bombing a city also grants a relic?
 
 
 
@@ -85,20 +79,22 @@ rome:
 
 ==UPDATING TEXTS==
 
-tamar:
-
-	faith purchases are cheaper when in a golden age
 
 
 ==FINAL TESTING==
+eleanir:
+	100% prod towards theater square buildings
+sweden:
+	getting a gwam gives you a random eureka
+	kristina gets kongos old ability for gwam
+
 
 drop lesser hold the line from +4 to +3
 georgia:
 	slight combat enrf to khevusrs, maybe 45
+	30% discounto for faith purchases in a golden age
 japan:
 	samurai have 45 str
-
-
 
 fix ai science value
 fix mayan spawn bias
@@ -106,13 +102,13 @@ fix mayan spawn bias
 
 ==DONE==
 eleanor:
-	knogo great people gen
 	works now do -3
-
+tamar:
+	faith purchases are cheaper when in a golden age
 kongo/mvebma:
 	let them build holy sites, but not recruit prophet
 		mbebes weaker but cheaper
-		building a theater square grants a free relic
+		building a market grants a free relic
 	
 reduce monks faith on kill to 100%, temple discount to 15%
 increase monk base cost, scale 20 faith per purchase, only +5 at theology, another +5 at divine right (not really thematic but its fair for gameplay)
@@ -120,7 +116,7 @@ additional spies at political philo and civil service
 move monk and recon promotion changes to seperate file
 adjust spy costs to be cheaper (start at 125)
 mongolia:
-	ordu: +1 mvoe to siege, maybe a little cheaper too.  also move it to animal husbandry 	mili eng bonus as well
+	ordu: +1 mvoe to siege, maybe a little cheaper too.  also move it to animal husbandry mili eng bonus as well
 	keshigs: bump to 200 prod
 
 voi chien:

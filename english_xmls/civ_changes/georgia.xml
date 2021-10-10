@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- georgia -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 10/8/2021 9:38:02 PM -->
+<!--  BUGGED? : This is doubled when in a Golden Age.   +5 [ICON_STRENGTH] Combat Strength to all units when in a Golden Age.  -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="en_US">
+			<Text>Combat victories provide [ICON_FAITH] Faith equal to 50% of the Combat Strength of the defeated unit (on Standard Speed). 30% discount on [ICON_FAITH] Faith when in a Golden Age.  Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. </Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
