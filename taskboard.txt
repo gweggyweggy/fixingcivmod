@@ -53,12 +53,9 @@ change religious community:
 	shrines grant additional trade route capacity or increase religious pressure from trade routes
 	trade routes going to cities following this religion gain 1.5x to all yields?
 
-jadwiga:
-	converting a city to ur religion for the first time gives you culture (similar to fez)
 
-poland:
-	move hussars earlier, adjust str accordingly
-	culture bombing a city also grants a relic? or conquering a city for the first time grants a relic
+
+
 
 
 
@@ -73,30 +70,39 @@ rome:
 
 
 ==UPDATING TEXTS==
-
+poland:
+	move hussars earlier, adjust str accordingly
+	conquering a city for the first time grants a relic
 
 
 ==FINAL TESTING==
 
 
 
-sweden:
-	getting a gwam gives you a random eureka
-	kristina gets kongos old ability for gwam
+
 
 
 drop lesser hold the line from +4 to +3
-georgia:
-	slight combat enrf to khevusrs, maybe 45
-	30% discounto for faith purchases in a golden age
+
 japan:
 	samurai have 45 str
 
-fix ai science value
-fix mayan spawn bias
+
 ==BACKLOGGED==
 
 ==DONE==
+fix ai science value
+fix mayan spawn bias
+
+georgia:
+	slight combat enrf to khevusrs, maybe 45
+	30% discounto for faith purchases in a golden age
+
+sweden:
+	getting a gwam gives you a random eureka
+	kristina gets kongos old ability for gwam
+jadwiga:
+	converting a city to ur religion for the first time gives you culture (similar to fez)
 eleanor:
 	works now do -3
 	100% prod towards theater square buildings

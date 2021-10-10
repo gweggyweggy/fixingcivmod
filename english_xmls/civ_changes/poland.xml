@@ -5,7 +5,10 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="en_US">
-			<Text>Each time you convert a city 9with a Religious unit) for the first time, earn 20 [ICON_CULTURE] Culture per [ICON_Citizen] population of that city. Poland's majority religion becomes the dominant religion in cities that loses a tile to a Polish Culture Bomb. Holy Sites gain standard adjacency bonus from all districts. Relics provide addition +2 [ICON_FAITH] Faith, +2 [ICON_CULTURE] Culture, and +4 [ICON_GOLD] Gold.</Text>
+			<Text>Each time you convert a city (with a Religious unit) for the first time, earn 20 [ICON_CULTURE] Culture per [ICON_Citizen] population of that city. Poland's majority religion becomes the dominant religion in cities that loses a tile to a Polish Culture Bomb. Holy Sites gain standard adjacency bonus from all districts. [ICON_GreatWork_Relic] Relics provide addition +2 [ICON_FAITH] Faith, +2 [ICON_CULTURE] Culture, and +4 [ICON_GOLD] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION" Language="en_US">
+			<Text>Conquering a non-free city grants a [ICON_GreatWork_Relic] Relic.  Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
