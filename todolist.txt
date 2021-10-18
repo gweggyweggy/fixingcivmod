@@ -135,6 +135,14 @@ recon:
 
 ----BACKLOG-----
 
+divine inspiration:
+	8 faith a wonder, 15% towards building wonders
+
+zen med:
+	all tiles gain +1 appeal, 1 amenity per breathtaking tile?
+
+adjust spawn bias for a lot of civs
+
 naval combat:
 	theres something in the db about PrevailingWinds?  would like to add some dynamic movement/combat bonuses for naval combat
 
@@ -172,8 +180,13 @@ tlacthi:
 kupe:
 	maybe make him unable to remove features?  pretty harsh, but thematic
 
+work ethic:
+	should be prod per pop to benefit tall civs (may compete with feed the world?)
+	would like to incorporate adjacency code somewhere else (gain faith equal to faith?  would that even work?  what about culture)
 
-specialists?
+cathedrals should hold more than religious art
+
+specialists should give gpp, also add policy cards for them
 
 should fighters only cost 1 alum as they are meant for more defensive measures compared to bombers?
 
@@ -196,11 +209,15 @@ defensive tactics:
 kongo:
 	make mbanzas more resilient to recruit partisans
 
+make neighborhoods actually good, should help with tall culture civs
 
 persia?
 
 magnifence frnace?
 
+make barb scout unit with standard sight
+
+maybe govenors should favor mroe tall? e.g. victor gets +1 city cs per pop
 
 russia:
 	needs nerf
@@ -209,6 +226,9 @@ peter:
 
 moksha:
 	lay on hands shd affect naval units
+
+dark age policy/wonder idea:
+	your religious units cannot be condemned (if a policy, give -10 cs)
 
 --stealing more things from bbg
 
@@ -226,3 +246,9 @@ hungary:
 
 	magnifence france:
 	plantations over luxuries provide double luxuries?
+
+
+
+--stealing things from dbgold
+yield hud ribbons initially hidden, get more diplo vis to reveal more
+learn from other civs

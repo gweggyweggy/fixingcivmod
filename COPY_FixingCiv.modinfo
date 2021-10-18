@@ -4,7 +4,7 @@
     <Name>FixingCiv2</Name>
     <Description>Full desc and details here https://github.com/gweggyweggy/fixingcivmod</Description>
     <CustomProperties></CustomProperties>
-    <Created>1633885293</Created>
+    <Created>1634520960</Created>
     <Teaser>Trying my best to fix Civ</Teaser>
     <Authors>Cezas</Authors>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
@@ -80,11 +80,20 @@
       <File>english_xmls/wonders.xml</File>
       <File>english_xmls/tech_modifiers.xml</File>
       <File>english_xmls/civic_modifiers.xml</File>
-      <File priority="401">english_xmls/civ_changes/poland.xml</File>
     </UpdateText>
     <UpdateDatabase id="update_non_unique_leaders">
       <File>scripts/non_unique_leader_changes/eleanor.sql</File>
     </UpdateDatabase>
+    <UpdateText id="update_leader_texts_again">
+      <File priority="500">english_xmls/civ_changes/georgia.xml</File>
+      <File priority="501">english_xmls/civ_changes/khmer.xml</File>
+      <File priority="502">english_xmls/civ_changes/kongo.xml</File>
+      <File priority="503">english_xmls/civ_changes/macedon.xml</File>
+      <File priority="504">english_xmls/civ_changes/mongolia.xml</File>
+      <File priority="506">english_xmls/civ_changes/poland.xml</File>
+      <File priority="507">english_xmls/civ_changes/sweden.xml</File>
+      <File priority="505">english_xmls/civ_changes/zulu.xml</File>
+    </UpdateText>
   </InGameActions>
   <Files>
     <File>english_xmls/civic_modifiers.xml</File>
