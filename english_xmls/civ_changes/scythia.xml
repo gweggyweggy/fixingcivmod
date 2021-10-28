@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scythia -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 10/28/2021 6:18:23 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="en_US">
+			<Text>Tomyris' units heal up to 30 hit points when they kill another unit.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

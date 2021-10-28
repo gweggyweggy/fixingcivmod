@@ -30,19 +30,11 @@ rationalism-lik cards: change pop requirement to be like 12?
 kongo:
 	25% discount when purchasing great artists
 
-
-==DEVELOPING==
+scythia:
+	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
 
 buff foment unrest and other spy missions
-
-scythia:
-	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
-	remove the +5 against wounded, but keep the heal on kill
-
-mvoe conquistador to metalcasting
-
-need to rework lhtl so that it only applies in melee combat
 
 zen meditation:
 	1 amenity for every specialty, would need to use MODIFIER_CITY_DISTRICTS_ADJUST_DISTRICT_AMENITY
@@ -52,22 +44,33 @@ zen meditation:
 change religious community:
 	shrines grant additional trade route capacity or increase religious pressure from trade routes
 	trade routes going to cities following this religion gain 1.5x to all yields?
+rome:
+	follow bbg lead with monument after code of laws
 
-need to post update all civ text
-
+increase mbebe cost to standard swords
 georgia:
 	walls provide +1 era score when built
 		100% faith on kills if in golden age
 		+5 str when in golden age
 
-rome:
-	follow bbg lead with monument after code of laws
-
 partially unerf monks, start 100 faith, still scale by 20
 
-increase mbebe cost to standard swords
+mvoe conquistador to metalcasting
+
+need to rework lhtl so that it only applies in melee combat
+
+==DEVELOPING==
+
+
+
+
+
+need to post update all civ text
+
+
+
 ==UPDATING TEXTS==
-need to fix kongos text to say "relic when market"
+
 
 
 ==FINAL TESTING==
@@ -77,15 +80,22 @@ need to fix kongos text to say "relic when market"
 
 
 
-drop lesser hold the line from +4 to +3
 
-japan:
-	samurai have 45 str
+
+
+
 
 
 ==BACKLOGGED==
 
 ==DONE==
+scythia:
+	remove the +5 against wounded, but keep the heal on kill
+need to fix kongos text to say "relic when market"
+drop lesser hold the line from +4 to +3
+japan:
+	samurai have 45 str
+temporarily remove +1 sight from scouts inherently
 poland:
 	move hussars earlier, adjust str accordingly
 	conquering a city grants a relic
