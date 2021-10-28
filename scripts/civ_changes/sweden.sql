@@ -3,6 +3,12 @@
 -- DateCreated: 10/9/2021 10:05:17 PM
 --------------------------------------------------------------
 
+
+--not sure why there are multiple copies for "unit_free_promotion"
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId) VALUES
+	('ABILITY_CAROLEAN','HETAIROI_FREE_PROMOTION');
+
+
 --probably does not need to be repeatable
 INSERT INTO Modifiers (ModifierId, ModifierType,Repeatable) VALUES
 	--('SIXFIX_SWEDEN_ACCUMULATIVE_GPP','MODIFIER_PLAYER_ADJUST_FREE_GREAT_PERSON_POINTS',1),

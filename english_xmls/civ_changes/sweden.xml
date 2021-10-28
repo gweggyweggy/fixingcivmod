@@ -10,6 +10,9 @@
 		<Replace Tag="LOC_TRAIT_LEADER_KRISTINA_AUTO_THEME_DESCRIPTION" Language="en_US">
 			<Text>Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist and [ICON_GreatMusician] Great Musician points.  Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all of their slots filled. Unlocks the Queen's Bibliotheque (Tier 2 Government Building).</Text>
 		</Replace>
+		<Replace Tag="LOC_UNIT_SWEDEN_CAROLEAN_DESCRIPTION" Language="en_US">
+			<Text>Swedish unique Renaissance Era unit that replaces the Pike and Shot.  Starts with a free promotion.  +1 [ICON_Movement] Movement more than the Pike and Shot. +3 [ICON_Strength] Combat Strength per unused [ICON_Movement] Movement.</Text>
+		</Replace>
 
 	</LocalizedText>
 </GameData>
