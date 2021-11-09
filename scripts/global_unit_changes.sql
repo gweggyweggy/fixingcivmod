@@ -97,7 +97,7 @@ UPDATE Units_XP2 SET ResourceMaintenanceAmount=2,ResourceCost=2 WHERE UnitType='
 
 --Warrior Monks--
 --will be available with a shrine, cheaper cost, will nerf combat str accordingly
-UPDATE Units SET Combat=35, Cost=60, CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_WARRIOR_MONK';
+UPDATE Units SET Combat=35, Cost=50, CostProgressionModel='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1=10 WHERE UnitType='UNIT_WARRIOR_MONK';
 DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_WARRIOR_MONK';
 INSERT INTO Unit_BuildingPrereqs (Unit,PrereqBuilding) VALUES
 	('UNIT_WARRIOR_MONK','BUILDING_SHRINE');

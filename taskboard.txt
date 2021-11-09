@@ -5,7 +5,6 @@ update text for new nonspecialty districts
 
 
 
-naruto run also ignores zoc
 
 black queen:
 	gain free diplo slot at diplomatic service
@@ -26,10 +25,6 @@ rationalism-lik cards: change pop requirement to be like 12?
 
 
 
-
-kongo:
-	25% discount when purchasing great artists
-
 scythia:
 	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
 
@@ -44,16 +39,14 @@ zen meditation:
 change religious community:
 	shrines grant additional trade route capacity or increase religious pressure from trade routes
 	trade routes going to cities following this religion gain 1.5x to all yields?
-rome:
-	follow bbg lead with monument after code of laws
 
-increase mbebe cost to standard swords
+
 georgia:
-	walls provide +1 era score when built
-		100% faith on kills if in golden age
-		+5 str when in golden age
+	change faith discount to 50%
+	100% faith on kills if in golden age
+	+5 str when in golden age
 
-partially unerf monks, start 100 faith, still scale by 20
+
 
 mvoe conquistador to metalcasting
 
@@ -61,11 +54,11 @@ need to rework lhtl so that it only applies in melee combat
 
 ==DEVELOPING==
 
+rome:
+	follow bbg lead with monument after code of laws
 
+need to post update all civ text?
 
-
-
-need to post update all civ text
 
 
 
@@ -74,10 +67,10 @@ need to post update all civ text
 
 
 ==FINAL TESTING==
-
-
-
-
+naruto run also ignores zoc
+partially unnerf monks, start 100 faith, still scale by 20
+kongo:
+	increase mbebe cost to standard swords
 
 
 

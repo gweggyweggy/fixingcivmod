@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rome -->
+<!-- Author: Cezas -->
+<!-- DateCreated: 11/8/2021 7:46:27 PM -->
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
+			<Text>All cities gain/start with an additional City Center building after researching Code of Laws. (Starts with a Monument building in the Ancient era).</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

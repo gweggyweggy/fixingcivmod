@@ -2,7 +2,7 @@
 -- Author: Cezas
 -- DateCreated: 9/4/2021 7:35:33 PM
 --------------------------------------------------------------
-UPDATE Units SET Cost=80, Combat=35 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER'; 
+UPDATE Units SET Cost=90, Combat=35 WHERE UnitType='UNIT_KONGO_SHIELD_BEARER'; 
 DELETE FROM ExcludedDistricts WHERE TraitType='TRAIT_LEADER_RELIGIOUS_CONVERT';
 DELETE FROM TraitModifiers WHERE
 	TraitType='TRAIT_CIVILIZATION_NKISI' AND ModifierId='TRAIT_DOUBLE_ARTIST_POINTS' OR 

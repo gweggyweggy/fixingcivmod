@@ -135,6 +135,8 @@ recon:
 
 ----BACKLOG-----
 
+buff siege cards to 30%, nerf prod %bonus to support from encamp buildings
+
 divine inspiration:
 	8 faith a wonder, 15% towards building wonders
 

@@ -131,10 +131,11 @@ UPDATE UnitPromotions SET Description='2x flanking bonus.  Only adjacent enemy u
 
 --naruto run promotion
 INSERT INTO UnitPromotions (UnitPromotionType, Name, Description, Level, PromotionClass, Column) VALUES
-	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties.',2,'PROMOTION_CLASS_MONK',1);
+	('PROMOTION_SIXFIX_NARUTO_RUN','Naruto Run','Ignore all terrain movement penalties and ZOC.',2,'PROMOTION_CLASS_MONK',1);
 INSERT INTO UnitPromotionModifiers (UnitPromotionType,ModifierId) VALUES
 	('PROMOTION_SIXFIX_NARUTO_RUN','MOD_IGNORE_TERRAIN_COST'),
-	('PROMOTION_SIXFIX_NARUTO_RUN','AMPHIBIOUS_BONUS_IGNORE_RIVERS')
+	('PROMOTION_SIXFIX_NARUTO_RUN','AMPHIBIOUS_BONUS_IGNORE_RIVERS'),
+	('PROMOTION_SIXFIX_NARUTO_RUN','IGNOREZOC_IGNORE_ZOC')
 	;
 INSERT INTO Types (Type, Kind) VALUES 
 	('PROMOTION_SIXFIX_NARUTO_RUN','KIND_PROMOTION');
