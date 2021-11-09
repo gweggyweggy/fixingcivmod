@@ -4,11 +4,17 @@
 --------------------------------------------------------------
 
 --new promotion tree
+/*
+todo:
+new tree wil be 
+l= sentry+spyglass, ranger+foragers, camouflage
+r= guerilla+ignorezoc-> alpine+? -> snipers
 
---left side is now ranger->sentry+spyglass->sniper
---right side is now guerrilla+ignorezoc->foragers->camouflage
---final is ambush
 
+left side is now ranger->sentry+spyglass->sniper
+right side is now guerrilla+ignorezoc->foragers->camouflage
+final is ambush
+*/
 --deleting old connections and promotions
 DELETE FROM UnitPromotionPrereqs WHERE 
 	UnitPromotion='PROMOTION_CAMOUFLAGE' OR PrereqUnitPromotion='PROMOTION_CAMOUFLAGE' OR

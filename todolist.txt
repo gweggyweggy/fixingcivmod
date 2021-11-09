@@ -211,7 +211,8 @@ kongo:
 
 make neighborhoods actually good, should help with tall culture civs
 
-persia?
+persia:
+	can we do gov titles on trade post establishmebnts?
 
 magnifence frnace?
 
