@@ -5,7 +5,7 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="en_US">
-			<Text>Tomyris' units heal up to 30 hit points when they kill another unit.</Text>
+			<Text>Tomyris' units heal 50 hit points when they kill another unit.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

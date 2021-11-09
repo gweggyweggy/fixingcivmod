@@ -233,6 +233,9 @@ moksha:
 dark age policy/wonder idea:
 	your religious units cannot be condemned (if a policy, give -10 cs)
 
+spain:
+	mvoe conquistador to metalcasting
+
 --stealing more things from bbg
 
 nubia:

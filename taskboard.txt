@@ -25,9 +25,6 @@ rationalism-lik cards: change pop requirement to be like 12?
 
 
 
-scythia:
-	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
-
 
 buff foment unrest and other spy missions
 
@@ -48,14 +45,14 @@ georgia:
 
 
 
-mvoe conquistador to metalcasting
+
 
 need to rework lhtl so that it only applies in melee combat
 
 ==DEVELOPING==
 
-rome:
-	follow bbg lead with monument after code of laws
+
+
 
 need to post update all civ text?
 
@@ -67,10 +64,6 @@ need to post update all civ text?
 
 
 ==FINAL TESTING==
-naruto run also ignores zoc
-partially unnerf monks, start 100 faith, still scale by 20
-kongo:
-	increase mbebe cost to standard swords
 
 
 
@@ -82,8 +75,18 @@ kongo:
 ==BACKLOGGED==
 
 ==DONE==
+naruto run also ignores zoc
+partially unnerf monks, start 100 faith, still scale by 20
+kongo:
+	increase mbebe cost to standard swords
+
+rome:
+	follow bbg lead with monument after code of laws
 scythia:
 	remove the +5 against wounded, but keep the heal on kill
+	make horse archers cost horses, like 10?  can make them alittle cheaper to compensate
+	make heal on kill for scythia 50?
+
 need to fix kongos text to say "relic when market"
 drop lesser hold the line from +4 to +3
 japan:
