@@ -38,10 +38,7 @@ change religious community:
 	trade routes going to cities following this religion gain 1.5x to all yields?
 
 
-georgia:
-	change faith discount to 50%
-	100% faith on kills if in golden age
-	+5 str when in golden age
+
 
 
 
@@ -50,7 +47,6 @@ georgia:
 need to rework lhtl so that it only applies in melee combat
 
 ==DEVELOPING==
-
 
 
 
@@ -74,7 +70,13 @@ need to post update all civ text?
 
 ==BACKLOGGED==
 
+georgia:
+	100% faith on kills if in golden age
+	+5 str when in golden age
 ==DONE==
+
+georgia:
+	change faith discount to 50%
 naruto run also ignores zoc
 partially unnerf monks, start 100 faith, still scale by 20
 kongo:

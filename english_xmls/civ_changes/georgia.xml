@@ -6,7 +6,7 @@
 <GameData>
 	<LocalizedText>
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="en_US">
-			<Text>Combat victories provide [ICON_FAITH] Faith equal to 50% of the Combat Strength of the defeated unit (on Standard Speed). 30% discount on [ICON_FAITH] Faith when in a Golden Age.  Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. </Text>
+			<Text>Combat victories provide [ICON_FAITH] Faith equal to 50% of the Combat Strength of the defeated unit (on Standard Speed).  50% discount on [ICON_FAITH] Faith purchases when in a Golden Age.  Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. </Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

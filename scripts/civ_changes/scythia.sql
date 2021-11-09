@@ -8,5 +8,6 @@ UPDATE ModifierArguments SET Value=50 WHERE ModifierId='TOMYRIS_HEAL_AFTER_DEFEA
 
 UPDATE Units SET Cost=80, StrategicResource='RESOURCE_HORSES' WHERE UnitType='UNIT_SCYTHIAN_HORSE_ARCHER';
 
-INSERT INTO Units_XP2 (UnitType, ResourceCost, CanEarnExperience, CanFormMilitaryFormation) VALUES
-	('UNIT_SCYTHIAN_HORSE_ARCHER',10, 1, 1);
+
+INSERT OR IGNORE INTO Units_XP2 ( UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, CanEarnExperience, CanFormMilitaryFormation)
+VALUES ( 'UNIT_SCYTHIAN_HORSE_ARCHER', 0, 10, 'RESOURCE_HORSES', 1, 1);
