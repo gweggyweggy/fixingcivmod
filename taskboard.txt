@@ -50,12 +50,11 @@ need to rework lhtl so that it only applies in melee combat
 
 
 
-need to post update all civ text?
 
 
 
 
-==UPDATING TEXTS==
+==UPDATING TEXTS== (remember to update leader text twice)
 
 
 
