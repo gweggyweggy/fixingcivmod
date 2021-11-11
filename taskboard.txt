@@ -47,7 +47,10 @@ change religious community:
 need to rework lhtl so that it only applies in melee combat
 
 ==DEVELOPING==
-
+georgia:
+	100% faith on kills if in golden age
+	+5 str when in golden age
+	BUG: +5 str applies to all civs, needs to be georgia specific
 
 
 
@@ -69,9 +72,7 @@ need to rework lhtl so that it only applies in melee combat
 
 ==BACKLOGGED==
 
-georgia:
-	100% faith on kills if in golden age
-	+5 str when in golden age
+
 ==DONE==
 
 georgia:
