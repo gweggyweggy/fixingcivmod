@@ -5,9 +5,17 @@ update text for new nonspecialty districts
 
 
 
-
-black queen:
-	gain free diplo slot at diplomatic service
+france:
+	wonder prod bonus to 50%
+	chateaus: (change to)
+		remove adj to resource req and allow chateaus next to eahc other
+		+3 culture next to wonders (+6 with flight)
+		+3 gold for each luxury resource adjacent
+		
+	black queen:
+		gain free diplo slot at diplomatic service
+	magnificence:
+		30% prod towards builders
 
 arabia:
 	minor desert spawn bias, maybe add some mountains to that
@@ -22,7 +30,6 @@ robert:
 
 
 rationalism-lik cards: change pop requirement to be like 12?
-
 
 
 
@@ -47,13 +54,6 @@ change religious community:
 need to rework lhtl so that it only applies in melee combat
 
 ==DEVELOPING==
-georgia:
-	100% faith on kills if in golden age
-	+5 str when in golden age
-	BUG: +5 str applies to all civs, needs to be georgia specific
-
-
-
 
 
 
@@ -77,8 +77,11 @@ georgia:
 
 georgia:
 	change faith discount to 50%
-naruto run also ignores zoc
-partially unnerf monks, start 100 faith, still scale by 20
+	+5 str when in golden age
+
+monks:
+	naruto run also ignores zoc
+	partially unnerf monks, start 100 faith, still scale by 20
 kongo:
 	increase mbebe cost to standard swords
 

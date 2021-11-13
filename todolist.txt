@@ -243,9 +243,7 @@ nubia:
 sumeria:
 	what do nerf?
 
-france:
-	another major adj for theatre squares on wonders
-	AND or theater squares/buildings get built faster next to wonders, and vice versa
+
 
 hungary:
 	maybe only +1 envoy per levy?
